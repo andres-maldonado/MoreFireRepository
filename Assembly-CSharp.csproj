@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Misc Scripts\ActivationTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\Global Timer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Enemy\DrawTransformLines.cs" />

@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|c:\\users\\pandy\\unity projects\\dig4930\\firegame\\morefirerepository\\assets\\scripts\\our scripts\\error message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|c:\\users\\pandy\\unity projects\\dig4930\\firegame\\morefirerepository\\assets\\scripts\\our scripts\\global timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\global timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\error message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\error message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|c:\\users\\pandy\\unity projects\\dig4930\\firegame\\morefirerepository\\assets\\minigamewin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\minigamewin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\minigamewin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -30,19 +34,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Global Timer.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Global Timer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\Global Timer.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Global Timer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\Global Timer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T11:46:54.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Error Message.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Error Message.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\Error Message.cs",
               "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Error Message.cs",
               "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\Error Message.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T10:48:26.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T10:48:26.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG3878\\Sumo\\Assets\\PlayerController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\DIG3878\\Sumo\\Assets\\PlayerController.cs",
@@ -50,11 +66,12 @@
               "RelativeToolTip": "..\\..\\..\\DIG3878\\Sumo\\Assets\\PlayerController.cs",
               "ViewState": "AQIAAPYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T06:42:46.884Z"
+              "WhenOpened": "2024-06-17T06:42:46.884Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MinigameWin.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\MinigameWin.cs",
               "RelativeDocumentMoniker": "Assets\\MinigameWin.cs",
@@ -62,12 +79,11 @@
               "RelativeToolTip": "Assets\\MinigameWin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T06:41:05.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T06:41:05.666Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MinigameTrigger.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
@@ -75,8 +91,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T05:34:46.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T05:34:46.848Z"
             }
           ]
         }
