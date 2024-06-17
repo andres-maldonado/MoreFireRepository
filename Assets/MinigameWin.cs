@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class MinigameWin : MonoBehaviour
 {
-
+    public GameObject player;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -25,7 +26,7 @@ public class MinigameWin : MonoBehaviour
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(.5f);
-
+        player.GetComponent<PlayerMovement>().DisablePlayer(false);
         Destroy(gameObject);
         yield return null;
     }
