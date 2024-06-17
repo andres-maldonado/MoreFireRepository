@@ -1,7 +1,7 @@
 testing_branch1:
-	msg: You know, sometimes I think... is this all there is? Is life just some sort of horrible joke without a punchline? Are we all just biding our time until the sweet, sweet release of death?
+	msg: What should I do in the case of a fire?
 	next: testing_branch2
 
 testing_branch2:
-	msg: Yep, that pretty much sums it up.
+	msg: [information here]
 	next: testing_branch1
