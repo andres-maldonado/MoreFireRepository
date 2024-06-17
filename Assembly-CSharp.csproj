@@ -118,6 +118,7 @@
     <Compile Include="Assets\Scripts\Misc Scripts\PlaySound2D.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\Error Message.cs" />
     <Compile Include="Assets\MinigameWin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Damagers\ProjectileWeapon.cs" />
