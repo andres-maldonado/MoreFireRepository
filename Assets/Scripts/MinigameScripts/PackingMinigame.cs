@@ -28,10 +28,10 @@ public class PackingMinigame : MonoBehaviour
 
         // at this point we know the parent GameObject exists, so we check if
         // it has the necessary "MinigameWin" component
-        if (!transform.parent.TryGetComponent<MinigameWin>(out MinigameWin MGW)) {
+        /*if (!transform.parent.TryGetComponent<MinigameWin>(out MinigameWin MGW)) {
             Debug.LogError("Error: minigame's parent doesn't have required MinigameWin component!");
             return false;
-        }
+        }*/
         return true;
     }
 
@@ -62,7 +62,8 @@ public class PackingMinigame : MonoBehaviour
             }
         }
         if (has_won) {
-            transform.parent.GetComponent<MinigameWin>().Win();
+            //transform.parent.GetComponent<MinigameWin>().Win();
+            Debug.Log("You win!");
         }
     }
 
@@ -70,6 +71,7 @@ public class PackingMinigame : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         if (packed.ContainsKey(other.name)) {
             packed[other.name] = true;
+            Debug.Log(other.name);
             Destroy(other.gameObject);
             CheckForWin();
         }
