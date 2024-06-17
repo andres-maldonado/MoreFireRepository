@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class DragAndDrop : MonoBehaviour
 {
-    Collider2D obj_collider;
-    void Start() {
-        obj_collider = GetComponent<Collider2D>();
-    }
-
-    void Update() {
-        Vector3 mousePos = Input.mousePosition;
-
+    void OnMouseDrag() {
+        Vector3 mouse_position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z + Camera.main.nearClipPlane));
+        mouse_position.z = 0f;
+        transform.position = -mouse_position;
     }
 }
