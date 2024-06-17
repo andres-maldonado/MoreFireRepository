@@ -18,7 +18,7 @@ public class DialogueScript : MonoBehaviour
     GameObject textBox;
 
     (string, string) ReadDialogue() {
-        
+        return ("Hello", "World");
     }
 
     void Start()
