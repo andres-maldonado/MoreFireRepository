@@ -23,7 +23,7 @@ public class PackingMinigame : MonoBehaviour
         // checks if the current GameObject has a parent object
         if (transform.parent == null) {
             Debug.LogError("Error: minigame script has no parent GameObject!");
-            return false;
+            //return false;
         }
 
         // at this point we know the parent GameObject exists, so we check if
@@ -75,6 +75,10 @@ public class PackingMinigame : MonoBehaviour
             Destroy(other.gameObject);
             CheckForWin();
         }
+    }
+
+    void Update() {
+        transform.position = Vector3.Lerp(transform.position, Vector3.zero, 0.0015f);
     }
     
 }
