@@ -5,9 +5,14 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public string name;
-
-    //stretch goal to add descriptions to the items
     public string desc;
-    //public Sprite img;
+    public Sprite img;
+
+    public void Init(string item_name, string item_desc, Sprite item_img)
+    {
+        name = item_name;
+        desc = item_desc;
+        img = item_img;
+    }
 
 }
