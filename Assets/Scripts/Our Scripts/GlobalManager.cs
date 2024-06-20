@@ -8,7 +8,38 @@ public class GlobalManager : MonoBehaviour
     private string minigame_folder = "Assets/Resources/MinigamePrefabs";
     private List<GameObject> minigames = new List<GameObject>();
 
-    public static double time = 0.00f;
+    public class GameTime {
+        private float raw_time, gametime_scale_factor;
+        public int hours, minutes;
+        private bool paused = false;
+
+        public GameTime(int starting_hours = 0, int starting_minutes = 0, float scale = 600.0f) {
+            gametime_scale_factor = scale;
+            hours = starting_hours;
+            minutes = starting_minutes;
+        }
+
+        public void UpdateTime() {
+            if (!paused) raw_time += 140 * Time.deltaTime / gametime_scale_factor;
+            hours = (int)(raw_time / 10 + 8) % 24;
+            minutes = (int)(raw_time % 10.0 * 6);
+
+            print(GetPaddedTime());
+        }
+
+        public void Toggle() {
+            paused = !paused;
+        }
+
+        private string GetPaddedITOS(int val) {
+            return (val < 10 ? "0" + val : val.ToString());
+        }
+
+        public string GetPaddedTime() {
+            return GetPaddedITOS(hours) + ":" + GetPaddedITOS(minutes);
+        }
+    }
+    public static GameTime global_time = new GameTime();
 
     // SINGLETON BOILER-PLATE
     private static GlobalManager _instance;
@@ -52,6 +83,7 @@ public class GlobalManager : MonoBehaviour
                 // loads the actual prefab into the List containing all minigames
                 GameObject loaded = Resources.Load(sub_path) as GameObject;
                 if (loaded != null) {
+                    // object was successfully loaded
                     minigames.Add(loaded);
                     Debug.Log(sub_path + " (ID: " + id + ")");
                     id++;
@@ -61,9 +93,14 @@ public class GlobalManager : MonoBehaviour
     }
     // END SINGLETON BOILER-PLATE
 
-    // 
-    public void StartMinigame(int minigame_id) {
-        Instantiate(minigames[minigame_id], new Vector3(0, 5, 0), Quaternion.identity);
+    private void Update() {
+        global_time.UpdateTime();
     }
 
+    // ###### CUSTOM PUBLIC METHODS ######
+
+    // launches one of the minigames using an integer ID
+    public void StartMinigame(int minigame_id) {
+        Instantiate(minigames[minigame_id], new Vector3(0, 0, 0), Quaternion.identity);
+    }
 }
