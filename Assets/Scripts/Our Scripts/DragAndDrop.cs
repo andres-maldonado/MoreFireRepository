@@ -13,6 +13,6 @@ public class DragAndDrop : MonoBehaviour
 
         rigidbody.velocity = Vector2.zero;
         rigidbody.angularVelocity = 0f;
-        transform.position = mouse_position;
+        transform.position = -mouse_position;
     }
 }
