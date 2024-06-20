@@ -23,8 +23,6 @@ public class GlobalManager : MonoBehaviour
             if (!paused) raw_time += 140 * Time.deltaTime / gametime_scale_factor;
             hours = (int)(raw_time / 10 + 8) % 24;
             minutes = (int)(raw_time % 10.0 * 6);
-
-            print(GetPaddedTime());
         }
 
         public void Toggle() {
@@ -93,14 +91,22 @@ public class GlobalManager : MonoBehaviour
     }
     // END SINGLETON BOILER-PLATE
 
+    private void Start() {
+        StartMinigame(0);
+    }
+
     private void Update() {
-        global_time.UpdateTime();
+        global_time.UpdateTime(); // updates the global timer
     }
 
     // ###### CUSTOM PUBLIC METHODS ######
 
     // launches one of the minigames using an integer ID
     public void StartMinigame(int minigame_id) {
-        Instantiate(minigames[minigame_id], new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(minigames[minigame_id], new Vector3(0, -15, 0), Quaternion.identity);
+    }
+
+    public void DisplayError(string error_message) {
+        
     }
 }
