@@ -27,7 +27,7 @@ public class Inventory : MonoBehaviour
         //item1.Init("bread", "very soft very yum", Resources.load<Sprite>("C:\Users\sherb\Unity Projects\Fire Game\MoreFireRepository\Assets\Sprites\FirePlaceholderImages\bread.jpg"));
 
         Item item1 = ScriptableObject.CreateInstance<Item>();
-        item1.Init("bread", "very yum very soft", Resources.load<Sprite>("C:\Users\sherb\Unity Projects\Fire Game\MoreFireRepository\Assets\Sprites\FirePlaceholderImages\bread.jpg"));
+        item1.Init("bread", "very yum very soft", Resources.Load<Sprite>("bread"));
         inv.Add(item1);
         print(item1.name);
         print(item1.desc);
