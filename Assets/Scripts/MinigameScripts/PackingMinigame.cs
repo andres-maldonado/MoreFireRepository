@@ -64,7 +64,6 @@ public class PackingMinigame : MonoBehaviour
         if (has_won) {
             //transform.parent.GetComponent<MinigameWin>().Win();
             Debug.Log("You win!");
-            GlobalManager.Instance.PrintMessage();
         }
     }
 
