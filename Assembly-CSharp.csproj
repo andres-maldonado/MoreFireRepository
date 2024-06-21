@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Starter Scripts\Utility\LockedObject.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Patrol.cs" />
+    <Compile Include="Assets\Scripts\DialogueScript.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\InventoryUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerInventory.cs" />
@@ -94,8 +95,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\LoadSceneOnClick.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\DragAndDrop.cs" />
+=======
+>>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\Misc Scripts\FreeParallax.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerAudio.cs" />
@@ -123,7 +127,6 @@
     <Compile Include="Assets\Scripts\Our Scripts\Error Message.cs" />
     <Compile Include="Assets\MinigameWin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-    <Compile Include="Assets\Scripts\MinigameScripts\PackingMinigame.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Damagers\ProjectileWeapon.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Enemy\EnemyPatrolAreaBehaviourSerious.cs" />
@@ -140,7 +143,6 @@
     <Compile Include="Assets\Scripts\Misc Scripts\Patrol_NOFLIP.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Flickering_Light.cs" />
-    <Compile Include="Assets\Scripts\Our Scripts\DialogueScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Managers\GameSceneManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
@@ -152,6 +154,7 @@
     <Compile Include="Assets\Scripts\Starter Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Managers\CollectibleManagerTMP.cs" />
+    <Compile Include="Assets\Scripts\DragAndDrop.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\SpeakerLibrary.cs" />
