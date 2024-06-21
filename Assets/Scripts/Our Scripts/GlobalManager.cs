@@ -13,16 +13,14 @@ public class GlobalManager : MonoBehaviour
         public int hours, minutes;
         private bool paused = false;
 
-        public GameTime(int starting_hours = 8, int starting_minutes = 0, float scale = 600.0f) {
+        public GameTime(float scale = 600.0f) {
             gametime_scale_factor = scale;
-            hours = starting_hours;
-            minutes = starting_minutes;
         }
 
         // updates the clock's internal values
         public void UpdateTime() {
             if (!paused) raw_time += 140 * Time.deltaTime / gametime_scale_factor;
-            hours = (int)(raw_time / 10 + starting_hours) % 24;
+            hours = (int)(raw_time / 10 + 8) % 24;
             minutes = (int)(raw_time % 10.0 * 6);
         }
 
