@@ -63,5 +63,9 @@ public class PackingMinigame : MonoBehaviour
             Destroy(other.gameObject);
             CheckForWin();
         }
+        else {
+            GlobalManager.Instance.DisplayError("Hm, that's not quite right...", "You packed " + other.name + " in your emergency kit, but unfortunately it won't be helpful in the fire. Try again!");
+            Destroy(other.gameObject);
+        }
     }
 }
