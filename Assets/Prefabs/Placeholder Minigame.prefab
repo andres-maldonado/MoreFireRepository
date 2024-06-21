@@ -67,6 +67,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf5d8af76a9ed84290d29b71d66f843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  minigameWinSound:
+    Guid:
+      Data1: -1763584013
+      Data2: 1200870355
+      Data3: 1162600116
+      Data4: -405406696
+    Path: event:/MinigameWin
 --- !u!1 &2678342446194785691
 GameObject:
   m_ObjectHideFlags: 0
