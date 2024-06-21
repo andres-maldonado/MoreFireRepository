@@ -523,6 +523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1973726662343668803}
   - component: {fileID: 1420215857916335646}
+  - component: {fileID: 7165006285729771525}
   - component: {fileID: 6677832959368903012}
   m_Layer: 0
   m_Name: PackingMinigame
@@ -570,6 +571,19 @@ MonoBehaviour:
   - Extinguisher
   - FirstAid
   - Batteries
+--- !u!114 &7165006285729771525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449997871628733793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c67e19e3ed9e449cac61bffe5f10e77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  on_win: 0
 --- !u!61 &6677832959368903012
 BoxCollider2D:
   m_ObjectHideFlags: 0
