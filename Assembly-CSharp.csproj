@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Starter Scripts\Utility\LockedObject.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Patrol.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\InventoryUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\FaceCamera.cs" />
