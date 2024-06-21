@@ -13,30 +13,36 @@ public class GlobalManager : MonoBehaviour
         public int hours, minutes;
         private bool paused = false;
 
-        public GameTime(int starting_hours = 0, int starting_minutes = 0, float scale = 600.0f) {
+        public GameTime(int starting_hours = 8, int starting_minutes = 0, float scale = 600.0f) {
             gametime_scale_factor = scale;
             hours = starting_hours;
             minutes = starting_minutes;
         }
 
+        // updates the clock's internal values
         public void UpdateTime() {
             if (!paused) raw_time += 140 * Time.deltaTime / gametime_scale_factor;
-            hours = (int)(raw_time / 10 + 8) % 24;
+            hours = (int)(raw_time / 10 + starting_hours) % 24;
             minutes = (int)(raw_time % 10.0 * 6);
         }
 
+        // toggles whether the clock is paused or not
         public void Toggle() {
             paused = !paused;
         }
 
+        // returns a padded value of the form "XX"
         private string GetPaddedITOS(int val) {
             return (val < 10 ? "0" + val : val.ToString());
         }
 
+        // returns the current game time in a string formatted as "XX:XX"
         public string GetPaddedTime() {
             return GetPaddedITOS(hours) + ":" + GetPaddedITOS(minutes);
         }
     }
+
+    // create a new instance of the GameTime class to use as the global timer
     public static GameTime global_time = new GameTime();
 
     // SINGLETON BOILER-PLATE
