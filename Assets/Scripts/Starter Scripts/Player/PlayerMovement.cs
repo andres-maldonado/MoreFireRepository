@@ -259,12 +259,11 @@ public class PlayerMovement : MonoBehaviour
 			if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
 			{
 				playerFootsteps.start();
-				Debug.Log("E");
-			}
-			else
-			{
-				playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
 			}
 		}
-	}
+        else
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+    }
 }

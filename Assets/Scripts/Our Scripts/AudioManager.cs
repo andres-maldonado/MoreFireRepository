@@ -6,7 +6,12 @@ using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
+    private EventInstance musicEventInstance;
     public static AudioManager instance { get; private set; }
+    private void Start()
+    {
+        InitializeMusic(FMODEvents.instance.konbiniJam);
+    }
     private void Awake()
     {
         if (instance != null)
@@ -23,5 +28,11 @@ public class AudioManager : MonoBehaviour
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         return eventInstance;
+    }
+
+    private void InitializeMusic(EventReference musicEventReference)
+    {
+        musicEventInstance = CreateInstance(musicEventReference);
+        musicEventInstance.start();
     }
 }

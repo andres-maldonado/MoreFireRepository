@@ -93,8 +93,8 @@
     <Compile Include="Assets\Plugins\FMOD\src\StudioParameterTrigger.cs" />
     <Compile Include="Assets\Plugins\FMOD\platforms\win\src\PlatformWindows.cs" />
     <Compile Include="Assets\Plugins\FMOD\platforms\html5\src\PlatformWebGL.cs" />
-    <Compile Include="Assets\Plugins\FMOD\platforms\android\src\PlatformAndroid.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\FMODEventTrack.cs" />
+    <Compile Include="Assets\Plugins\FMOD\platforms\android\src\PlatformAndroid.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\fmod_dsp.cs" />
   </ItemGroup>
   <ItemGroup>
