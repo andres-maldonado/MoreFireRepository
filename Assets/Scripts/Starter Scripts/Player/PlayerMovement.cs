@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -51,9 +52,6 @@ public class PlayerMovement : MonoBehaviour
 	[Tooltip("The length of the ray used to detect the ground.")]
 	public float rayLength = 1;
 
-	[Header("Audio")]
-	public PlayerAudio playerAudio;
-
 	/*
     PRIVATE VARIABLES
     */
@@ -67,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
 	private bool isGrounded = false;
 	private Vector3 currentVelocity = Vector3.zero;
 	private int jumpsLeft; //how many jumps until the player can't jump anymore? reset when grounded.
+	private EventInstance playerFootsteps;
 
 	// Start is called before the first frame update
 	void Start()
@@ -75,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 		col = GetComponent<Collider2D>(); //Get Collider component
 		rend = GetComponent<SpriteRenderer>(); //Get Sprite Renderer Component
 		anim = GetComponent<Animator>(); //Get Animator Component
-		playerAudio = GetComponent<PlayerAudio>();
+		playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
 	}
 
 	public void DisablePlayer(bool isDisabled)
@@ -101,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
 			HorizontalMovement = Input.GetAxisRaw("Horizontal");
 			VerticalMovement = Input.GetAxisRaw("Vertical");
 
-			if (!TopDownMovement) //if the movement is not top down movement
+			/*if (!TopDownMovement) //if the movement is not top down movement
 			{
 				VerticalMovement = Input.GetAxisRaw("Jump");
 				anim.SetFloat("MoveVertical", VerticalMovement);
@@ -127,51 +126,30 @@ public class PlayerMovement : MonoBehaviour
 					Jump();
 					jumpsLeft--;
 				}
-			}
-			//Animation
-			// Lines 134-169 Jane Apostol 10/12/23
-			if (!TopDownMovement) // when the movement is sidescroller
-			{
-				if (HorizontalMovement != 0)
-				{
-					anim.SetBool("isMoving", true);
-					if (playerAudio && !playerAudio.WalkSource.isPlaying && playerAudio.WalkSource.clip != null)
-					{
-						playerAudio.WalkSource.Play();
-					}
-				}
-				else
-				{
-					anim.SetBool("isMoving", false);
-					if (playerAudio && playerAudio.WalkSource.isPlaying && playerAudio.WalkSource.clip != null)
-					{
-						playerAudio.WalkSource.Stop();
-					}
-				}
-			}
-			else // when the movement is topdown
-			{
+			}*/
 				anim.SetFloat("MoveHorizontal", HorizontalMovement);
 
 				if (HorizontalMovement != 0 || VerticalMovement != 0)
 				{
 					anim.SetBool("isMoving", true);
-					if (playerAudio && !playerAudio.WalkSource.isPlaying && playerAudio.WalkSource.clip != null)
+					/*if (playerAudio && !playerAudio.WalkSource.isPlaying && playerAudio.WalkSource.clip != null)
 					{
 						playerAudio.WalkSource.Play();
 					}
+					*/
 				}
 				else
 				{
 					anim.SetBool("isMoving", false);
-					if (playerAudio && playerAudio.WalkSource.isPlaying && playerAudio.WalkSource.clip != null)
+					/*if (playerAudio && playerAudio.WalkSource.isPlaying && playerAudio.WalkSource.clip != null)
 					{
 						playerAudio.WalkSource.Stop();
 					}
+					*/
 				}
-			}
 
 		}
+		UpdateSound();
 
 	}
 
@@ -240,17 +218,6 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
-	private void Jump()
-	{
-		rb.velocity = new Vector2(rb.velocity.x, 0); //Stop any previous vertical movement
-		rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse); //Add force upwards as an impulse.
-		anim.SetBool("isJumping", true); // Jane Apostol 10/12/23
-
-		if (playerAudio && playerAudio != null)
-		{
-			playerAudio.JumpSource.Play();
-		}
-	}
 
 	private void FlipCheck(float move)
 	{
@@ -281,5 +248,23 @@ public class PlayerMovement : MonoBehaviour
 	public void TriggerPlayerAttackAnimation()
 	{
 		anim.SetTrigger("isAttacking");
+	}
+
+	private void UpdateSound()
+	{
+		if (rb.velocity.x != 0 || rb.velocity.y != 0)
+		{
+			PLAYBACK_STATE playbackState;
+			playerFootsteps.getPlaybackState(out playbackState);
+			if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+			{
+				playerFootsteps.start();
+				Debug.Log("E");
+			}
+			else
+			{
+				playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+			}
+		}
 	}
 }

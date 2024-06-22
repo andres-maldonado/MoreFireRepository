@@ -5,7 +5,7 @@ using UnityEngine;
 public class MinigameWin : MonoBehaviour
 {
     public GameObject player;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,7 @@ public class MinigameWin : MonoBehaviour
 
     public void Win()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.minigameWinSound, this.transform.position);
         GetComponent<Animator>().SetBool("isBeaten", true);
         StartCoroutine(EndGame());
     }
