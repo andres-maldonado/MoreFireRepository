@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8232235693287553891}
   - component: {fileID: 4178498901459910672}
   m_Layer: 0
-  m_Name: Inventory Slot
+  m_Name: Inventory Slot 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5918547031656897657}
   - component: {fileID: 3436558311918141926}
   m_Layer: 0
-  m_Name: Inventory Slot (3)
+  m_Name: Inventory Slot 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 4167238307091026542}
   - component: {fileID: 4672325195084024764}
   m_Layer: 0
-  m_Name: Inventory Slot (2)
+  m_Name: Inventory Slot 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 5945512687732465225}
   - component: {fileID: 3451993540718070726}
   m_Layer: 0
-  m_Name: Inventory Slot (1)
+  m_Name: Inventory Slot 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,6 +587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2869930865327515428}
   - component: {fileID: 2308549302329740928}
+  - component: {fileID: 4574606382075542829}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -625,6 +626,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
   items: {fileID: 0}
+--- !u!114 &4574606382075542829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5237329695552028228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8bf5922c58b66a41aaf8712d362e82e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inv: []
 --- !u!1 &8130063625387032435
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,11 +668,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7300684839077138515}
+  - {fileID: 5918547031656897657}
   - {fileID: 8232235693287553891}
   - {fileID: 5945512687732465225}
   - {fileID: 4167238307091026542}
-  - {fileID: 5918547031656897657}
-  - {fileID: 7300684839077138515}
   m_Father: {fileID: 2869930865327515428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -698,7 +712,7 @@ GameObject:
   - component: {fileID: 7300684839077138515}
   - component: {fileID: 6155491819274125634}
   m_Layer: 0
-  m_Name: Inventory Slot (4)
+  m_Name: Inventory Slot 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -14,5 +14,4 @@ public class Item : ScriptableObject
         desc = item_desc;
         img = item_img;
     }
-
 }

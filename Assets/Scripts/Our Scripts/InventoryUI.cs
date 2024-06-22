@@ -7,20 +7,26 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] Animator timer;
     [SerializeField] Animator items;
 
-    // Start is called before the first frame update
+    private bool inventory_isopen = false;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void OpenInventory()
-    {
-        //GetComponentInChildren<Animator>.SetBool("open", true);
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            timer.Play("InventoryTimerEnter");
+            items.Play("InventorySlotsEnter");
+            inventory_isopen = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && inventory_isopen)
+        {
+            timer.Play("InventoryTimerExit");
+            items.Play("InventorySlotsExit");
+            inventory_isopen = false;
+        }
     }
 }
