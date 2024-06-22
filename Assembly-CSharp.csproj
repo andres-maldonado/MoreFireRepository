@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Starter Scripts\Utility\LockedObject.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Patrol.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\InventoryUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\FaceCamera.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Enemy\DrawTransformLines.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\FMODEvents.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\Starter Scripts\Utility\CollectibleItemTMP.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\MinigameTrigger.cs" />
@@ -97,6 +99,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\DragAndDrop.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\FreeParallax.cs" />
@@ -1205,6 +1208,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="FMODUnityEditor.csproj">
+      <Project>{B8D213FF-879F-5111-09CE-6D3F4381DAB6}</Project>
+      <Name>FMODUnityEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnityResonance.csproj">
+      <Project>{8CAE397C-4633-401F-D56E-A9E6FF5DC51C}</Project>
+      <Name>FMODUnityResonance</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnityResonanceEditor.csproj">
+      <Project>{B8D934E2-54E6-EFC9-ACEC-FE03F03AAD0E}</Project>
+      <Name>FMODUnityResonanceEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnity.csproj">
+      <Project>{AABF6DD3-E333-1287-3FDD-6BDFF5C5F402}</Project>
+      <Name>FMODUnity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

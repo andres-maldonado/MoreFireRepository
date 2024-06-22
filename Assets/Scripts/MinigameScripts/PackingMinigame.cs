@@ -19,19 +19,7 @@ public class PackingMinigame : MonoBehaviour
                 return false;
             }
         }
-        
-        // checks if the current GameObject has a parent object
-        if (transform.parent == null) {
-            Debug.LogError("Error: minigame script has no parent GameObject!");
-            //return false;
-        }
 
-        // at this point we know the parent GameObject exists, so we check if
-        // it has the necessary "MinigameWin" component
-        /*if (!transform.parent.TryGetComponent<MinigameWin>(out MinigameWin MGW)) {
-            Debug.LogError("Error: minigame's parent doesn't have required MinigameWin component!");
-            return false;
-        }*/
         return true;
     }
 
@@ -62,7 +50,7 @@ public class PackingMinigame : MonoBehaviour
             }
         }
         if (has_won) {
-            //transform.parent.GetComponent<MinigameWin>().Win();
+            GetComponent<MinigameHandler>().Win();
             Debug.Log("You win!");
         }
     }
@@ -75,10 +63,9 @@ public class PackingMinigame : MonoBehaviour
             Destroy(other.gameObject);
             CheckForWin();
         }
+        else {
+            GlobalManager.Instance.DisplayError("Hm, that's not quite right...", "You packed " + other.name + " in your emergency kit, but unfortunately it won't be helpful in the fire. Try again!");
+            Destroy(other.gameObject);
+        }
     }
-
-    void Update() {
-        transform.position = Vector3.Lerp(transform.position, Vector3.zero, 0.0015f);
-    }
-    
 }
