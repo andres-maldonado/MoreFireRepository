@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{c8d82853-0868-499f-a866-d726813636fb}">
+		<property name="name">
+			<value>PluckArea</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1078279-6266-466b-b073-4be208c99cc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{005d9b26-3ae4-4a1c-b03b-129b03703def}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{005d9b26-3ae4-4a1c-b03b-129b03703def}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.99800002574920654</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

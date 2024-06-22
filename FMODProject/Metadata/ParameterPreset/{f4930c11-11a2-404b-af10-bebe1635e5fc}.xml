@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{f4930c11-11a2-404b-af10-bebe1635e5fc}">
+		<property name="name">
+			<value>ArpArea</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1078279-6266-466b-b073-4be208c99cc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a9ab9ab5-c81f-4c7b-a21f-633eec96e84f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a9ab9ab5-c81f-4c7b-a21f-633eec96e84f}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
