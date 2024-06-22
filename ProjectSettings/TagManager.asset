@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ShouldPack
   - ShouldNotPack
+  - GuardView
+  - Cover
   layers:
   - Default
   - TransparentFX
@@ -42,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 180786079
     locked: 0
