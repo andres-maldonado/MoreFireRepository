@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{b99fdb78-69cc-4bed-a863-71426b7f4122}">
+		<property name="name">
+			<value>BassArea</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1078279-6266-466b-b073-4be208c99cc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{bffe09e5-9e57-49fc-b8c1-641cf5e86fa3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{bffe09e5-9e57-49fc-b8c1-641cf5e86fa3}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Value A</value>
+			<value>Value B</value>
+			<value>Value C</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

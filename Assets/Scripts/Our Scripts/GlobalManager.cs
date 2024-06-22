@@ -5,7 +5,10 @@ using System.IO;
 
 public class GlobalManager : MonoBehaviour
 {
+    // ###### FILE PATHS ######
     private string minigame_folder = "Assets/Resources/MinigamePrefabs";
+    private string error_path = "Error Message";
+
     private List<GameObject> minigames = new List<GameObject>();
 
     public class GameTime {
@@ -96,7 +99,7 @@ public class GlobalManager : MonoBehaviour
     // END SINGLETON BOILER-PLATE
 
     private void Start() {
-        StartMinigame(0);
+        //StartMinigame(0);
     }
 
     private void Update() {
@@ -110,7 +113,9 @@ public class GlobalManager : MonoBehaviour
         Instantiate(minigames[minigame_id], new Vector3(0, -15, 0), Quaternion.identity);
     }
 
-    public void DisplayError(string error_message) {
-        
+    public void DisplayError(string error_title, string error_message) {
+        GameObject message_prefab = Resources.Load(error_path) as GameObject;
+        GameObject e = Instantiate(message_prefab, Vector3.zero, Quaternion.identity);
+        e.GetComponent<ErrorMessage>().SetText(error_title, error_message);
     }
 }
