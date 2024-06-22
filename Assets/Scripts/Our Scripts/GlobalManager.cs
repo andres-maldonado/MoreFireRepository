@@ -99,7 +99,7 @@ public class GlobalManager : MonoBehaviour
     // END SINGLETON BOILER-PLATE
 
     private void Start() {
-        StartMinigame(0);
+        //StartMinigame(0);
     }
 
     private void Update() {
