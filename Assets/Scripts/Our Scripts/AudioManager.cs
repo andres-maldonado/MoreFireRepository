@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance { get; private set; }
     private void Start()
     {
-        InitializeMusic(FMODEvents.instance.konbiniJam);
+        InitializeMusic(FMODEvents.instance.song);
     }
     private void Awake()
     {
@@ -34,5 +34,10 @@ public class AudioManager : MonoBehaviour
     {
         musicEventInstance = CreateInstance(musicEventReference);
         musicEventInstance.start();
+    }
+
+    public void MusicParameterChange(string parameterName, float parameterValue)
+    {
+        musicEventInstance.setParameterByName(parameterName, parameterValue);
     }
 }

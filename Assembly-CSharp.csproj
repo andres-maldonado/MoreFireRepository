@@ -149,11 +149,11 @@
     <Compile Include="Assets\Scripts\Misc Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Flickering_Light.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\DialogueScript.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\TriggerParameterChange.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\MinigameHandler.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Utility\CameraMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\HealingItem.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyChaseBehaviour.cs" />
@@ -187,6 +187,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Resources\Dialogue\dialogue_test_file.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
