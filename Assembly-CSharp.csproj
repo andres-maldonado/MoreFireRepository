@@ -153,6 +153,7 @@
     <Compile Include="Assets\Scripts\Misc Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Flickering_Light.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\DialogueScript.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\TriggerParameterChange.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
