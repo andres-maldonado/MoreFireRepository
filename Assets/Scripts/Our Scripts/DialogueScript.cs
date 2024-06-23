@@ -12,6 +12,10 @@ using TMPro;
 public class DialogueScript : MonoBehaviour
 {
     private TMP_Text mainText;
+    private GameObject prompter;
+    private Vector3 prompter_origin;
+    private double prompter_time;
+
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
     [SerializeField] private int minigame_id = 0;
     [SerializeField] private bool start_minigame = true;
@@ -25,6 +29,8 @@ public class DialogueScript : MonoBehaviour
 
     void Awake() {
         mainText = transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>();
+        prompter = transform.GetChild(0).GetChild(2).gameObject;
+        prompter_origin = prompter.transform.position;
     }
 
     public void Set(string file_name, int game_id = 0, bool start_game = true, int tpl = 25) {
@@ -66,6 +72,8 @@ public class DialogueScript : MonoBehaviour
         }
 
         counter++;
+        promper_time += Time.deltaTime;
+        prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Sin(prompter_time) * 10), 0);
 
         if (Input.GetKeyDown(KeyCode.Z)) {
             ReadDialogue();
