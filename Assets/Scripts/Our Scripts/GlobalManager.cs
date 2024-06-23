@@ -7,7 +7,12 @@ public class GlobalManager : MonoBehaviour
 {
     // ###### FILE PATHS ######
     private string minigame_folder = "Assets/Resources/MinigamePrefabs";
+
+    // IMPORTANT: these file paths are relative to the Assets/Resources folder
     private string error_path = "Error Message";
+    private string dialogue_path = "Dialogue/DialogueBox";
+
+    private GameObject message_prefab, dialogue_prefab;
 
     private List<GameObject> minigames = new List<GameObject>();
 
@@ -95,15 +100,19 @@ public class GlobalManager : MonoBehaviour
                 }
             }
         }
+
+        // load prefabs once, then instantiate them later
+        message_prefab = Resources.Load(error_path) as GameObject;
+        dialogue_prefab = Resources.Load(dialogue_path) as GameObject;
     }
     // END SINGLETON BOILER-PLATE
 
-    private void Start() {
-        //StartMinigame(0);
-    }
-
     private void Update() {
         global_time.UpdateTime(); // updates the global timer
+    }
+
+    private void Start() {
+        StartDialogue("dialogue_test_file");
     }
 
     // ###### CUSTOM PUBLIC METHODS ######
@@ -114,8 +123,13 @@ public class GlobalManager : MonoBehaviour
     }
 
     public void DisplayError(string error_title, string error_message) {
-        GameObject message_prefab = Resources.Load(error_path) as GameObject;
         GameObject e = Instantiate(message_prefab, Vector3.zero, Quaternion.identity);
         e.GetComponent<ErrorMessage>().SetText(error_title, error_message);
+    }
+
+    public void StartDialogue(string branch_name, int game_id = 0, bool start_minigame = true, int tpl = 25) {
+        GameObject d = Instantiate(dialogue_prefab, Vector3.zero, Quaternion.identity);
+        DialogueScript s = d.GetComponent<DialogueScript>();
+        s.Set(branch_name, game_id, start_minigame, tpl);
     }
 }

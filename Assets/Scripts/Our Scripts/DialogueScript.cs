@@ -13,7 +13,9 @@ public class DialogueScript : MonoBehaviour
 {
     private TMP_Text mainText;
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
-    [SerializeField] private int ticks_per_letter = 10;
+    [SerializeField] private int minigame_id = 0;
+    [SerializeField] private bool start_minigame = true;
+    [SerializeField] private int ticks_per_letter = 25;
     
     private int letters_displayed = 0;
     private int counter = 0;
@@ -25,7 +27,16 @@ public class DialogueScript : MonoBehaviour
         mainText = transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>();
     }
 
+    public void Set(string file_name, int game_id = 0, bool start_game = true, int tpl = 25) {
+        dialogue_file_name = file_name;
+        minigame_id = game_id;
+        start_minigame = start_game;
+        ticks_per_letter = tpl;
+    }
+
     void Start() {
+        // if the file doesn't exist, disable the script so as not to break anything too
+        // badly
         if (!File.Exists("Assets/Resources/Dialogue/" + dialogue_file_name + ".txt")) {
             Debug.LogError("No dialogue file named " + dialogue_file_name + " found!");
             gameObject.GetComponent<DialogueScript>().enabled = false;
@@ -40,7 +51,9 @@ public class DialogueScript : MonoBehaviour
         if ((current_text = file_reader.ReadLine()) == null) {
             // queue destruction / start minigame
             Destroy(gameObject);
-            GlobalManager.Instance.StartMinigame(0);
+            if (start_minigame) {
+                GlobalManager.Instance.StartMinigame(minigame_id);
+            }
         }
         letters_displayed = 0;
     }

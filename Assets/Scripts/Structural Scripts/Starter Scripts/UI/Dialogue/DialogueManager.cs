@@ -16,6 +16,7 @@ using System;
  * A script by Michael O'Connell, extended by Benjamin Cohen, further extended by Eric Bejleri, and then extended even FURTHER again by Benjamin Cohen
  */
 
+/*
 public class DialogueManager : MonoBehaviour
 {
 	[Header("UI Elements")]
@@ -46,10 +47,10 @@ public class DialogueManager : MonoBehaviour
 	/* IMPORTANT IMPORTANT IMPORTANT IMPORTANT */
 	/*This variable will store the script we need to access to stop player movement! If you are using a different movement script
      * make sure to change this variable appropriately and to make sure the movement script has a way to prevent character movement!
-    */
+    
 	private GameManager gameManager;
 
-	/* ^ IMPORTANT IMPORTANT IMPORTANT IMPORTANT ^*/
+	/* ^ IMPORTANT IMPORTANT IMPORTANT IMPORTANT ^
 
 	[HideInInspector]
 	public DialogueTrigger currentTrigger;
@@ -236,3 +237,4 @@ public class DialogueManager : MonoBehaviour
 		inputStream.Clear();
 	}
 }
+**/

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿/**
+using System.Collections;
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,14 +39,14 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    /* Called when you want to start dialogue */
+    /* Called when you want to start dialogue
     void TriggerDialogue()
     {
         ReadTextFile(); // loads in the text file
         manager.StartDialogue(dialogue); // Accesses Dialogue Manager and Starts Dialogue
     }
 
-    /* loads in your text file */
+    /* loads in your text file
     private void ReadTextFile()
     {
         string txt = TextFileAsset.text;
@@ -59,7 +60,6 @@ public class DialogueTrigger : MonoBehaviour
 
     /*Version 2: Introduces the ability to have multiple tags on a single line! Allows for more functions to be programmed
      * to unique text strings or general functions. 
-     */
     private void SearchForTags(string[] lines)
     {
         foreach (string line in lines) // for every line of dialogue
@@ -111,3 +111,4 @@ public class DialogueTrigger : MonoBehaviour
 
     }
 }
+**/
