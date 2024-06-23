@@ -22,7 +22,6 @@ public class TriggerParameterChange : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("hi");
         if (0 <= padValue && padValue <= 1) { audioManager.MusicParameterChange("Pad", padValue); }
         if (0 <= bassValue && bassValue <= 1) { audioManager.MusicParameterChange("Bass", bassValue); }
         if (0 <= plucksValue && plucksValue <= 1) { audioManager.MusicParameterChange("Plucks", plucksValue); }
@@ -30,7 +29,6 @@ public class TriggerParameterChange : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("hi");
         if (0 <= padExitValue && padExitValue <= 1) { audioManager.MusicParameterChange("Pad", padExitValue); }
         if (0 <= bassExitValue && bassExitValue <= 1) { audioManager.MusicParameterChange("Bass", bassExitValue); }
         if (0 <= plucksExitValue && plucksExitValue <= 1) { audioManager.MusicParameterChange("Plucks", plucksExitValue); }
