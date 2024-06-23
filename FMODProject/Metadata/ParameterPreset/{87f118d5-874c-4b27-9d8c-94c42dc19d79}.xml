@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{87f118d5-874c-4b27-9d8c-94c42dc19d79}">
+		<property name="name">
+			<value>Arp</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1078279-6266-466b-b073-4be208c99cc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f1d26ce3-9aa6-49b8-9bf0-17890495c68f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f1d26ce3-9aa6-49b8-9bf0-17890495c68f}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.99800002574920654</value>
+		</property>
+	</object>
+</objects>

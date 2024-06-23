@@ -61,117 +61,123 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Misc Scripts\Rotator.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Utility\LockedObject.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerWalkBehaviour.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Patrol.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\LockedObject.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAudio.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\InventoryUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\FaceCamera.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Teleporter.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyPatrolPathBehaviour.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\ActivationTrigger.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\DrawTransformLines.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\Global Timer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Enemy\DrawTransformLines.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\GameSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\FMODEvents.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Utility\CollectibleItemTMP.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\MinigameTrigger.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Utility\CollectibleItem.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Managers\CollectibleManager.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CollectibleItemTMP.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\OrthographicZoom.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\CollectibleManager.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyPatrolAreaBehaviourSerious.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\QuitOnClick.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Utility\CheckPoint.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Parallax.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\LockedObject_MultiKey.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Damagers\Damager.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\DragAndDrop.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\FreeParallax.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerAudio.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Damagers\ProjectileWeapon.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\UI\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Damagers\Projectile.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Floater.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Enemy\Enemy_Health_Bar.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\Enemy_Health_Bar.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\DEActivationTrigger.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CollectibleItem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CheckPoint.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Damagers\Damager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Enemy\EnemyChaseBehaviour.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Enemy\EnemyAnimController.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\PlaySound2D.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\Error Message.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\MinigameWin.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyAnimController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\MinigameScripts\PackingMinigame.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Damagers\ProjectileWeapon.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Enemy\EnemyPatrolAreaBehaviourSerious.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Enemy\EnemyPatrolPathBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Damagers\MeleeWeapon.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\OnTriggerStay.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\CollectibleManagerTMP.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Level_Change.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerAnimController.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerWalkBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAnimController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Patrol_NOFLIP.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Flickering_Light.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\DialogueScript.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\TriggerParameterChange.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Managers\GameSceneManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Utility\LockedObject_MultiKey.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Utility\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\MinigameHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Utility\HealingItem.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Enemy\EnemyAttack.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Managers\CollectibleManagerTMP.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\HealingItem.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyChaseBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\GlobalManager.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Damagers\MeleeWeapon.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerIdleBehaviour.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\SpeakerLibrary.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\StealthRespawn.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\UI\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\TimedPlatform.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Player\PlayerIdleBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Starter Scripts\Damagers\Projectile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Scripts\Starter Scripts\UI\TestDialogues\D1.txt" />
+    <None Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\TestDialogues\D1.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Misc\dialogue_tree.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Scripts\Starter Scripts\UI\TestDialogues\TestDoc.txt" />
+    <None Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\TestDialogues\TestDoc.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -181,6 +187,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Resources\Dialogue\dialogue_test_file.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -1022,6 +1029,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="PsdPlugin">
       <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
       <Private>False</Private>
@@ -1142,10 +1153,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1200,6 +1207,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="FMODUnityEditor.csproj">
+      <Project>{B8D213FF-879F-5111-09CE-6D3F4381DAB6}</Project>
+      <Name>FMODUnityEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnityResonance.csproj">
+      <Project>{8CAE397C-4633-401F-D56E-A9E6FF5DC51C}</Project>
+      <Name>FMODUnityResonance</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnity.csproj">
+      <Project>{AABF6DD3-E333-1287-3FDD-6BDFF5C5F402}</Project>
+      <Name>FMODUnity</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnityResonanceEditor.csproj">
+      <Project>{B8D934E2-54E6-EFC9-ACEC-FE03F03AAD0E}</Project>
+      <Name>FMODUnityResonanceEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

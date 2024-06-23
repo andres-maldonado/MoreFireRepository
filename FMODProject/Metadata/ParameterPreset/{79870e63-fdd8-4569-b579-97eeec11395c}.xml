@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{79870e63-fdd8-4569-b579-97eeec11395c}">
+		<property name="name">
+			<value>Plucks</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1078279-6266-466b-b073-4be208c99cc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{240ed589-511f-4a48-ad80-69efdd157730}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{240ed589-511f-4a48-ad80-69efdd157730}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.99600005149841309</value>
+		</property>
+	</object>
+</objects>

@@ -6,22 +6,16 @@ using TMPro;
 
 public class ErrorMessage : MonoBehaviour
 {
-    public Text title;
-    public Text description;
+    private TMP_Text title;
+    private TMP_Text description;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        title = transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<TMP_Text>();
+        description = transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<TMP_Text>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void Error(string titleString, string descriptionString)
+    public void SetText(string titleString, string descriptionString)
     {
         title.text = titleString;
         description.text = descriptionString;

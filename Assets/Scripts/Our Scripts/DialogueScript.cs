@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,47 +11,72 @@ using TMPro;
 
 public class DialogueScript : MonoBehaviour
 {
-    // important things
-    public string startingBranch = "testing_branch1";
-    const string dialoguePath = @"Assets/Misc/dialogue_tree.txt";
-    private string targetText;
+    private TMP_Text mainText;
+    private GameObject prompter;
+    private Vector3 prompter_origin;
+    private double prompter_time;
 
-    GameObject textBox;
+    [SerializeField] private string dialogue_file_name = "dialogue_test_file";
+    [SerializeField] private int minigame_id = 0;
+    [SerializeField] private bool start_minigame = true;
+    [SerializeField] private int ticks_per_letter = 25;
+    
+    private int letters_displayed = 0;
+    private int counter = 0;
+    private string current_text = "";
 
-    (string, string) ReadDialogue() {
-        return ("Hello", "World");
+    private StreamReader file_reader;
+
+    void Awake() {
+        mainText = transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>();
+        prompter = transform.GetChild(0).GetChild(2).gameObject;
+        prompter_origin = prompter.transform.position;
     }
 
-    void Start()
-    {
-        textBox = GameObject.Find("DialogueText");
-
-        TMP_Text t = textBox.GetComponent<TMP_Text>();
-
-        if (!File.Exists(dialoguePath)) {
-            // if the file path can't be found, create a new text file with placeholder
-            // dialogue to avoid bad things happening
-            using (StreamWriter sw = File.CreateText(dialoguePath)) {
-                sw.WriteLine(startingBranch + ": ");
-                sw.WriteLine("  msg: \"An error has occurred, no valid dialogue file exists.\"");
-                sw.WriteLine("  next: TERMINUS");
-            }
-        }
-        else {
-            // the file path was found, meaning a valid dialogue tree file exists,
-            // so let's use it
-            using (StreamReader sr = File.OpenText(dialoguePath)) {
-                string s;
-                while ((s = sr.ReadLine()) != null) {
-                    print(s);
-                }
-            }
-        }
+    public void Set(string file_name, int game_id = 0, bool start_game = true, int tpl = 25) {
+        dialogue_file_name = file_name;
+        minigame_id = game_id;
+        start_minigame = start_game;
+        ticks_per_letter = tpl;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Start() {
+        // if the file doesn't exist, disable the script so as not to break anything too
+        // badly
+        if (!File.Exists("Assets/Resources/Dialogue/" + dialogue_file_name + ".txt")) {
+            Debug.LogError("No dialogue file named " + dialogue_file_name + " found!");
+            gameObject.GetComponent<DialogueScript>().enabled = false;
+        }
+
+        file_reader = File.OpenText("Assets/Resources/Dialogue/" + dialogue_file_name + ".txt");
+
+        ReadDialogue();
+    }
+
+    void ReadDialogue() {
+        if ((current_text = file_reader.ReadLine()) == null) {
+            // queue destruction / start minigame
+            Destroy(gameObject);
+            if (start_minigame) {
+                GlobalManager.Instance.StartMinigame(minigame_id);
+            }
+        }
+        letters_displayed = 0;
+    }
+
+    void Update() {
+        mainText.text = current_text.Substring(0, letters_displayed >= current_text.Length ? current_text.Length : letters_displayed);
+        if (counter > ticks_per_letter) {
+            counter = 0;
+            letters_displayed++;
+        }
+
+        counter++;
+        promper_time += Time.deltaTime;
+        prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Sin(prompter_time) * 10), 0);
+
+        if (Input.GetKeyDown(KeyCode.Z)) {
+            ReadDialogue();
+        }
     }
 }

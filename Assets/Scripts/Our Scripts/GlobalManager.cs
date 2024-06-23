@@ -5,7 +5,15 @@ using System.IO;
 
 public class GlobalManager : MonoBehaviour
 {
+    // ###### FILE PATHS ######
     private string minigame_folder = "Assets/Resources/MinigamePrefabs";
+
+    // IMPORTANT: these file paths are relative to the Assets/Resources folder
+    private string error_path = "Error Message";
+    private string dialogue_path = "Dialogue/DialogueBox";
+
+    private GameObject message_prefab, dialogue_prefab;
+
     private List<GameObject> minigames = new List<GameObject>();
 
     public class GameTime {
@@ -13,30 +21,34 @@ public class GlobalManager : MonoBehaviour
         public int hours, minutes;
         private bool paused = false;
 
-        public GameTime(int starting_hours = 0, int starting_minutes = 0, float scale = 600.0f) {
+        public GameTime(float scale = 600.0f) {
             gametime_scale_factor = scale;
-            hours = starting_hours;
-            minutes = starting_minutes;
         }
 
+        // updates the clock's internal values
         public void UpdateTime() {
             if (!paused) raw_time += 140 * Time.deltaTime / gametime_scale_factor;
             hours = (int)(raw_time / 10 + 8) % 24;
             minutes = (int)(raw_time % 10.0 * 6);
         }
 
+        // toggles whether the clock is paused or not
         public void Toggle() {
             paused = !paused;
         }
 
+        // returns a padded value of the form "XX"
         private string GetPaddedITOS(int val) {
             return (val < 10 ? "0" + val : val.ToString());
         }
 
+        // returns the current game time in a string formatted as "XX:XX"
         public string GetPaddedTime() {
             return GetPaddedITOS(hours) + ":" + GetPaddedITOS(minutes);
         }
     }
+
+    // create a new instance of the GameTime class to use as the global timer
     public static GameTime global_time = new GameTime();
 
     // SINGLETON BOILER-PLATE
@@ -88,15 +100,19 @@ public class GlobalManager : MonoBehaviour
                 }
             }
         }
+
+        // load prefabs once, then instantiate them later
+        message_prefab = Resources.Load(error_path) as GameObject;
+        dialogue_prefab = Resources.Load(dialogue_path) as GameObject;
     }
     // END SINGLETON BOILER-PLATE
 
-    private void Start() {
-        StartMinigame(0);
-    }
-
     private void Update() {
         global_time.UpdateTime(); // updates the global timer
+    }
+
+    private void Start() {
+        StartDialogue("dialogue_test_file");
     }
 
     // ###### CUSTOM PUBLIC METHODS ######
@@ -106,7 +122,14 @@ public class GlobalManager : MonoBehaviour
         Instantiate(minigames[minigame_id], new Vector3(0, -15, 0), Quaternion.identity);
     }
 
-    public void DisplayError(string error_message) {
-        
+    public void DisplayError(string error_title, string error_message) {
+        GameObject e = Instantiate(message_prefab, Vector3.zero, Quaternion.identity);
+        e.GetComponent<ErrorMessage>().SetText(error_title, error_message);
+    }
+
+    public void StartDialogue(string branch_name, int game_id = 0, bool start_minigame = true, int tpl = 25) {
+        GameObject d = Instantiate(dialogue_prefab, Vector3.zero, Quaternion.identity);
+        DialogueScript s = d.GetComponent<DialogueScript>();
+        s.Set(branch_name, game_id, start_minigame, tpl);
     }
 }
