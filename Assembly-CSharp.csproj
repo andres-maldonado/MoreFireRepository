@@ -146,6 +146,7 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\TriggerDialogue.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAnimController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
