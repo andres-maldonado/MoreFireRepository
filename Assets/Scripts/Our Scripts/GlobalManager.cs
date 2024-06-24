@@ -111,10 +111,6 @@ public class GlobalManager : MonoBehaviour
         global_time.UpdateTime(); // updates the global timer
     }
 
-    private void Start() {
-        StartDialogue("dialogue_test_file");
-    }
-
     // ###### CUSTOM PUBLIC METHODS ######
 
     // launches one of the minigames using an integer ID
@@ -127,9 +123,9 @@ public class GlobalManager : MonoBehaviour
         e.GetComponent<ErrorMessage>().SetText(error_title, error_message);
     }
 
-    public void StartDialogue(string branch_name, int game_id = 0, bool start_minigame = true, int tpl = 25) {
+    public void StartDialogue(string branch_name, Sprite sp_sprite, int game_id = 0, bool start_minigame = true, int tpl = 25) {
         GameObject d = Instantiate(dialogue_prefab, Vector3.zero, Quaternion.identity);
         DialogueScript s = d.GetComponent<DialogueScript>();
-        s.Set(branch_name, game_id, start_minigame, tpl);
+        s.Set(branch_name, sp_sprite, game_id, start_minigame, tpl);
     }
 }

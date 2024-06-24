@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // custom imports
 using System.IO;
@@ -13,6 +14,8 @@ public class DialogueScript : MonoBehaviour
 {
     private TMP_Text mainText;
     private GameObject prompter;
+    private SpriteRenderer speaker_sprite;
+
     private Vector3 prompter_origin;
     private double prompter_time;
 
@@ -30,11 +33,13 @@ public class DialogueScript : MonoBehaviour
     void Awake() {
         mainText = transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>();
         prompter = transform.GetChild(0).GetChild(2).gameObject;
+        speaker_sprite = transform.GetChild(1).GetComponent<SpriteRenderer>();
         prompter_origin = prompter.transform.position;
     }
 
-    public void Set(string file_name, int game_id = 0, bool start_game = true, int tpl = 25) {
+    public void Set(string file_name, Sprite speaker_image, int game_id = 0, bool start_game = true, int tpl = 25) {
         dialogue_file_name = file_name;
+        speaker_sprite.sprite = speaker_image;
         minigame_id = game_id;
         start_minigame = start_game;
         ticks_per_letter = tpl;
@@ -61,6 +66,8 @@ public class DialogueScript : MonoBehaviour
                 GlobalManager.Instance.StartMinigame(minigame_id);
             }
         }
+        prompter_time = -3.0;
+        prompter.GetComponent<Image>().enabled = false;
         letters_displayed = 0;
     }
 
@@ -72,11 +79,17 @@ public class DialogueScript : MonoBehaviour
         }
 
         counter++;
-        promper_time += Time.deltaTime;
-        prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Sin(prompter_time) * 10), 0);
+        prompter_time += Time.deltaTime;
+        if (letters_displayed == current_text.Length && !prompter.GetComponent<Image>().enabled) {
+            prompter.GetComponent<Image>().enabled = true;
+        }
+        prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Abs(Math.Sin(prompter_time * 4) * 8)), 0);
 
         if (Input.GetKeyDown(KeyCode.Z)) {
-            ReadDialogue();
+            // if the message is finished typing, move on to the next message
+            if (letters_displayed >= current_text.Length) ReadDialogue();
+            // if it's not finished yet, show the whole message
+            else { letters_displayed = current_text.Length; }
         }
     }
 }
