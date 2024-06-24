@@ -20,9 +20,10 @@ public class DialogueScript : MonoBehaviour
     private double prompter_time;
 
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
-    [SerializeField] private int minigame_id = 0;
-    [SerializeField] private bool start_minigame = true;
+    [SerializeField] private int minigame_id = -1;
     [SerializeField] private int ticks_per_letter = 25;
+    [SerializeField] private string[] start_quests;
+    [SerializeField] private string[] end_quests;
     
     private int letters_displayed = 0;
     private int counter = 0;
@@ -37,11 +38,12 @@ public class DialogueScript : MonoBehaviour
         prompter_origin = prompter.transform.position;
     }
 
-    public void Set(string file_name, Sprite speaker_image, int game_id = 0, bool start_game = true, int tpl = 25) {
+    public void Set(string file_name, Sprite speaker_image, int game_id = -1, string quests_to_start = "", string quests_to_end = "", int tpl = 25) {
         dialogue_file_name = file_name;
         speaker_sprite.sprite = speaker_image;
         minigame_id = game_id;
-        start_minigame = start_game;
+        start_quests = quests_to_start.Split(",");
+        end_quests = quests_to_end.Split(",");
         ticks_per_letter = tpl;
     }
 
@@ -62,7 +64,14 @@ public class DialogueScript : MonoBehaviour
         if ((current_text = file_reader.ReadLine()) == null) {
             // queue destruction / start minigame
             Destroy(gameObject);
-            if (start_minigame) {
+            foreach (string q in end_quests) {
+                if (q.Trim() != "") QuestManager.Instance.CompleteQuest(q.Trim());
+            }
+            foreach (string q in start_quests) {
+                if (q.Trim() != "") QuestManager.Instance.StartQuest(q.Trim());
+            }
+
+            if (minigame_id > -1) {
                 GlobalManager.Instance.StartMinigame(minigame_id);
             }
         }
