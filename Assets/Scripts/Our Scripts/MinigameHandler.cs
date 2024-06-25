@@ -30,8 +30,5 @@ public class MinigameHandler : MonoBehaviour
         minigame_ended = false;
     }
 
-    void Update() {
-        transform.position = Vector3.Lerp(transform.position, minigame_ended ? screen_bottom : Vector3.zero, 0.003f);
-        if (minigame_ended && Vector3.Distance(transform.position, screen_bottom) < 0.15 && on_win == end_behavior.move_and_destroy) Destroy(gameObject);
-    }
+    
 }
