@@ -19,19 +19,43 @@ public class Inventory : MonoBehaviour
         slot.GetComponent<Renderer>().sortingLayerID = SortingLayer.NameToID("Foreground");
     }
 
+    void clear_sprite(GameObject slot)
+    {
+        render = slot.GetComponent<SpriteRenderer>();
+        render.sprite = null;
+    }
+
+    void clear_all_sprites()
+    {
+        clear_sprite(slot1);
+        clear_sprite(slot2);
+        clear_sprite(slot3);
+        clear_sprite(slot4);
+        clear_sprite(slot5);
+    }
+
     void Start()
     {
         Item item1 = ScriptableObject.CreateInstance<Item>();
         item1.Init("bread", "very yum very soft", Resources.Load<Sprite>("bread"));
         inv.Add(item1);
-
-        Item item2 = ScriptableObject.CreateInstance<Item>();
-        item2.Init("water", "mmmmm refreshing", Resources.Load<Sprite>("water"));
-        inv.Add(item2);
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Item item2 = ScriptableObject.CreateInstance<Item>();
+            item2.Init("water", "mmmmm refreshing", Resources.Load<Sprite>("water"));
+            inv.Add(item2);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            inv.Remove(inv[0]);
+            clear_all_sprites();
+        }
+
         if (inv.Count >= 1)
         {
             get_item_sprite(inv, slot1, 0);

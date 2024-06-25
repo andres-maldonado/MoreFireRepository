@@ -5,8 +5,9 @@ using UnityEngine;
 public class TriggerDialogue : MonoBehaviour
 {
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
-    [SerializeField] private bool start_minigame = true;
-    [SerializeField] private int minigame_id = 0;
+    [SerializeField] private int minigame_id = -1;
+    [SerializeField] private string quests_to_start;
+    [SerializeField] private string quests_to_complete;
 
     private void Start() {
         if (GetComponent<SpriteRenderer>() == null) {
@@ -19,7 +20,7 @@ public class TriggerDialogue : MonoBehaviour
         if (other.GetComponent<PlayerMovement>() != null) {
             // the collider that entered the trigger is the player
             other.GetComponent<PlayerMovement>().DisablePlayer(true); // stop movement
-            GlobalManager.Instance.StartDialogue(dialogue_file_name, GetComponent<SpriteRenderer>().sprite, minigame_id, start_minigame); // queue dialogue
+            GlobalManager.Instance.StartDialogue(dialogue_file_name, GetComponent<SpriteRenderer>().sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
         }
     }
 }
