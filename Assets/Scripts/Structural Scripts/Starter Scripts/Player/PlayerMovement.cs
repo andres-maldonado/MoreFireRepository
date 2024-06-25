@@ -181,7 +181,7 @@ public class PlayerMovement : MonoBehaviour
 			lastLookDirection = new Vector2(Horizontal, Vertical);
 		}
 
-		rb.velocity = new Vector3(Horizontal * Speed, Vertical * Speed); //Set velocity to move gameobject.
+		rb.velocity = new Vector2(Horizontal * Speed, Vertical * Speed); //Set velocity to move gameobject.
 
 
 		FlipCheck(Horizontal);
@@ -252,18 +252,23 @@ public class PlayerMovement : MonoBehaviour
 
 	private void UpdateSound()
 	{
+		Debug.Log("Works");
 		if (rb.velocity.x != 0 || rb.velocity.y != 0)
 		{
-			PLAYBACK_STATE playbackState;
-			playerFootsteps.getPlaybackState(out playbackState);
-			if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+			Debug.Log("Moving");
+			PLAYBACK_STATE footsteps;
+			playerFootsteps.getPlaybackState(out footsteps);
+			if (footsteps.Equals(PLAYBACK_STATE.STOPPED))
 			{
 				playerFootsteps.start();
+				Debug.Log("Start");
 			}
-		}
+            Debug.Log(footsteps);
+        }
         else
         {
             playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+			//Debug.Log("False");
         }
     }
 }

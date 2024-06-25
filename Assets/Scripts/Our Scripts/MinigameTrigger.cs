@@ -8,11 +8,12 @@ public class MinigameTrigger : MonoBehaviour
     [SerializeField] Object minigame;
     [SerializeField] bool oneTime;
     private bool inTrigger = false;
+    private GameObject canvas;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        canvas = GameObject.FindWithTag("MainCanvas");
     }
 
     // Update is called once per frame
@@ -37,7 +38,7 @@ public class MinigameTrigger : MonoBehaviour
     private void StartGame()
     {
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(true);
-        Instantiate(minigame);
+        Instantiate(minigame, canvas.transform);
         Destroy(gameObject);
     }
 }

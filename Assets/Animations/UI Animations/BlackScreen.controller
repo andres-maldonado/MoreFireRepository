@@ -31,7 +31,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Image
+  m_Name: BlackScreen
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: FadeOut
@@ -61,7 +61,7 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
 --- !u!1102 &1029153873722589936
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -139,7 +139,7 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 --- !u!1102 &4436861423015970250
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -158,7 +158,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 564aac87fa3dca94fab06d5df92b2ccd, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5f6a32bb890cd274481bbc9e3cd8a4e0, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -166,7 +166,7 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1107 &5728796169141005171
 AnimatorStateMachine:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -194,7 +194,7 @@ AnimatorStateMachine:
   m_DefaultState: {fileID: 1029153873722589936}
 --- !u!1102 &6837707094774769346
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -213,7 +213,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 42acfa5a77ff23448b12494a8daa7247, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3d3b512ed6d22b140a6c18004f96eca0, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

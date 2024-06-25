@@ -107,12 +107,13 @@ public class GlobalManager : MonoBehaviour
     }
     // END SINGLETON BOILER-PLATE
 
-    private void Update() {
-        global_time.UpdateTime(); // updates the global timer
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
     }
 
-    private void Start() {
-        StartDialogue("dialogue_test_file");
+    private void Update() {
+        global_time.UpdateTime(); // updates the global timer
     }
 
     // ###### CUSTOM PUBLIC METHODS ######
@@ -127,9 +128,9 @@ public class GlobalManager : MonoBehaviour
         e.GetComponent<ErrorMessage>().SetText(error_title, error_message);
     }
 
-    public void StartDialogue(string branch_name, int game_id = 0, bool start_minigame = true, int tpl = 25) {
+    public void StartDialogue(string branch_name, Sprite sp_sprite, int game_id = -1, string quests_to_start = "", string quests_to_end = "", int tpl = 25) {
         GameObject d = Instantiate(dialogue_prefab, Vector3.zero, Quaternion.identity);
         DialogueScript s = d.GetComponent<DialogueScript>();
-        s.Set(branch_name, game_id, start_minigame, tpl);
+        s.Set(branch_name, sp_sprite, game_id, quests_to_start, quests_to_end, tpl);
     }
 }

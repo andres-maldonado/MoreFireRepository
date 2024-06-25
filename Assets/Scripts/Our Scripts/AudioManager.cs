@@ -11,14 +11,20 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         InitializeMusic(FMODEvents.instance.song);
+        DontDestroyOnLoad(gameObject);
     }
     private void Awake()
     {
-        if (instance != null)
+        if (instance != null && instance != this)
         {
             Debug.LogError("Found more than one Audio Manager in the scene");
+            Destroy(gameObject);
         }
-        instance = this;
+        else 
+        {
+            instance = this;
+        }
+        
     }
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
@@ -27,13 +33,23 @@ public class AudioManager : MonoBehaviour
     public EventInstance CreateInstance(EventReference eventReference)
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
+        Debug.Log("Played" + eventReference);
         return eventInstance;
     }
 
     private void InitializeMusic(EventReference musicEventReference)
     {
-        musicEventInstance = CreateInstance(musicEventReference);
-        musicEventInstance.start();
+        PLAYBACK_STATE playbackState;
+        musicEventInstance.getPlaybackState(out playbackState);
+        if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+        {
+            musicEventInstance = CreateInstance(musicEventReference);
+            musicEventInstance.start();
+        }
+        else
+        {
+            Debug.Log("Music already playing");
+        }
     }
 
     public void MusicParameterChange(string parameterName, float parameterValue)
