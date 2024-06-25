@@ -33,6 +33,7 @@ public class AudioManager : MonoBehaviour
     public EventInstance CreateInstance(EventReference eventReference)
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
+        Debug.Log("Played" + eventReference);
         return eventInstance;
     }
 

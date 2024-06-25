@@ -10,6 +10,7 @@ TagManager:
   - Cover
   - AudioManager
   - SceneManager
+  - MainCanvas
   layers:
   - Default
   - TransparentFX
