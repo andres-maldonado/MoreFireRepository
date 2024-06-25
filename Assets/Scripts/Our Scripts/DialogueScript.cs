@@ -64,6 +64,7 @@ public class DialogueScript : MonoBehaviour
         if ((current_text = file_reader.ReadLine()) == null) {
             // queue destruction / start minigame
             Destroy(gameObject);
+            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(false);
             foreach (string q in end_quests) {
                 if (q.Trim() != "") QuestManager.Instance.CompleteQuest(q.Trim());
             }
