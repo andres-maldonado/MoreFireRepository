@@ -32,11 +32,10 @@ public class DialogueScript : MonoBehaviour
     private StreamReader file_reader;
 
     void Awake() {
-        mainText = transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>();
-        prompter = transform.GetChild(0).GetChild(2).gameObject;
-        speaker_sprite = transform.GetChild(1).GetComponent<SpriteRenderer>();
+        mainText = transform.GetChild(1).GetComponent<TMP_Text>();
+        prompter = transform.GetChild(2).gameObject;
+        speaker_sprite = transform.GetChild(3).GetComponent<SpriteRenderer>();
         prompter_origin = prompter.transform.position;
-        transform.GetChild(0).GetComponent<Canvas>().worldCamera = Camera.main;
     }
 
     public void Set(string file_name, Sprite speaker_image, int game_id = -1, string quests_to_start = "", string quests_to_end = "", int tpl = 25) {
@@ -49,8 +48,7 @@ public class DialogueScript : MonoBehaviour
     }
 
     void Start() {
-        // if the file doesn't exist, disable the script so as not to break anything too
-        // badly
+        // if the file doesn't exist, disable the script so as not to break anything too badly
         if (!File.Exists("Assets/Resources/Dialogue/" + dialogue_file_name + ".txt")) {
             Debug.LogError("No dialogue file named " + dialogue_file_name + " found!");
             gameObject.GetComponent<DialogueScript>().enabled = false;
@@ -94,7 +92,7 @@ public class DialogueScript : MonoBehaviour
         if (letters_displayed == current_text.Length && !prompter.GetComponent<Image>().enabled) {
             prompter.GetComponent<Image>().enabled = true;
         }
-        prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Abs(Math.Sin(prompter_time * 4) * 8)), 0);
+        prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Abs(Math.Sin(prompter_time * 4) * 2)), 0);
 
         if (Input.GetKeyDown(KeyCode.Z)) {
             // if the message is finished typing, move on to the next message
