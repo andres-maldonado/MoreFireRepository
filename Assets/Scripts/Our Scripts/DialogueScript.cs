@@ -36,6 +36,7 @@ public class DialogueScript : MonoBehaviour
         prompter = transform.GetChild(0).GetChild(2).gameObject;
         speaker_sprite = transform.GetChild(1).GetComponent<SpriteRenderer>();
         prompter_origin = prompter.transform.position;
+        transform.GetChild(0).GetComponent<Canvas>().worldCamera = Camera.main;
     }
 
     public void Set(string file_name, Sprite speaker_image, int game_id = -1, string quests_to_start = "", string quests_to_end = "", int tpl = 25) {
