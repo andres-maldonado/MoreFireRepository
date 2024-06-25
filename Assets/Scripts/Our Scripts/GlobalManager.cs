@@ -107,6 +107,11 @@ public class GlobalManager : MonoBehaviour
     }
     // END SINGLETON BOILER-PLATE
 
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void Update() {
         global_time.UpdateTime(); // updates the global timer
     }

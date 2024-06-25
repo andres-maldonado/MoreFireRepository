@@ -254,9 +254,9 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if (rb.velocity.x != 0 || rb.velocity.y != 0)
 		{
-			PLAYBACK_STATE playbackState;
-			playerFootsteps.getPlaybackState(out playbackState);
-			if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+			PLAYBACK_STATE footsteps;
+			playerFootsteps.getPlaybackState(out footsteps);
+			if (footsteps.Equals(PLAYBACK_STATE.STOPPED))
 			{
 				playerFootsteps.start();
 			}

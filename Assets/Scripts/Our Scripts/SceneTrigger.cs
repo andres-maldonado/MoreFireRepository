@@ -23,7 +23,8 @@ public class SceneTrigger : MonoBehaviour
             gameSceneManager.LoadScene(scene);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
         inTrigger = true;
         doorIcon.SetBool("inTrigger", true);

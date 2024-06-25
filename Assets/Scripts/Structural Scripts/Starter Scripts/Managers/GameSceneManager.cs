@@ -33,9 +33,7 @@ public class GameSceneManager : MonoBehaviour
 
     IEnumerator LoadAsyncScene(int SceneIndex)
     {
-        Debug.Log("B");
         yield return new WaitForSeconds(.5f);
-        Debug.Log("A");
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneIndex);
 
         // Wait until the asynchronous scene fully loads
