@@ -13,6 +13,7 @@ public class GameSceneManager : MonoBehaviour
 
     [Tooltip("If you want to open this scene with a fade in")]
     public bool startWithFadeIn = true;
+    private bool noFadeOut = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,9 @@ public class GameSceneManager : MonoBehaviour
 
     IEnumerator LoadAsyncScene(int SceneIndex)
     {
+        Debug.Log("B");
+        yield return new WaitForSeconds(.5f);
+        Debug.Log("A");
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneIndex);
 
         // Wait until the asynchronous scene fully loads
@@ -54,7 +58,7 @@ public class GameSceneManager : MonoBehaviour
     {
         Transition.SetActive(true);
         Transition.GetComponent<Animator>().SetBool("FadeOut", true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.5f);
         Transition.GetComponent<Animator>().SetBool("FadeOut", false);
     }
 }

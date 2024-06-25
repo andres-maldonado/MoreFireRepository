@@ -9,6 +9,7 @@ TagManager:
   - GuardView
   - Cover
   - AudioManager
+  - SceneManager
   layers:
   - Default
   - TransparentFX

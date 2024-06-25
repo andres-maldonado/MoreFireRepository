@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LoadSceneOnClick : MonoBehaviour {
-
+    [SerializeField] GameSceneManager sceneManager;
     public void LoadByIndex(int sceneIndex)
     {
-        SceneManager.LoadScene(sceneIndex);
+        sceneManager.LoadScene(sceneIndex);
     }
 }
