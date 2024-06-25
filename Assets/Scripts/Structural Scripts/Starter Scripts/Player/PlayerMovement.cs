@@ -181,7 +181,7 @@ public class PlayerMovement : MonoBehaviour
 			lastLookDirection = new Vector2(Horizontal, Vertical);
 		}
 
-		rb.velocity = new Vector3(Horizontal * Speed, Vertical * Speed); //Set velocity to move gameobject.
+		rb.velocity = new Vector2(Horizontal * Speed, Vertical * Speed); //Set velocity to move gameobject.
 
 
 		FlipCheck(Horizontal);

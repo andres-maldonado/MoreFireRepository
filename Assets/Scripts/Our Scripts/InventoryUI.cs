@@ -15,6 +15,14 @@ public class InventoryUI : MonoBehaviour
 
     void Update()
     {
+        //if TAB is pressed when the inventory is open it is closed
+        if (Input.GetKeyDown(KeyCode.Tab) && inventory_isopen)
+        {
+            timer.Play("InventoryTimerExit");
+            items.Play("InventorySlotsExit");
+            inventory_isopen = false;
+        }
+
         //brings up the inventory if TAB is pressed and the inventory is not already open
         if (Input.GetKeyDown(KeyCode.Tab) && inventory_isopen == false)
         {
@@ -23,13 +31,6 @@ public class InventoryUI : MonoBehaviour
             inventory_isopen = true;
         }
 
-        //if TAB is pressed when the inventory is open it is closed
-        if (Input.GetKeyDown(KeyCode.Tab) && inventory_isopen)
-        {
-            timer.Play("InventoryTimerExit");
-            items.Play("InventorySlotsExit");
-            inventory_isopen = false;
-        }
 
     }
 }
