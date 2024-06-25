@@ -43,13 +43,6 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Item item2 = ScriptableObject.CreateInstance<Item>();
-            item2.Init("water", "mmmmm refreshing", Resources.Load<Sprite>("water"));
-            inv.Add(item2);
-        }
-
         if (Input.GetKeyDown(KeyCode.Q))
         {
             inv.Remove(inv[0]);
