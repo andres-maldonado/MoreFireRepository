@@ -8,6 +8,9 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private int minigame_id = -1;
     [SerializeField] private string quests_to_start;
     [SerializeField] private string quests_to_complete;
+    [SerializeField] private Sprite speaker_sprite;
+
+    private bool player_near = false;
 
     private void Start() {
         if (GetComponent<SpriteRenderer>() == null) {
@@ -16,11 +19,22 @@ public class TriggerDialogue : MonoBehaviour
         }
     }
 
+    private void Update() {
+        if (player_near && Input.GetKeyDown(KeyCode.E)) {
+            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(true); // stop movement
+            GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D other) {
         if (other.GetComponent<PlayerMovement>() != null) {
-            // the collider that entered the trigger is the player
-            other.GetComponent<PlayerMovement>().DisablePlayer(true); // stop movement
-            GlobalManager.Instance.StartDialogue(dialogue_file_name, GetComponent<SpriteRenderer>().sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
+            player_near = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.GetComponent<PlayerMovement>() != null) {
+            player_near = false;
         }
     }
 }

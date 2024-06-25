@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: example_fetch_quest
   m_EditorClassIdentifier: 
   quest_name: water_fetch
-  quest_desc: Grab water for your wonderful neighbor, Bob.
+  quest_desc: Give Crewmate their water
+  is_starter_quest: 0

@@ -120,11 +120,11 @@ public class GlobalManager : MonoBehaviour
 
     // launches one of the minigames using an integer ID
     public void StartMinigame(int minigame_id) {
-        Instantiate(minigames[minigame_id], new Vector3(0, -15, 0), Quaternion.identity);
+        Instantiate(minigames[minigame_id], GameObject.FindWithTag("MainCanvas").transform);
     }
 
     public void DisplayError(string error_title, string error_message) {
-        GameObject e = Instantiate(message_prefab, Vector3.zero, Quaternion.identity);
+        GameObject e = Instantiate(message_prefab, GameObject.FindWithTag("MainCanvas").transform);
         e.GetComponent<ErrorMessage>().SetText(error_title, error_message);
     }
 
