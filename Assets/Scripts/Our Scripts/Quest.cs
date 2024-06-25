@@ -10,5 +10,4 @@ public class Quest : ScriptableObject
     public string quest_desc;
     [Tooltip("Should this quest be present at the beginning of the game?")]
     public bool is_starter_quest = false;
-    public bool completed = false;
 }

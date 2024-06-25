@@ -25,6 +25,9 @@ public class QuestManager : MonoBehaviour
 
             if (q != null) {
                 quest_bank.Add(q.quest_name, (q, false));
+                if (q.is_starter_quest) {
+                    active_quests.Add(q);
+                }
             }
         }
     }
