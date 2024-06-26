@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneOnClick : MonoBehaviour {
     [SerializeField] GameSceneManager sceneManager;
-    public void LoadByIndex(int sceneIndex)
+    public void LoadByIndex(int sceneIndex, string entrance)
     {
-        sceneManager.LoadScene(sceneIndex);
+        sceneManager.LoadScene(sceneIndex, entrance);
     }
 }

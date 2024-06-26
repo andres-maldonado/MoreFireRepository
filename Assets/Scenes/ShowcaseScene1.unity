@@ -269,7 +269,7 @@ Transform:
   m_GameObject: {fileID: 85410150}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.03729, y: -4.67032, z: -10}
+  m_LocalPosition: {x: -5.99, y: 6.41, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -300,10 +300,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c6919a4cbf47542aaabe867d87e19b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxXBoundary: 5
-  MinXBoundary: -5
-  MaxYBoundary: 5
-  MinYBoundary: -5
+  MaxXBoundary: 10
+  MinXBoundary: -10
+  MaxYBoundary: 10
+  MinYBoundary: -10
   clampCamera: 1
   PlayerCharacter: {fileID: 1380831182}
   smoothSpeed: 0.125
@@ -7918,11 +7918,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.0372896
+      value: -5.9899993
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.6703196
+      value: 6.4100003
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14535,6 +14535,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: exit
+      value: FrontDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: scene
       value: 1
       objectReference: {fileID: 0}
@@ -14568,7 +14572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5552439527513669480, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.36
+      value: -5.436
       objectReference: {fileID: 0}
     - target: {fileID: 5552439527513669480, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17458,6 +17462,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1737387334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1737387335}
+  m_Layer: 0
+  m_Name: FrontDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1737387335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737387334}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.447, y: -4.829, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1758635214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20158,3 +20193,4 @@ SceneRoots:
   - {fileID: 1758635214}
   - {fileID: 1503842761}
   - {fileID: 736653207}
+  - {fileID: 1737387335}
