@@ -25,6 +25,8 @@ public class TriggerDialogue : MonoBehaviour
             GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(true); // stop movement
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Contains(fetch_item)) {
                 dialogue_file_name = "dialogue_test_postfetch";
+                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Remove(fetch_item);
+                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().clear_all_sprites();
             }
             GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
             GlobalManager.Instance.in_dialogue = true;

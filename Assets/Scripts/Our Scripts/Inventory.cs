@@ -25,7 +25,7 @@ public class Inventory : MonoBehaviour
         render.sprite = null;
     }
 
-    void clear_all_sprites()
+    public void clear_all_sprites()
     {
         clear_sprite(slot1);
         clear_sprite(slot2);
