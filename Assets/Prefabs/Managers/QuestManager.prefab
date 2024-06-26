@@ -45,4 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questlog_UI: {fileID: 0}
+  all_quests:
+  - {fileID: 11400000, guid: 1bd45b1dc62604074b516dc489a6dcf1, type: 2}
+  - {fileID: 11400000, guid: 8b6424a79700544ddb6f83378d2d1fe6, type: 2}
+  - {fileID: 11400000, guid: 7d3eb38e31d25433692d707ac73b3ffb, type: 2}
   active_quests: []

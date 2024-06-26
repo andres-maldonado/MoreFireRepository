@@ -12,7 +12,7 @@ public class GlobalManager : MonoBehaviour
     private string error_path = "Error Message";
     private string dialogue_path = "Dialogue/DialogueBox";
 
-    private GameObject message_prefab, dialogue_prefab;
+    public GameObject message_prefab, dialogue_prefab;
 
     private List<GameObject> minigames = new List<GameObject>();
 
@@ -66,7 +66,7 @@ public class GlobalManager : MonoBehaviour
         else {
             _instance = this;
 
-            int id = 0;
+            /*int id = 0;
 
             // load in all minigame prefabs
             foreach (string path in Directory.GetFiles(minigame_folder)) {
@@ -100,12 +100,12 @@ public class GlobalManager : MonoBehaviour
                     Debug.Log(sub_path + " (ID: " + id + ")");
                     id++;
                 }
-            }
+            }*/
         }
 
         // load prefabs once, then instantiate them later
-        message_prefab = Resources.Load(error_path) as GameObject;
-        dialogue_prefab = Resources.Load(dialogue_path) as GameObject;
+        //message_prefab = Resources.Load(error_path) as GameObject;
+        //dialogue_prefab = Resources.Load(dialogue_path) as GameObject;
     }
     // END SINGLETON BOILER-PLATE
 

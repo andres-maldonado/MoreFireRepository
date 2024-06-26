@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MinigameWin : MonoBehaviour
 {
+    [Tooltip("Comma-separated list of quest names to complete upon minigame win")]
+    [SerializeField] private string quests_to_complete;
     public GameObject player;
 
     // Start is called before the first frame update
@@ -27,6 +29,10 @@ public class MinigameWin : MonoBehaviour
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(.5f);
+        foreach (string q in quests_to_complete.Split(","))
+        {
+            QuestManager.Instance.CompleteQuest(q.Trim());
+        }
         player.GetComponent<PlayerMovement>().DisablePlayer(false);
         Destroy(gameObject);
         yield return null;

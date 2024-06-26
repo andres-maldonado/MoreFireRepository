@@ -29,6 +29,8 @@ public class TriggerDialogue : MonoBehaviour
             }
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Contains(fetch_item)) {
                 dialogue_file_name = "dialogue_test_postfetch";
+                quests_to_complete = "water_fetch";
+                quests_to_start = "";
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Remove(fetch_item);
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().clear_all_sprites();
             }
