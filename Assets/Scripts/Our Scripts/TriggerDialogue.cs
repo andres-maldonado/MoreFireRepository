@@ -5,6 +5,10 @@ using UnityEngine;
 public class TriggerDialogue : MonoBehaviour
 {
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
+    //[SerializeField] private TextAsset first_dialogue;
+    //[SerializeField] private TextAsset second_dialogue;
+    //private TextAsset current_asset;
+
     [SerializeField] private int minigame_id = -1;
     [SerializeField] private string quests_to_start;
     [SerializeField] private string quests_to_complete;
@@ -14,6 +18,7 @@ public class TriggerDialogue : MonoBehaviour
     private bool player_near = false;
 
     private void Start() {
+        //current_asset = first_dialogue;
         if (GetComponent<SpriteRenderer>() == null) {
             Debug.LogError("Error: no SpriteRenderer component attached to DialogueTrigger; no speaker sprite available.");
             GetComponent<TriggerDialogue>().enabled = false;
