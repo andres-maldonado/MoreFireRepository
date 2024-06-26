@@ -6,12 +6,14 @@ public class InventoryUI : MonoBehaviour
 {
     [SerializeField] Animator timer;
     [SerializeField] Animator items;
+    [SerializeField] Animator quest;
     public bool inventory_isopen = false;
 
     public void close_inventory()
     {
         timer.Play("InventoryTimerExit");
         items.Play("InventorySlotsExit");
+        quest.Play("QuestLogExit");
         inventory_isopen = false;
     }
 
@@ -19,6 +21,7 @@ public class InventoryUI : MonoBehaviour
     {
         timer.Play("InventoryTimerEnter");
         items.Play("InventorySlotsEnter");
+        quest.Play("QuestLogEnter");
         inventory_isopen = true;
     }
 
@@ -35,7 +38,5 @@ public class InventoryUI : MonoBehaviour
         {
             open_inventory();
         }
-
-
     }
 }
