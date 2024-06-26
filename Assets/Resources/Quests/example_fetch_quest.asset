@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: example_fetch_quest
   m_EditorClassIdentifier: 
   quest_name: water_fetch
-  quest_desc: Give Crewmate their water
+  quest_desc: Bring Takumi some water
   is_starter_quest: 0
