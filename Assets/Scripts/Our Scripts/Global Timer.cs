@@ -7,6 +7,22 @@ using TMPro;
 
 public class GlobalTimer : MonoBehaviour
 {
+    private static GlobalTimer _instance;
+    public static GlobalTimer Instance { get { return _instance; } }
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
     public TMP_Text timer;
     public float time = 0;
     public int realTimeInSeconds;
@@ -32,6 +48,9 @@ public class GlobalTimer : MonoBehaviour
             minute = (int)(time % 10f * 6);
             timer.text = hour + ":" + (minute < 10 ? "0" + (minute) : (minute));
         }
-        
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            frozen = !frozen;
+        }
     }
 }

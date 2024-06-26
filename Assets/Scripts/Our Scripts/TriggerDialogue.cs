@@ -23,7 +23,10 @@ public class TriggerDialogue : MonoBehaviour
     private void Update() {
         if (player_near && Input.GetKeyDown(KeyCode.E) && !GlobalManager.Instance.in_dialogue) {
             GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(true); // stop movement
-            GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory(); //closes inventory
+            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open close inventory
+            {
+                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
+            }
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Contains(fetch_item)) {
                 dialogue_file_name = "dialogue_test_postfetch";
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Remove(fetch_item);

@@ -21,7 +21,10 @@ public class MinigameTrigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && inTrigger == true)
         {
-            GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory(); //closes inventory
+            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open
+            {
+                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory(); //closes inventory
+            }
             StartGame();
         }
     }
