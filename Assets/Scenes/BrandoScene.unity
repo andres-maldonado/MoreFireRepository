@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_file_name: dialogue_test_file
-  minigame_id: 0
+  minigame_id: -1
   quests_to_start: among_us
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
@@ -954,7 +954,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 224734056}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

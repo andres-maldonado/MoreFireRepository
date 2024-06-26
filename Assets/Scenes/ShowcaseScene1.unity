@@ -13990,6 +13990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779f36ec1a42f6f47a3c3c8f3555fd9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: c4c8f5685376147e6a080a2929ff928a, type: 2}
   inventory: {fileID: 1968262346}
 --- !u!61 &736653205
 BoxCollider2D:
@@ -14744,6 +14745,7 @@ MonoBehaviour:
   quests_to_start: water_fetch
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
+  fetch_item: {fileID: 11400000, guid: c4c8f5685376147e6a080a2929ff928a, type: 2}
 --- !u!212 &1503842760
 SpriteRenderer:
   m_ObjectHideFlags: 0

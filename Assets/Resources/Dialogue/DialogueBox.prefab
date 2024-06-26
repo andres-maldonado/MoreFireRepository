@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_file_name: dialogue_test_file
-  minigame_id: 0
+  minigame_id: -1
   ticks_per_letter: 25
   start_quests: []
   end_quests: []
