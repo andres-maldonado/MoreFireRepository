@@ -5,6 +5,8 @@ Our game revolves around preparation, evacuation, and if possible we want to inc
 
 GitHub Repo Link: https://github.com/andres-maldonado/MoreFireRepository
 
+GitHub Release Link: https://github.com/andres-maldonado/MoreFireRepository/releases/tag/Showcase
+
 Single-Line Build Command:
 "[your unity installation path]" -quit -batchmode -projectPath "[where MoreFireRepository is]" -executeMethod Builder.BuildWindows
 
