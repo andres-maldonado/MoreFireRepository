@@ -50,7 +50,7 @@ public class PackingMinigame : MonoBehaviour
             }
         }
         if (has_won) {
-            GetComponent<MinigameHandler>().Win();
+            GetComponentInParent<MinigameWin>().Win();
             Debug.Log("You win!");
         }
     }
