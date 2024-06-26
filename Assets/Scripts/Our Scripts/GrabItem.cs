@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrabItem : MonoBehaviour
 {
 
+    public Item item;
     private bool in_trigger = false;
     public GameObject inventory;
 
@@ -30,9 +31,9 @@ public class GrabItem : MonoBehaviour
     {
         if (in_trigger && Input.GetKeyDown(KeyCode.E) && inventory.GetComponent<Inventory>().inv.Count < 5)
         {
-            Item item2 = ScriptableObject.CreateInstance<Item>();
-            item2.Init(transform.name, "mmmmm refreshing", Resources.Load<Sprite>(transform.name));
-            inventory.GetComponent<Inventory>().inv.Add(item2);
+            //Item item2 = ScriptableObject.CreateInstance<Item>();
+            //item2.Init(transform.name, "mmmmm refreshing", Resources.Load<Sprite>(transform.name));
+            inventory.GetComponent<Inventory>().inv.Add(item);
             Destroy(gameObject);
         }
         else if (in_trigger && Input.GetKeyDown(KeyCode.E) && inventory.GetComponent<Inventory>().inv.Count >= 5)

@@ -260,7 +260,7 @@ public class PlayerMovement : MonoBehaviour
 			{
 				playerFootsteps.start();
 			}
-            Debug.Log(footsteps);
+            //Debug.Log(footsteps);
         }
         else
         {
