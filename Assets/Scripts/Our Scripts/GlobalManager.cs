@@ -16,6 +16,8 @@ public class GlobalManager : MonoBehaviour
 
     private List<GameObject> minigames = new List<GameObject>();
 
+    public bool in_dialogue = false;
+
     public class GameTime {
         private float raw_time, gametime_scale_factor;
         public int hours, minutes;
