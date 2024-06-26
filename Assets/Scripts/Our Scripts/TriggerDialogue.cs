@@ -21,12 +21,13 @@ public class TriggerDialogue : MonoBehaviour
     }
 
     private void Update() {
-        if (player_near && Input.GetKeyDown(KeyCode.E)) {
+        if (player_near && Input.GetKeyDown(KeyCode.E) && !GlobalManager.Instance.in_dialogue) {
             GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(true); // stop movement
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Contains(fetch_item)) {
                 dialogue_file_name = "dialogue_test_postfetch";
             }
             GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
+            GlobalManager.Instance.in_dialogue = true;
         }
     }
 
