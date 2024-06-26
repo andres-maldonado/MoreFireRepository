@@ -117,6 +117,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\Enemy_Health_Bar.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\DEActivationTrigger.cs" />
+    <Compile Include="Assets\TrackCamera.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CollectibleItem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />

@@ -128,7 +128,7 @@ public class GlobalManager : MonoBehaviour
         e.GetComponent<ErrorMessage>().SetText(error_title, error_message);
     }
 
-    public void StartDialogue(string branch_name, Sprite sp_sprite, int game_id = -1, string quests_to_start = "", string quests_to_end = "", int tpl = 25) {
+    public void StartDialogue(string branch_name, Sprite sp_sprite, int game_id = -1, string quests_to_start = "", string quests_to_end = "", int tpl = 2) {
         GameObject d = Instantiate(dialogue_prefab, GameObject.FindWithTag("MainCanvas").transform);
         DialogueScript s = d.GetComponent<DialogueScript>();
         s.Set(branch_name, sp_sprite, game_id, quests_to_start, quests_to_end, tpl);
