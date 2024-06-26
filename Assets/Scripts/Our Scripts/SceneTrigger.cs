@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneTrigger : MonoBehaviour
 {
     GameSceneManager gameSceneManager;
     private bool inTrigger = false;
     public int scene;
+    public string exit;
     Animator doorIcon;
     // Start is called before the first frame update
     void Start()
     {
-        gameSceneManager = GameObject.FindWithTag("SceneManager").GetComponent<GameSceneManager>();
+        gameSceneManager = GameSceneManager.Instance;
         doorIcon = transform.GetChild(0).GetComponent<Animator>();
     }
 
@@ -20,7 +22,8 @@ public class SceneTrigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && inTrigger == true)
         {
-            gameSceneManager.LoadScene(scene);
+            GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory(); //closes inventory
+            gameSceneManager.LoadScene(scene, exit);
         }
     }
 

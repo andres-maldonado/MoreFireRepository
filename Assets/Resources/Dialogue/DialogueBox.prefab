@@ -27,14 +27,14 @@ RectTransform:
   m_GameObject: {fileID: 616324891720393279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.40208334, y: 0.40208334, z: 0.40208334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8760534670803967514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 386, y: 56.166687}
+  m_AnchoredPosition: {x: 0, y: -400}
   m_SizeDelta: {x: 1840, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6203007318910434029
@@ -161,14 +161,14 @@ RectTransform:
   m_GameObject: {fileID: 6474662261902026866}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.40208334, y: 0.40208334, z: 0.40208334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8760534670803967514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 386, y: 56.166687}
+  m_AnchoredPosition: {x: 0, y: -400}
   m_SizeDelta: {x: 1880, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2043120016967412373
@@ -235,8 +235,8 @@ Transform:
   m_GameObject: {fileID: 6546157004343924187}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 104.54166, y: 176.79167, z: 0}
-  m_LocalScale: {x: 80.416664, y: 80.416664, z: 0.40208334}
+  m_LocalPosition: {x: -600, y: 0, z: 0}
+  m_LocalScale: {x: 200, y: 200, z: 0.40208334}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8760534670803967514}
@@ -320,14 +320,14 @@ RectTransform:
   m_GameObject: {fileID: 7110651642277371860}
   m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.40208337, y: 0.40208337, z: 0.40208334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8760534670803967514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 747.0708, y: 24.804169}
+  m_AnchoredPosition: {x: 890, y: -470}
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1453924616688492242
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_file_name: dialogue_test_file
-  minigame_id: 0
-  ticks_per_letter: 25
+  minigame_id: -1
+  ticks_per_letter: 2
   start_quests: []
   end_quests: []

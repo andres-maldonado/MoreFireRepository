@@ -25,7 +25,7 @@ public class Inventory : MonoBehaviour
         render.sprite = null;
     }
 
-    void clear_all_sprites()
+    public void clear_all_sprites()
     {
         clear_sprite(slot1);
         clear_sprite(slot2);
@@ -41,14 +41,8 @@ public class Inventory : MonoBehaviour
         inv.Add(item1);
     }
 
-    void Update()
+    void Update() //makes sure that the inventory is always displaying the correct items
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            inv.Remove(inv[0]);
-            clear_all_sprites();
-        }
-
         if (inv.Count >= 1)
         {
             get_item_sprite(inv, slot1, 0);

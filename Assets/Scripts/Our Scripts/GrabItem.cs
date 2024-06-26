@@ -5,8 +5,10 @@ using UnityEngine;
 public class GrabItem : MonoBehaviour
 {
 
+    public Item item;
     private bool in_trigger = false;
     public GameObject inventory;
+    SpriteRenderer render;
 
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -18,22 +20,14 @@ public class GrabItem : MonoBehaviour
     {
         in_trigger = false;
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (in_trigger && Input.GetKeyDown(KeyCode.E) && inventory.GetComponent<Inventory>().inv.Count < 5)
         {
-            Item item2 = ScriptableObject.CreateInstance<Item>();
-            item2.Init(transform.name, "mmmmm refreshing", Resources.Load<Sprite>(transform.name));
-            inventory.GetComponent<Inventory>().inv.Add(item2);
-            Destroy(gameObject);
+            inventory.GetComponent<Inventory>().inv.Add(item); //adds item to inventory
+            render = this.GetComponent<SpriteRenderer>();
+            render.sprite = null; //gets rid of the sprite from scene (but its still there if you want more)
+            // Destroy(gameObject);
         }
         else if (in_trigger && Input.GetKeyDown(KeyCode.E) && inventory.GetComponent<Inventory>().inv.Count >= 5)
         {

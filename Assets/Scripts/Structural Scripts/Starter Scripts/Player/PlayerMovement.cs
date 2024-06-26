@@ -252,18 +252,15 @@ public class PlayerMovement : MonoBehaviour
 
 	private void UpdateSound()
 	{
-		Debug.Log("Works");
 		if (rb.velocity.x != 0 || rb.velocity.y != 0)
 		{
-			Debug.Log("Moving");
 			PLAYBACK_STATE footsteps;
 			playerFootsteps.getPlaybackState(out footsteps);
 			if (footsteps.Equals(PLAYBACK_STATE.STOPPED))
 			{
 				playerFootsteps.start();
-				Debug.Log("Start");
 			}
-            Debug.Log(footsteps);
+            //Debug.Log(footsteps);
         }
         else
         {

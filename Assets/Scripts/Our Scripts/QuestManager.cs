@@ -34,7 +34,7 @@ public class QuestManager : MonoBehaviour
 
     private void Awake() {
         if (_instance != null && _instance != this) {
-            Debug.LogError("Error: attempted to instantiate a second GlobalManager.");
+            Debug.LogError("Error: attempted to instantiate a second QuestManager.");
             Destroy(this.gameObject);
         }
         else {
@@ -42,6 +42,10 @@ public class QuestManager : MonoBehaviour
             LoadQuestBank();
             UpdateLogText();
         }
+    }
+
+    private void Start() {
+        DontDestroyOnLoad(gameObject);
     }
 
     public void StartQuest(string quest_name) {

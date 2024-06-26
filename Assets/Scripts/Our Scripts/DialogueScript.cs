@@ -63,6 +63,7 @@ public class DialogueScript : MonoBehaviour
         if ((current_text = file_reader.ReadLine()) == null) {
             // queue destruction / start minigame
             Destroy(gameObject);
+            GlobalManager.Instance.in_dialogue = false;
             GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(false);
             foreach (string q in end_quests) {
                 if (q.Trim() != "") QuestManager.Instance.CompleteQuest(q.Trim());
@@ -92,7 +93,7 @@ public class DialogueScript : MonoBehaviour
         if (letters_displayed == current_text.Length && !prompter.GetComponent<Image>().enabled) {
             prompter.GetComponent<Image>().enabled = true;
         }
-        prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Abs(Math.Sin(prompter_time * 4) * 2)), 0);
+        prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Abs(Math.Sin(prompter_time * 4) * 0.05f)), 0);
 
         if (Input.GetKeyDown(KeyCode.Z)) {
             // if the message is finished typing, move on to the next message
