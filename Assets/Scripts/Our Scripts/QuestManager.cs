@@ -9,15 +9,19 @@ public class QuestManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text questlog_UI;
 
+    public List<Quest> all_quests = new List<Quest>();
     private Dictionary<string, (Quest, bool)> quest_bank = new Dictionary<string, (Quest, bool)>();
+
     [SerializeField] private List<Quest> active_quests = new List<Quest>();
+
+
 
     // SINGLETON BOILER-PLATE
     private static QuestManager _instance;
     public static QuestManager Instance { get { return _instance; } }
 
     private void LoadQuestBank() {
-        foreach (string path in Directory.GetFiles("Assets/Resources/Quests")) {
+        /*foreach (string path in Directory.GetFiles("Assets/Resources/Quests")) {
             // this successfully trims a filepath of the form "Assets/Resources/Quests/[quest_name].[extension]"
             // to "Quests/[quest_name]", which makes it compatible with Resources.Load()
             string snipped_path = path.Substring(17).Substring(0, path.LastIndexOf('.') - 17);
@@ -28,6 +32,14 @@ public class QuestManager : MonoBehaviour
                 if (q.is_starter_quest) {
                     active_quests.Add(q);
                 }
+            }
+        }*/
+        foreach (Quest q in all_quests)
+        {
+            quest_bank.Add(q.quest_name, (q, false));
+            if (q.is_starter_quest)
+            {
+                active_quests.Add(q);
             }
         }
     }

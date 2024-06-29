@@ -1,7 +1,4 @@
 using UnityEditor;
-using UnityEngine;
-using UnityEditor.Build.Reporting;
-using System.Diagnostics;
 
 public class Builder
 {
@@ -15,7 +12,4 @@ public class Builder
                                     "WindowsBuilds/FireProto.exe", BuildTarget.StandaloneWindows, BuildOptions.AutoRunPlayer);
     }
 
-    public static void Build() {
-        BuildWindows();
-    }
 }

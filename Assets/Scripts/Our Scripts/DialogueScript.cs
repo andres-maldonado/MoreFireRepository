@@ -49,12 +49,12 @@ public class DialogueScript : MonoBehaviour
 
     void Start() {
         // if the file doesn't exist, disable the script so as not to break anything too badly
-        if (!File.Exists("Assets/Resources/Dialogue/" + dialogue_file_name + ".txt")) {
+        if (!File.Exists(Application.streamingAssetsPath + "/Dialogue/" + dialogue_file_name + ".txt")) {
             Debug.LogError("No dialogue file named " + dialogue_file_name + " found!");
             gameObject.GetComponent<DialogueScript>().enabled = false;
         }
 
-        file_reader = File.OpenText("Assets/Resources/Dialogue/" + dialogue_file_name + ".txt");
+        file_reader = File.OpenText(Application.streamingAssetsPath + "/Dialogue/" + dialogue_file_name + ".txt");
 
         ReadDialogue();
     }

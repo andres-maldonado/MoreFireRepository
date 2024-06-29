@@ -5,6 +5,10 @@ using UnityEngine;
 public class TriggerDialogue : MonoBehaviour
 {
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
+    //[SerializeField] private TextAsset first_dialogue;
+    //[SerializeField] private TextAsset second_dialogue;
+    //private TextAsset current_asset;
+
     [SerializeField] private int minigame_id = -1;
     [SerializeField] private string quests_to_start;
     [SerializeField] private string quests_to_complete;
@@ -14,6 +18,7 @@ public class TriggerDialogue : MonoBehaviour
     private bool player_near = false;
 
     private void Start() {
+        //current_asset = first_dialogue;
         if (GetComponent<SpriteRenderer>() == null) {
             Debug.LogError("Error: no SpriteRenderer component attached to DialogueTrigger; no speaker sprite available.");
             GetComponent<TriggerDialogue>().enabled = false;
@@ -29,8 +34,8 @@ public class TriggerDialogue : MonoBehaviour
             }
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Contains(fetch_item)) {
                 dialogue_file_name = "dialogue_test_postfetch";
-                quests_to_start = "";
                 quests_to_complete = "water_fetch";
+                quests_to_start = "";
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Remove(fetch_item);
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().clear_all_sprites();
             }
