@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b409d45ddc64cceb1dfbef1f83b5bc, type: 3}
   m_Name: filler_quest3
   m_EditorClassIdentifier: 
-  quest_name: among_us
-  quest_desc: Sus out the impostor among us
-  is_starter_quest: 0
+  quest_name: bike_pump
+  quest_desc: Fill your bike tires with air
+  is_starter_quest: 1
