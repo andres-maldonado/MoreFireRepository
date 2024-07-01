@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class GlobalManager : MonoBehaviour
 {
     // ###### FILE PATHS ######
-    private string minigame_folder = "Assets/Resources/MinigamePrefabs";
+    // private string minigame_folder = "Assets/Resources/MinigamePrefabs";
 
     // IMPORTANT: these file paths are relative to the Assets/Resources folder
     private string error_path = "Error Message";
@@ -14,8 +16,7 @@ public class GlobalManager : MonoBehaviour
 
     public GameObject message_prefab, dialogue_prefab;
 
-    private List<GameObject> minigames = new List<GameObject>();
-
+    private AsyncOperationHandle<GameObject> minigame_handle;
     public bool in_dialogue = false;
 
     public class GameTime {
@@ -119,10 +120,24 @@ public class GlobalManager : MonoBehaviour
     }
 
     // ###### CUSTOM PUBLIC METHODS ######
+    
+    private IEnumerator LoadMinigame(string address) {
+        minigame_handle = Addressables.LoadAssetAsync<GameObject>(address);
+        yield return minigame_handle;
+
+        if (minigame_handle.Status == AsyncOperationStatus.Succeeded) {
+            Instantiate(minigame_handle.Result, GameObject.FindWithTag("MainCanvas").transform);
+        }
+    }
 
     // launches one of the minigames using an integer ID
-    public void StartMinigame(int minigame_id) {
-        Instantiate(minigames[minigame_id], GameObject.FindWithTag("MainCanvas").transform);
+    public void StartMinigame(string minigame_id) {
+        //Instantiate(minigames[minigame_id], GameObject.FindWithTag("MainCanvas").transform);
+        StartCoroutine(LoadMinigame(minigame_id));
+    }
+
+    public void FreeMinigame() {
+        Addressables.Release(minigame_handle);
     }
 
     public void DisplayError(string error_title, string error_message) {

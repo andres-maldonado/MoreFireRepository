@@ -11,4 +11,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShowcaseScene2.unity
     guid: 28b16391c65585b44ba4388e62ed7764
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: aaf762e632a65497e9889aa6f81522d3, type: 2}

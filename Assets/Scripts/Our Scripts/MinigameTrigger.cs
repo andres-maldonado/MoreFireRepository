@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MinigameTrigger : MonoBehaviour
 {
-    [SerializeField] Object minigame;
+    [SerializeField] private string minigame_name;
     [SerializeField] bool oneTime;
     private bool inTrigger = false;
     private GameObject canvas;
@@ -42,7 +42,8 @@ public class MinigameTrigger : MonoBehaviour
     private void StartGame()
     {
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(true);
-        Instantiate(minigame, canvas.transform);
+        // Instantiate(minigame, canvas.transform);
+        GlobalManager.Instance.StartMinigame(minigame_name);
         Destroy(gameObject);
     }
 }

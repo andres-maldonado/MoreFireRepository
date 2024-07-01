@@ -14,27 +14,24 @@ public class MinigameWin : MonoBehaviour
         player = GameObject.FindWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Win()
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.minigameWinSound, this.transform.position);
         GetComponent<Animator>().SetBool("isBeaten", true);
         StartCoroutine(EndGame());
     }
+
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(.5f);
+        player.GetComponent<PlayerMovement>().DisablePlayer(false);
+        GlobalManager.Instance.FreeMinigame();
+        Debug.Log("destroyed");
+        Destroy(gameObject);
         foreach (string q in quests_to_complete.Split(","))
         {
             QuestManager.Instance.CompleteQuest(q.Trim());
         }
-        player.GetComponent<PlayerMovement>().DisablePlayer(false);
-        Destroy(gameObject);
         yield return null;
     }
 }
