@@ -17615,7 +17615,7 @@ PrefabInstance:
     - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: minigame
       value: 
-      objectReference: {fileID: 2437686333823035395, guid: 45b2217b8894a4846b3f1da213bd7eef, type: 3}
+      objectReference: {fileID: 8123014525805291546, guid: 989086c5631f64aeda8573f011e4e507, type: 3}
     - target: {fileID: 9116064496366930636, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.25
