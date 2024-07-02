@@ -115,6 +115,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\Scripts\MinigameScripts\PumpMinigame.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\KeepData.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Damagers\Projectile.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Floater.cs" />
@@ -146,6 +147,7 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\CollectibleManagerTMP.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Level_Change.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Scripts\MinigameScripts\CheckoutMinigame.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerMovement.cs" />
