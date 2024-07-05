@@ -6,6 +6,7 @@ using TMPro;
 
 public class CheckoutMinigame : MonoBehaviour
 {
+    [SerializeField] Animator wallet;
     [SerializeField] private TMP_Text item_listUI;
     [SerializeField] private List<string> checkout_screen = new List<string>();
     [SerializeField] string[] items_checkout;
@@ -18,7 +19,9 @@ public class CheckoutMinigame : MonoBehaviour
         {
             checked_out[other.name] = true;
             checkout_screen.Add(other.name); 
+            Debug.Log(other.name);
             update_checkout_screen();
+            check_done();
             Destroy(other.gameObject);
         }
     }
@@ -35,7 +38,8 @@ public class CheckoutMinigame : MonoBehaviour
         }
         if (done_scanning)
         {
-            print("done scanning !!");
+            Debug.Log("done scanning !!");
+            wallet.Play("WalletEnter");
         }        
     }
 
@@ -44,7 +48,7 @@ public class CheckoutMinigame : MonoBehaviour
         string receipt = "";
         for (int i = 0; i < checkout_screen.Count; i++)
         {
-            receipt += checkout_screen[i] + (i == checkout_screen.Count - 1 ? "" : "\n\n");
+            receipt += checkout_screen[i] + (i == checkout_screen.Count - 1 ? "" : "\n");
         }
         item_listUI.text = receipt;
     }
