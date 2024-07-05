@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 9e8321afb3de54d08941d15bad1754ac
   m_currentHash:
     serializedVersion: 2
-    Hash: 2b64608e6519b7c242187e1926c4401f
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -51,6 +51,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f80c74064e354881af60d71ed1362a9, type: 2}
   - {fileID: 11400000, guid: 9234cf2f784904507b54d3218ed754a2, type: 2}
   - {fileID: 11400000, guid: 8d05ea37024cf445486753a6c60490b5, type: 2}
+  - {fileID: 11400000, guid: 59534cc399d464f1b8b6f4ddfac04477, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -93,6 +94,7 @@ MonoBehaviour:
     m_LabelNames:
     - default
     - minigame
+    - managers
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 03d0ef1703f67482f94f659a358e6215, type: 2}
