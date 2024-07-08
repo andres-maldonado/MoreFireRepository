@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\Misc Scripts\OrthographicZoom.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\CollectibleManager.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\NewPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyPatrolAreaBehaviourSerious.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\QuitOnClick.cs" />
@@ -111,6 +112,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\Scripts\MinigameScripts\PumpMinigame.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\KeepData.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Damagers\Projectile.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Floater.cs" />
