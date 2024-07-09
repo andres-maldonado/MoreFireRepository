@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4256419878388457083}
   - component: {fileID: 521482860367406520}
-  - component: {fileID: 674838836984844471}
   - component: {fileID: 4411698806701405162}
   - component: {fileID: 2828934839698939594}
   - component: {fileID: 7293140776454878026}
+  - component: {fileID: 7116449916861649292}
   m_Layer: 0
   m_Name: Player Character
   m_TagString: Player
@@ -31,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.0372896, y: -4.6703196, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b47af49d9d31ffe4984f48fc80a1268d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,33 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &674838836984844471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9088656780719252597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f30cb23d9368b4c989ac297997664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TopDownMovement: 1
-  disabled: 0
-  Speed: 2
-  Acceleration: 0.05
-  DiagonalSpeedLimiter: 0.7
-  SpriteFacingRight: 1
-  canJump: 0
-  JumpForce: 10
-  NumberOfJumps: 1
-  FallMultiplier: 3
-  ShowDebugRaycast: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  rayLength: 1
 --- !u!70 &4411698806701405162
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -198,3 +171,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7116449916861649292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088656780719252597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9d2c9d36cc10e4290ee8e5780770dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.05
+  disabled: 0
