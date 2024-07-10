@@ -29,11 +29,11 @@ public class MinigameWin : MonoBehaviour
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(.5f);
+        player.GetComponent<NewPlayerMovement>().DisablePlayer(false);
         foreach (string q in quests_to_complete.Split(","))
         {
             QuestManager.Instance.CompleteQuest(q.Trim());
         }
-        player.GetComponent<PlayerMovement>().DisablePlayer(false);
         Destroy(gameObject);
         yield return null;
     }

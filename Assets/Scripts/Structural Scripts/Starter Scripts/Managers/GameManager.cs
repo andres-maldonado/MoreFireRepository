@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 	{
 		if (Player == null)
 		{
-			Player = FindObjectOfType<PlayerMovement>().gameObject;
+			Player = FindObjectOfType<NewPlayerMovement>().gameObject;
 		}
 		RespawnPlace = Player.transform.position;
 	}
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
 	public void DisablePlayerMovement(bool isDisabled)
 	{
-		PlayerMovement playerMovement = Player.GetComponent<PlayerMovement>();
+		NewPlayerMovement playerMovement = Player.GetComponent<NewPlayerMovement>();
 		PlayerAudio playerAudio = Player.GetComponent<PlayerAudio>();
 
 		if (playerMovement)

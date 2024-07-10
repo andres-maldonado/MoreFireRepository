@@ -29,10 +29,7 @@ public class PlayerWalkBehaviour : StateMachineBehaviour
         /* 
          * store the player input and scale it for use in the below movement (transform.translate function) 
          * normalized makes sure that walking diagonaly is not faster than moving horizontally or vertically
-         */
-        Vector3 inputVector = new Vector3( (Input.GetAxis("Horizontal")) , (Input.GetAxis("Vertical")), 0).normalized ;
-
-        playerTransform.Translate(inputVector * scaledSpeed); // moves the transform in the direction set above
+         */ // moves the transform in the direction set above
     }
 
 }

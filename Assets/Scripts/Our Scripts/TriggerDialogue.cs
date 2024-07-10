@@ -27,7 +27,7 @@ public class TriggerDialogue : MonoBehaviour
 
     private void Update() {
         if (player_near && Input.GetKeyDown(KeyCode.E) && !GlobalManager.Instance.in_dialogue) {
-            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(true); // stop movement
+            GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(true); // stop movement
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open close inventory
             {
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
@@ -45,13 +45,13 @@ public class TriggerDialogue : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.GetComponent<PlayerMovement>() != null) {
+        if (other.GetComponent<NewPlayerMovement>() != null) {
             player_near = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        if (other.GetComponent<PlayerMovement>() != null) {
+        if (other.GetComponent<NewPlayerMovement>() != null) {
             player_near = false;
         }
     }
