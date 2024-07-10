@@ -19,7 +19,7 @@ public class PumpMinigame : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.E)) {
             tire_fullness += breath_strength;
         }
-        Debug.Log(tire_fullness);
+        //Debug.Log(tire_fullness);
         tire_fullness -= tire_deflate_rate * Time.deltaTime;
         tire_fullness = tire_fullness < 0.0f ? 0.0f : tire_fullness;
         meter.localScale = new Vector3(7.8f * tire_fullness, 1.0f, 1.0f);

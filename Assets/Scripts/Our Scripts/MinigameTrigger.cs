@@ -41,7 +41,7 @@ public class MinigameTrigger : MonoBehaviour
 
     private void StartGame()
     {
-        GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(true);
+        GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(true);
         Instantiate(minigame, canvas.transform);
         Destroy(gameObject);
     }
