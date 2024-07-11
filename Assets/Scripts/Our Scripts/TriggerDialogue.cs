@@ -14,19 +14,14 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private string quests_to_complete;
     [SerializeField] private Sprite speaker_sprite;
     [SerializeField] private Item fetch_item;
+    [SerializeField] private bool interactToTrigger = true;
 
     private bool player_near = false;
 
-    private void Start() {
-        //current_asset = first_dialogue;
-        if (GetComponent<SpriteRenderer>() == null) {
-            Debug.LogError("Error: no SpriteRenderer component attached to DialogueTrigger; no speaker sprite available.");
-            GetComponent<TriggerDialogue>().enabled = false;
-        }
-    }
+    private void Start() {  }
 
     private void Update() {
-        if (player_near && Input.GetKeyDown(KeyCode.E) && !GlobalManager.Instance.in_dialogue) {
+        if (player_near && (Input.GetKeyDown(KeyCode.E)||!interactToTrigger) && !GlobalManager.Instance.in_dialogue) {
             GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(true); // stop movement
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open close inventory
             {
@@ -41,6 +36,10 @@ public class TriggerDialogue : MonoBehaviour
             }
             GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
             GlobalManager.Instance.in_dialogue = true;
+            if(!interactToTrigger)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
