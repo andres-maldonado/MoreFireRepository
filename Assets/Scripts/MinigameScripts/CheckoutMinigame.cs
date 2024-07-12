@@ -65,6 +65,7 @@ public class CheckoutMinigame : MonoBehaviour
         }
         if (paid)
         {
+            wallet.Play("MinigameMoveDown");
             GetComponentInParent<MinigameWin>().Win();
         }
     }

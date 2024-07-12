@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAudio.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\InventoryUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\Scripts\MinigameScripts\EvacuationMinigame.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\FaceCamera.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Teleporter.cs" />
