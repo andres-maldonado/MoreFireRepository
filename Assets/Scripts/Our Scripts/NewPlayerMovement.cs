@@ -34,6 +34,8 @@ public class NewPlayerMovement : MonoBehaviour
         if (!disabled)
         {
             rb.velocity = speed * new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+            Animate();
+            FlipCheck(Input.GetAxisRaw("Horizontal"));
             /*if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             {
                 lastLookDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
