@@ -226,7 +226,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: EvacuationMinigame
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4613066314995719448, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 4318338534848395615, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
     m_AddedGameObjects: []
