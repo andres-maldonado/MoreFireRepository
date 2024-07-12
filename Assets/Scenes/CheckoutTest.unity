@@ -404,6 +404,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7371108851370891087, guid: 6032f4e24e2ff804da1527712775e3d0, type: 3}
+      propertyPath: m_Color.a
+      value: 0.21176471
+      objectReference: {fileID: 0}
     - target: {fileID: 8357345544352779198, guid: 6032f4e24e2ff804da1527712775e3d0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
