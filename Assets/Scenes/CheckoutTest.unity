@@ -400,10 +400,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckoutMinigame
       objectReference: {fileID: 0}
-    - target: {fileID: 7368906127574972205, guid: 6032f4e24e2ff804da1527712775e3d0, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7371108851370891087, guid: 6032f4e24e2ff804da1527712775e3d0, type: 3}
       propertyPath: m_Color.a
       value: 0.21176471

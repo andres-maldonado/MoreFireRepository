@@ -138,25 +138,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1567856471026930296, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 2630249888299700746, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765937892750869986, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765937892750869986, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277312043528865681, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4318338534848395615, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318338534848395615, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5937367284972722251, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_LocalScale.x
@@ -226,12 +218,17 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8431805831029227526, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_Name
+      value: player icon
+      objectReference: {fileID: 0}
     - target: {fileID: 8536793492143868755, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_Name
       value: EvacuationMinigame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4318338534848395615, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
