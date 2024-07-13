@@ -16,7 +16,6 @@ public class AddressableScenes : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         foreach (string m in manager_names) {
-            Debug.Log(m);
             AsyncOperationHandle<GameObject> loadOp = Addressables.LoadAssetAsync<GameObject>(m);
             yield return loadOp;
 
@@ -31,6 +30,8 @@ public class AddressableScenes : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
 
         Addressables.UnloadSceneAsync(init_scene_op);
+
+        yield return new WaitForSeconds(2.5f);
         init_scene_op = Addressables.LoadSceneAsync("ShowcaseScene2", LoadSceneMode.Single);
         yield return init_scene_op;
     }
