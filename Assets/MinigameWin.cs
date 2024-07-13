@@ -24,14 +24,12 @@ public class MinigameWin : MonoBehaviour
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(.5f);
-        player.GetComponent<PlayerMovement>().DisablePlayer(false);
-        GlobalManager.Instance.FreeMinigame();
-        Debug.Log("destroyed");
-        Destroy(gameObject);
+        player.GetComponent<NewPlayerMovement>().DisablePlayer(false);
         foreach (string q in quests_to_complete.Split(","))
         {
             QuestManager.Instance.CompleteQuest(q.Trim());
         }
+        Destroy(gameObject);
         yield return null;
     }
 }

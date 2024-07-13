@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 		col = GetComponent<Collider2D>(); //Get Collider component
 		rend = GetComponent<SpriteRenderer>(); //Get Sprite Renderer Component
 		anim = GetComponent<Animator>(); //Get Animator Component
-		playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
+		//playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
 	}
 
 	public void DisablePlayer(bool isDisabled)
@@ -142,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
 				{
 					anim.SetBool("isMoving", false);
 					/*if (playerAudio && playerAudio.WalkSource.isPlaying && playerAudio.WalkSource.clip != null)
-					{
+					{a
 						playerAudio.WalkSource.Stop();
 					}
 					*/
@@ -157,9 +157,8 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if (!disabled)
 		{
-			if (!TopDownMovement) //If the game isn't topdown
-				MoveSideScroller(HorizontalMovement); //move like a sidescroller
-			else
+			//if (!TopDownMovement) //If the game isn't topdown
+				//MoveSideScroller(HorizontalMovement); //move like a sidescroller
 				MoveTopDown(HorizontalMovement, VerticalMovement); //otherwise move like a topdown
 		}
 	}
@@ -187,7 +186,7 @@ public class PlayerMovement : MonoBehaviour
 		FlipCheck(Horizontal);
 	}
 
-	private void MoveSideScroller(float move)
+	/*private void MoveSideScroller(float move)
 	{
 		if (move != 0)
 		{
@@ -216,7 +215,7 @@ public class PlayerMovement : MonoBehaviour
 			}
 
 		}
-	}
+	}*/
 
 
 	private void FlipCheck(float move)

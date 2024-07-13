@@ -64,7 +64,7 @@ public class DialogueScript : MonoBehaviour
             // queue destruction / start minigame
             Destroy(gameObject);
             GlobalManager.Instance.in_dialogue = false;
-            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().DisablePlayer(false);
+            GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(false);
             foreach (string q in end_quests) {
                 if (q.Trim() != "") QuestManager.Instance.CompleteQuest(q.Trim());
             }

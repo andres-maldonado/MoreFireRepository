@@ -3,36 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|c:\\users\\pandy\\unity projects\\dig4930\\firegame\\morefirerepository\\assets\\scripts\\our scripts\\dialoguescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\minigamewin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\minigamewin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|c:\\users\\pandy\\unity projects\\dig4930\\firegame\\morefirerepository\\assets\\scripts\\our scripts\\grabitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\grabitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|c:\\users\\pandy\\unity projects\\dig4930\\firegame\\morefirerepository\\assets\\scripts\\our scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\fmodevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\fmodevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|c:\\users\\pandy\\unity projects\\dig4930\\firegame\\morefirerepository\\assets\\scripts\\our scripts\\triggerdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\triggerdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\dialoguescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\dialoguescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\error message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\error message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\triggerdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\triggerdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|c:\\users\\pandy\\unity projects\\dig4930\\firegame\\morefirerepository\\assets\\scripts\\our scripts\\minigametrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\minigametrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\globalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\globalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFF9A589-0CC8-9E9E-2259-0840F9F72464}|Assembly-CSharp-Editor.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\editor\\builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFF9A589-0CC8-9E9E-2259-0840F9F72464}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\newplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\newplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\minigamewin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\minigamewin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\structural scripts\\starter scripts\\utility\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structural scripts\\starter scripts\\utility\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\minigamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\minigamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\structural scripts\\starter scripts\\player\\playerwalkbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structural scripts\\starter scripts\\player\\playerwalkbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\structural scripts\\starter scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structural scripts\\starter scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\draganddrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\keepdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\keepdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\textmesh pro\\shaders\\tmp_sdf-mobile.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\textmesh pro\\shaders\\tmp_sdf-mobile.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -67,36 +79,12 @@
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigamescripts\\packingminigame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\minigametrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\minigametrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\scenetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\scenetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\structural scripts\\starter scripts\\managers\\gamescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structural scripts\\starter scripts\\managers\\gamescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\misc scripts\\loadsceneonclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\misc scripts\\loadsceneonclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\structural scripts\\starter scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structural scripts\\starter scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\structural scripts\\starter scripts\\player\\playerwalkbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structural scripts\\starter scripts\\player\\playerwalkbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\triggerparameterchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\triggerparameterchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\structural scripts\\starter scripts\\ui\\testdialogues\\d1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -111,10 +99,6 @@
       "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structural scripts\\starter scripts\\ui\\dialogue\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\assets\\scripts\\our scripts\\fmodevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE21BCA-66A0-F30D-9C6B-906730EFAC8A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\our scripts\\fmodevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pandy\\Unity Projects\\DIG3878\\Sumo\\Assets\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -125,95 +109,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TriggerDialogue.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\TriggerDialogue.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\TriggerDialogue.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\TriggerDialogue.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\TriggerDialogue.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T13:55:38.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "QuestManager.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\QuestManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\QuestManager.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\QuestManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\QuestManager.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCkAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T07:28:04.747Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GameSceneManager.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Managers\\GameSceneManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Managers\\GameSceneManager.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Managers\\GameSceneManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Managers\\GameSceneManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T02:50:27.302Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GlobalManager.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\GlobalManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\GlobalManager.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\GlobalManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\GlobalManager.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAADwv4MAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T04:43:05.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "KeepData.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\KeepData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\KeepData.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\KeepData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\KeepData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T02:15:52.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "LoadSceneOnClick.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Misc Scripts\\LoadSceneOnClick.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Misc Scripts\\LoadSceneOnClick.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Misc Scripts\\LoadSceneOnClick.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Misc Scripts\\LoadSceneOnClick.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T03:15:09.274Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Error Message.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Error Message.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\Error Message.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Error Message.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\Error Message.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAdAAAA",
+              "Title": "GrabItem.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\GrabItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\GrabItem.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\GrabItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\GrabItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T10:48:26.165Z"
+              "WhenOpened": "2024-07-11T11:14:10.424Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Item.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\Item.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Item.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T11:13:50.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MinigameTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:46:22.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DialogueScript.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\DialogueScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\DialogueScript.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\DialogueScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\DialogueScript.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAgwDgAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T02:43:30.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MinigameWin.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\MinigameWin.cs",
+              "RelativeDocumentMoniker": "Assets\\MinigameWin.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\MinigameWin.cs",
+              "RelativeToolTip": "Assets\\MinigameWin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T06:41:05.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayerWalkBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerWalkBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerWalkBehaviour.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerWalkBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerWalkBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T06:11:37.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "DragAndDrop.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\DragAndDrop.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\DragAndDrop.cs",
@@ -225,7 +202,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TriggerDialogue.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\TriggerDialogue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\TriggerDialogue.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\TriggerDialogue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\TriggerDialogue.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T13:55:38.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "CameraMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Utility\\CameraMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Utility\\CameraMovement.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Utility\\CameraMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Utility\\CameraMovement.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T06:09:44.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Global Timer.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Global Timer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\Global Timer.cs",
@@ -237,68 +239,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MinigameWin.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\MinigameWin.cs",
-              "RelativeDocumentMoniker": "Assets\\MinigameWin.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\MinigameWin.cs",
-              "RelativeToolTip": "Assets\\MinigameWin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA3AAAA",
+              "DocumentIndex": 7,
+              "Title": "GlobalManager.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\GlobalManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\GlobalManager.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\GlobalManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\GlobalManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T06:41:05.666Z"
+              "WhenOpened": "2024-06-25T04:43:05.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DialogueScript.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\DialogueScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\DialogueScript.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\DialogueScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\DialogueScript.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAwDgAAABHAAAA",
+              "DocumentIndex": 3,
+              "Title": "FMODEvents.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\FMODEvents.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\FMODEvents.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\FMODEvents.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\FMODEvents.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T02:43:30.316Z",
+              "WhenOpened": "2024-06-21T05:49:20.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Builder.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Editor\\Builder.cs",
-              "RelativeDocumentMoniker": "Assets\\Editor\\Builder.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Editor\\Builder.cs",
-              "RelativeToolTip": "Assets\\Editor\\Builder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T14:27:19.83Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MinigameHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\MinigameHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\MinigameHandler.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\MinigameHandler.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\MinigameHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T09:01:47.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SceneTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\SceneTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\SceneTrigger.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\SceneTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\SceneTrigger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T03:38:33.5Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "NewPlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\NewPlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\NewPlayerMovement.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\NewPlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\NewPlayerMovement.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwCUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T05:37:17.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T05:37:34.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "InventoryUI.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\InventoryUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\InventoryUI.cs",
@@ -310,7 +300,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
+              "Title": "GameSceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Managers\\GameSceneManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Managers\\GameSceneManager.cs",
+              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Managers\\GameSceneManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Managers\\GameSceneManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T02:50:27.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\Inventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\Inventory.cs",
@@ -322,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\AudioManager.cs",
@@ -334,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "TrackCamera.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\TrackCamera.cs",
               "RelativeDocumentMoniker": "Assets\\TrackCamera.cs",
@@ -346,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "TMP_SDF-Mobile.shader",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\TextMesh Pro\\Shaders\\TMP_SDF-Mobile.shader",
               "RelativeDocumentMoniker": "Assets\\TextMesh Pro\\Shaders\\TMP_SDF-Mobile.shader",
@@ -358,19 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MinigameTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\MinigameTrigger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T05:34:46.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "PackingMinigame.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\MinigameScripts\\PackingMinigame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MinigameScripts\\PackingMinigame.cs",
@@ -382,19 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerMovement.cs",
-              "ViewState": "AQIAAOsAAAAAAAAAAADwv/kAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T05:37:34.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 22,
               "Title": "DialogueManager.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\UI\\Dialogue\\DialogueManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\UI\\Dialogue\\DialogueManager.cs",
@@ -406,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 21,
               "Title": "D1.txt",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\UI\\TestDialogues\\D1.txt",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\UI\\TestDialogues\\D1.txt",
@@ -419,42 +397,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "TriggerParameterChange.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\TriggerParameterChange.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\TriggerParameterChange.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\TriggerParameterChange.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\TriggerParameterChange.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T07:33:25.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FMODEvents.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\FMODEvents.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Our Scripts\\FMODEvents.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Our Scripts\\FMODEvents.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Our Scripts\\FMODEvents.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T05:49:20.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PlayerWalkBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerWalkBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerWalkBehaviour.cs",
-              "ToolTip": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerWalkBehaviour.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\Player\\PlayerWalkBehaviour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T06:11:37.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
               "Title": "DialogueTrigger.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG4930\\FireGame\\MoreFireRepository\\Assets\\Scripts\\Structural Scripts\\Starter Scripts\\UI\\Dialogue\\DialogueTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Structural Scripts\\Starter Scripts\\UI\\Dialogue\\DialogueTrigger.cs",
@@ -466,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 24,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\Pandy\\Unity Projects\\DIG3878\\Sumo\\Assets\\PlayerController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\DIG3878\\Sumo\\Assets\\PlayerController.cs",
@@ -474,8 +416,7 @@
               "RelativeToolTip": "..\\..\\..\\DIG3878\\Sumo\\Assets\\PlayerController.cs",
               "ViewState": "AQIAAPYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T06:42:46.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T06:42:46.884Z"
             }
           ]
         }
