@@ -176,6 +176,7 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Damagers\MeleeWeapon.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerIdleBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MinigameScripts\evac_warning.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\SpeakerLibrary.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\StealthRespawn.cs" />
