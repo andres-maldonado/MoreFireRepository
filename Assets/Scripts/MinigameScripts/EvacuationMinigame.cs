@@ -7,7 +7,7 @@ public class EvacuationMinigame : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] GameObject player_icon;
     private Vector3 prev_pos;
-    private int step = 0;
+    public int step = 0;
     private float scale = 2.83f;
     void OnTriggerEnter2D()
     {
@@ -46,11 +46,6 @@ public class EvacuationMinigame : MonoBehaviour
             Destroy(player_icon);
             animator.Play("MinigameMoveDown");
         }
-        // else if (step == 6)
-        // {
-        //     player_icon.GetComponent<TrailRenderer>().Clear();
-        //     animator.Play("MinigameMoveDown");
-        // }
         prev_pos = player_icon.transform.position;
         step++;
     }

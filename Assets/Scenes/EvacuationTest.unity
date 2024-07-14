@@ -130,14 +130,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1424139805}
     m_Modifications:
-    - target: {fileID: 842220164143182955, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 842220164143182955, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
-      propertyPath: m_Size.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 955563248908239849, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_Name
       value: Evacuation
@@ -147,16 +139,12 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 992412030185303618, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_Name
+      value: warning
+      objectReference: {fileID: 0}
+    - target: {fileID: 992412030185303618, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646253132790022487, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646253132790022487, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.04
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2630249888299700746, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_Enabled
@@ -234,6 +222,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6157745867926565567, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157745867926565567, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7032626313210197588, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_SortingOrder
       value: 6
@@ -268,14 +264,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8431805831029227526, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_Name
-      value: player icon
+      value: player_icon
       objectReference: {fileID: 0}
     - target: {fileID: 8536793492143868755, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_Name
       value: EvacuationMinigame
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 4613066314995719448, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects:
     - {fileID: 4318338534848395615, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
     m_AddedGameObjects: []
