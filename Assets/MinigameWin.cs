@@ -29,6 +29,7 @@ public class MinigameWin : MonoBehaviour
         {
             QuestManager.Instance.CompleteQuest(q.Trim());
         }
+        GlobalManager.Instance.FreeMinigame();
         Destroy(gameObject);
         yield return null;
     }

@@ -29,7 +29,7 @@ public class AddressableScenes : MonoBehaviour
 
         yield return new WaitForSeconds(2.5f);
 
-        Addressables.UnloadSceneAsync(init_scene_op);
+        Addressables.UnloadSceneAsync(init_scene_op, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
 
         yield return new WaitForSeconds(2.5f);
         init_scene_op = Addressables.LoadSceneAsync("ShowcaseScene2", LoadSceneMode.Single);
