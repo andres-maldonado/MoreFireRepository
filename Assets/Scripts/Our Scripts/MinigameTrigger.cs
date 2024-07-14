@@ -7,7 +7,7 @@ using System;
 
 public class MinigameTrigger : MonoBehaviour
 {
-    [SerializeField] Object minigame;
+    [SerializeField] GameObject minigame;
     [SerializeField] bool oneTime;
     private bool inTrigger = false;
     private GameObject canvas;

@@ -283,6 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39128559588393763}
   - component: {fileID: 8520141538510648750}
+  - component: {fileID: 8231271860319279672}
   m_Layer: 3
   m_Name: Evacuation
   m_TagString: Untagged
@@ -321,8 +322,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adeef3d8b1a8a944cad4b93fd0379676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evac_game: {fileID: 2277312043528865681}
-  firststep: {fileID: 842220164143182955}
+  animator: {fileID: 9043465148730494591}
+  player_icon: {fileID: 8431805831029227526}
+--- !u!61 &8231271860319279672
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2277312043528865681}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.9, y: 0.1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.3}
+  m_EdgeRadius: 0
 --- !u!1 &8431805831029227526
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +399,7 @@ Transform:
   m_GameObject: {fileID: 8431805831029227526}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.59, y: 0.18, z: 0}
+  m_LocalPosition: {x: 4.563, y: 0.2, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -597,7 +643,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_MaskInteraction: 0
   m_Autodestruct: 0
-  m_Emitting: 1
+  m_Emitting: 0
   m_ApplyActiveColorSpace: 1
 --- !u!1 &8536793492143868755
 GameObject:
