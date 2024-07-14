@@ -4,22 +4,62 @@ using UnityEngine;
 
 public class EvacuationMinigame : MonoBehaviour
 {
-
-    public GameObject evac_game;
-    [SerializeField] BoxCollider2D firststep;
-
-    void OnTriggerEnter2D(Collider2D other)
+    [SerializeField] Animator animator;
+    [SerializeField] GameObject player_icon;
+    private Vector3 prev_pos;
+    private int step = 0;
+    private float scale = 2.83f;
+    void OnTriggerEnter2D()
     {
-        print("hello");
+        player_icon.GetComponent<TrailRenderer>().emitting = true;
+        if (step == 0)
+        {
+            player_icon.GetComponent<TrailRenderer>().AddPosition(prev_pos);
+            this.GetComponent<BoxCollider2D>().offset = new Vector2 (-0.4f, -2.35f);
+        }
+        else if (step == 1)
+        {
+            Vector3[] temp = {prev_pos, new Vector3 (-1.9f * scale,-1.4f * scale,0), new Vector3 (-0.38f * scale,-1.4f * scale,0)};
+            player_icon.GetComponent<TrailRenderer>().AddPositions(temp);
+            this.GetComponent<BoxCollider2D>().offset = new Vector2 (-2.1f, -2.5f);
+        }
+        else if (step == 2)
+        {
+            player_icon.GetComponent<TrailRenderer>().AddPosition(prev_pos);
+            this.GetComponent<BoxCollider2D>().offset = new Vector2 (-5.5f, -2.5f);
+        }
+        else if (step == 3)
+        {
+            player_icon.GetComponent<TrailRenderer>().AddPosition(prev_pos);
+            this.GetComponent<BoxCollider2D>().offset = new Vector2 (-5.5f, -3.5f);
+        }
+        else if (step == 4)
+        {
+            player_icon.GetComponent<TrailRenderer>().AddPosition(prev_pos);
+            this.GetComponent<BoxCollider2D>().offset = new Vector2 (-7f, -3.6f);
+        }
+        else if (step == 5)
+        {
+            player_icon.GetComponent<TrailRenderer>().AddPosition(prev_pos);
+            player_icon.GetComponent<TrailRenderer>().emitting = false;
+            player_icon.GetComponent<TrailRenderer>().Clear();
+            Destroy(player_icon);
+            animator.Play("MinigameMoveDown");
+        }
+        // else if (step == 6)
+        // {
+        //     player_icon.GetComponent<TrailRenderer>().Clear();
+        //     animator.Play("MinigameMoveDown");
+        // }
+        prev_pos = player_icon.transform.position;
+        step++;
     }
-    // Start is called before the first frame update
+    void OnTriggerExit2D()
+    {
+        player_icon.GetComponent<TrailRenderer>().emitting = false;
+    }
     void Start()
     {
-        firststep = firststep.GetComponent<BoxCollider2D>();
-    }
-
-    void Update()
-    {
-        
+        prev_pos = player_icon.transform.position;
     }
 }
