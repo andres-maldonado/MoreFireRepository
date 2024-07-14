@@ -23,8 +23,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - minigame
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0613428f9eee5439282a8370ee291382
-    m_Address: Test
+  - m_GUID: 23f0f5eea00da4434b005c6267acafea
+    m_Address: PhoneMinigame
     m_ReadOnly: 0
     m_SerializedLabels:
     - minigame

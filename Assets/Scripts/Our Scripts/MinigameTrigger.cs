@@ -13,6 +13,7 @@ public class MinigameTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (GlobalManager.Instance.IsComplete(minigame_name)) Destroy(gameObject);
         canvas = GameObject.FindWithTag("MainCanvas");
     }
 

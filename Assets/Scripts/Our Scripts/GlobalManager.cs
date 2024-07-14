@@ -7,16 +7,13 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class GlobalManager : MonoBehaviour
 {
-    // ###### FILE PATHS ######
-    // private string minigame_folder = "Assets/Resources/MinigamePrefabs";
-
-    // IMPORTANT: these file paths are relative to the Assets/Resources folder
-    private string error_path = "Error Message";
-    private string dialogue_path = "Dialogue/DialogueBox";
-
     public GameObject message_prefab, dialogue_prefab;
 
     private AsyncOperationHandle<GameObject> minigame_handle;
+
+    // this keeps track of which minigames have already been completed so the triggers don't respawn
+    private Dictionary<string, bool> minigame_completion = new Dictionary<string, bool>();
+
     public bool in_dialogue = false;
 
     public class GameTime {
@@ -66,47 +63,7 @@ public class GlobalManager : MonoBehaviour
         }
         else {
             _instance = this;
-
-            /*int id = 0;
-
-            // load in all minigame prefabs
-            foreach (string path in Directory.GetFiles(minigame_folder)) {
-                string[] split_path = path.Split("/");
-                string sub_path = "";
-
-                // removes the "Assets/Resources/" portion of the path to work
-                // properly with Resources.Load()
-                for (int j = 2; j < split_path.Length; j++) {
-                    sub_path += split_path[j];
-                    if (j != split_path.Length - 1) {
-                        sub_path += "/";
-                    }
-                }
-
-                // removes the .prefab suffix which breaks Resources.Load()
-                split_path = sub_path.Split(".");
-                sub_path = "";
-                for (int k = 0; k < split_path.Length - 1; k++) {
-                    sub_path += split_path[k];
-                    if (k != split_path.Length - 2) {
-                        sub_path += ".";
-                    }
-                }
-
-                // loads the actual prefab into the List containing all minigames
-                GameObject loaded = Resources.Load(sub_path) as GameObject;
-                if (loaded != null) {
-                    // object was successfully loaded
-                    minigames.Add(loaded);
-                    Debug.Log(sub_path + " (ID: " + id + ")");
-                    id++;
-                }
-            }*/
         }
-
-        // load prefabs once, then instantiate them later
-        //message_prefab = Resources.Load(error_path) as GameObject;
-        //dialogue_prefab = Resources.Load(dialogue_path) as GameObject;
     }
     // END SINGLETON BOILER-PLATE
 
@@ -120,12 +77,25 @@ public class GlobalManager : MonoBehaviour
     }
 
     // ###### CUSTOM PUBLIC METHODS ######
+
+    public bool IsComplete(string minigame_address) {
+        if (!minigame_completion.ContainsKey(minigame_address)) {
+            Debug.Log("Error: no minigame named " + minigame_address + ".");
+            return false;
+        }
+        return minigame_completion[minigame_address];
+    }
     
+    private string current_minigame;
     private IEnumerator LoadMinigame(string address) {
         minigame_handle = Addressables.LoadAssetAsync<GameObject>(address);
         yield return minigame_handle;
 
         if (minigame_handle.Status == AsyncOperationStatus.Succeeded) {
+            if (!minigame_completion.ContainsKey(address)) {
+                current_minigame = address;
+                minigame_completion.Add(address, false);
+            }
             Instantiate(minigame_handle.Result, GameObject.FindWithTag("MainCanvas").transform);
         }
     }
@@ -137,6 +107,8 @@ public class GlobalManager : MonoBehaviour
     }
 
     public void FreeMinigame() {
+        minigame_completion[current_minigame] = true;
+        current_minigame = "";
         Addressables.Release(minigame_handle);
     }
 
