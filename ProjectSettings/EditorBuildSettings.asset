@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ShowcaseScene1.unity
-    guid: 5d3d03966301147dbae0a8b9095b2396
+    path: Assets/Scenes/PrepInteriorHouse.unity
+    guid: 4a8781de17c101d4c94e58ce8ed43c67
   - enabled: 1
-    path: Assets/Scenes/ShowcaseScene2.unity
-    guid: 28b16391c65585b44ba4388e62ed7764
+    path: Assets/Scenes/PrepExterior.unity
+    guid: 56455736a16bc0f46a4acd1e9e39b15b
   m_configObjects: {}
