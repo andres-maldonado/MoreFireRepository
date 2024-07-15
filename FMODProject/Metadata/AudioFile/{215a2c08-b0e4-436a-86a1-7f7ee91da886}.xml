@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{215a2c08-b0e4-436a-86a1-7f7ee91da886}">
+		<property name="assetPath">
+			<value>KonbiniWallet.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.51137500000000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e7702afe-73be-408a-9b3a-926a22ff5c31}</destination>
+		</relationship>
+	</object>
+</objects>
