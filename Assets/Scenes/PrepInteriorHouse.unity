@@ -25755,7 +25755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b954c8c87895a3a4db54581af92ba5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigame: {fileID: 1083585179551813142, guid: 31dda1e804c4f224ba377886ec940f06, type: 3}
+  minigame: {fileID: 8536793492143868755, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
   oneTime: 0
   startSound:
     Guid:
