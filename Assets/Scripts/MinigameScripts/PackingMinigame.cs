@@ -8,8 +8,9 @@ public class PackingMinigame : MonoBehaviour
     // be packed
     [SerializeField] string[] should_pack;
     Dictionary<string, bool> packed = new Dictionary<string, bool>();
-
     BoxCollider2D collection_trigger;
+    bool trigger_once = true;
+    [SerializeField] bool non_essential = false;
 
     bool Validate() {
         // ensures all the items which are supposed to be packed actually exist
@@ -49,7 +50,7 @@ public class PackingMinigame : MonoBehaviour
                 has_won = false;
             }
         }
-        if (has_won) {
+        if (has_won && !non_essential) {
             GetComponentInParent<MinigameWin>().Win();
             Debug.Log("You win!");
         }
@@ -64,8 +65,24 @@ public class PackingMinigame : MonoBehaviour
             CheckForWin();
         }
         else {
-            GlobalManager.Instance.DisplayError("Hm, that's not quite right...", "You packed " + other.name + " in your emergency kit, but unfortunately it won't be helpful in the fire. Try again!");
-            Destroy(other.gameObject);
+            if (trigger_once)
+            {
+               GlobalManager.Instance.DisplayError("Hm, that's not quite right...", "You packed " + other.name + " in your emergency kit, but unfortunately it won't be helpful in the fire. You should take it out!"); 
+               trigger_once = false;
+            }
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other){
+        if (!packed.ContainsKey(other.name)) {
+            non_essential = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other){
+        if (!packed.ContainsKey(other.name)) {
+            non_essential = false;
+            CheckForWin();
         }
     }
 }

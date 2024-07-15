@@ -45,6 +45,7 @@ public class EvacuationMinigame : MonoBehaviour
             player_icon.GetComponent<TrailRenderer>().Clear();
             Destroy(player_icon);
             animator.Play("MinigameMoveDown");
+            GetComponentInParent<MinigameWin>().Win();
         }
         prev_pos = player_icon.transform.position;
         step++;
