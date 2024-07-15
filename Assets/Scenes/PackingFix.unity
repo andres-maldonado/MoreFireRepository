@@ -889,7 +889,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9090576710849194814, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
 --- !u!1001 &8303192359869388884
 PrefabInstance:
@@ -939,6 +942,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 412298859871323772, guid: 45b2217b8894a4846b3f1da213bd7eef, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 511507388}
     - target: {fileID: 2437686333823035395, guid: 45b2217b8894a4846b3f1da213bd7eef, type: 3}
       propertyPath: m_Name
       value: UpdatedPacking

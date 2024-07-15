@@ -20,13 +20,18 @@ public class evac_warning : MonoBehaviour
         {
             this.transform.position = new Vector2 (2.1f * scale, -2.99f * scale);
         }
-        else if (this.GetComponentInParent<EvacuationMinigame>().step == 3 || this.GetComponentInParent<EvacuationMinigame>().step == 5)
+        else if (this.GetComponentInParent<EvacuationMinigame>().step == 3)
         {
             this.transform.position = new Vector2 (-2.1f * scale, -3.4f * scale);
         }
         else if (this.GetComponentInParent<EvacuationMinigame>().step == 4)
         {
             this.transform.position = new Vector2 (-6.9f * scale, -2.3f * scale);
+        }
+        else if (this.GetComponentInParent<EvacuationMinigame>().step == 5)
+        {
+            this.transform.position = new Vector2 (-2.1f * scale, -3.4f * scale);
+            Destroy(this);
         }
     }
 }
