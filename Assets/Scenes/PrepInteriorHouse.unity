@@ -12284,7 +12284,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigame: {fileID: 2437686333823035395, guid: 45b2217b8894a4846b3f1da213bd7eef, type: 3}
   oneTime: 0
-  startSound: 
+  startSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &596228934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26050,7 +26056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b954c8c87895a3a4db54581af92ba5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigame: {fileID: 8123014525805291546, guid: 989086c5631f64aeda8573f011e4e507, type: 3}
+  minigame: {fileID: 8536793492143868755, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
   oneTime: 0
   startSound:
     Guid:

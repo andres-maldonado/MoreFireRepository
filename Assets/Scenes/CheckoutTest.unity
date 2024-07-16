@@ -214,6 +214,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &397918377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1448485886020603967, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_Name
+      value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <itemPickup>k__BackingField.Path
+      value: event:/ItemPickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <itemPickup>k__BackingField.Guid.Data1
+      value: 1244805166
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <itemPickup>k__BackingField.Guid.Data2
+      value: 1228736813
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <itemPickup>k__BackingField.Guid.Data3
+      value: -1684435015
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <itemPickup>k__BackingField.Guid.Data4
+      value: 1283449316
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
 --- !u!1 &683730518
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +401,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 683730522}
     m_Modifications:
+    - target: {fileID: 281600680249158187, guid: 6032f4e24e2ff804da1527712775e3d0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 440934211340135345, guid: 6032f4e24e2ff804da1527712775e3d0, type: 3}
       propertyPath: m_fontSize
       value: 800
@@ -434,3 +515,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 105427580}
   - {fileID: 683730522}
+  - {fileID: 397918377}

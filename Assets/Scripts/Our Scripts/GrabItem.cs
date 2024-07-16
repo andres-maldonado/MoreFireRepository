@@ -26,10 +26,8 @@ public class GrabItem : MonoBehaviour
         {
             inventory.GetComponent<Inventory>().inv.Add(item); //adds item to inventory
             render = this.GetComponent<SpriteRenderer>();
-            render.sprite = null;
             AudioManager.instance.PlayOneShot(FMODEvents.instance.itemPickup, this.transform.position);
-            //gets rid of the sprite from scene (but its still there if you want more)
-            // Destroy(gameObject);
+            Destroy(gameObject);
         }
         else if (in_trigger && Input.GetKeyDown(KeyCode.E) && inventory.GetComponent<Inventory>().inv.Count >= 5)
         {
