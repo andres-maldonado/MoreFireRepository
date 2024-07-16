@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using TMPro;
+using FMODUnity;
 
 public class CheckoutMinigame : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class CheckoutMinigame : MonoBehaviour
     [SerializeField] string[] items_checkout;
     Dictionary<string, bool> checked_out = new Dictionary<string, bool>();
     BoxCollider2D checkout_trigger;
+    [SerializeField] EventReference checkoutScan;
+    [SerializeField] EventReference konbiniCoin;
+    [SerializeField] EventReference konbiniWallet;
 
     bool finish_checkout = false;
 
@@ -29,6 +33,7 @@ public class CheckoutMinigame : MonoBehaviour
                 checkout_done();
             }
             Destroy(other.gameObject);
+            AudioManager.instance.PlayOneShot(checkoutScan, this.transform.position);
             done_pay();
         }
     }
@@ -47,6 +52,7 @@ public class CheckoutMinigame : MonoBehaviour
         {
             finish_checkout = true;
             wallet.Play("WalletEnter");
+            AudioManager.instance.PlayOneShot(konbiniWallet, this.transform.position);
             collider.size = new Vector2 (1.5f, 0.4f);
             collider.offset = new Vector2 (-5, -3.4f);
             checked_out.Add("Coin", false);

@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class PumpMinigame : MonoBehaviour
     [SerializeField] private float tire_deflate_rate = 1.0f;
     [SerializeField] private float breath_strength = 0.032f;
     private bool game_finished = false;
+    [SerializeField] EventReference bikePump;
 
     private Transform meter;
 
@@ -18,6 +20,7 @@ public class PumpMinigame : MonoBehaviour
     private void Update() {
         if (Input.GetKeyUp(KeyCode.E)) {
             tire_fullness += breath_strength;
+            AudioManager.instance.PlayOneShot(bikePump, this.transform.position);
         }
         //Debug.Log(tire_fullness);
         tire_fullness -= tire_deflate_rate * Time.deltaTime;

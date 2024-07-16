@@ -50,6 +50,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tire_deflate_rate: 0.2
   breath_strength: 0.075
+  bikePump:
+    Guid:
+      Data1: -1283065566
+      Data2: 1260674946
+      Data3: -1543120207
+      Data4: 1938515036
+    Path: event:/Minigames/Bike/BikePump
 --- !u!1 &3548607013009250480
 GameObject:
   m_ObjectHideFlags: 0

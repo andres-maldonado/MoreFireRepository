@@ -17023,7 +17023,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 85410152}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 2
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -25755,7 +25755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b954c8c87895a3a4db54581af92ba5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigame: {fileID: 8536793492143868755, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+  minigame: {fileID: 8123014525805291546, guid: 989086c5631f64aeda8573f011e4e507, type: 3}
   oneTime: 0
   startSound:
     Guid:

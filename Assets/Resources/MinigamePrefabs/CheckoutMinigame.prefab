@@ -485,6 +485,27 @@ MonoBehaviour:
   items_checkout:
   - bread
   - extinguisher
+  checkoutScan:
+    Guid:
+      Data1: -886396550
+      Data2: 1188220199
+      Data3: 631102614
+      Data4: -2066738104
+    Path: event:/Minigames/Checkout/CheckoutScan
+  konbiniCoin:
+    Guid:
+      Data1: 1765972145
+      Data2: 1217323565
+      Data3: 1515348099
+      Data4: 1439029150
+    Path: event:/Minigames/Checkout/KonbiniCoin
+  konbiniWallet:
+    Guid:
+      Data1: 1343558141
+      Data2: 1259238356
+      Data3: -405306186
+      Data4: 1446725354
+    Path: event:/Minigames/Checkout/KonbiniWallet
 --- !u!61 &2418067825170910616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -660,6 +681,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b91e1375804ad69e763f2f60f1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragItem:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!50 &9088064069243364548
 Rigidbody2D:
   serializedVersion: 4
@@ -1317,6 +1345,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b91e1375804ad69e763f2f60f1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragItem:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!50 &7368906127574972205
 Rigidbody2D:
   serializedVersion: 4
@@ -1699,6 +1734,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b91e1375804ad69e763f2f60f1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragItem:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!50 &6190970342106151667
 Rigidbody2D:
   serializedVersion: 4
