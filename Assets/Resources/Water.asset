@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Water
   desc: Water, so refreshing
-  img: {fileID: 21300000, guid: 5207dea555111714b84c006120419541, type: 3}
+  img: {fileID: 21300000, guid: 14ef991c625b4134dac4cb0e72671aa0, type: 3}

@@ -595,6 +595,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b91e1375804ad69e763f2f60f1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragItem:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!50 &527628397476346980
 Rigidbody2D:
   serializedVersion: 4
@@ -783,7 +790,7 @@ GameObject:
   - component: {fileID: 9043465148730494591}
   - component: {fileID: 2632458368972523937}
   m_Layer: 0
-  m_Name: EvacuationMinigame
+  m_Name: MapMinigame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -914,7 +921,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 25f728377f910204fbe54420fce2bb85, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.81960785, g: 0.4745098, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

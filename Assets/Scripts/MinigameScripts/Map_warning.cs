@@ -13,6 +13,7 @@ public class evac_warning : MonoBehaviour
     }
     public void OnTriggerEnter2D()
     {
+        this.transform.parent.transform.GetChild(2).GetComponent<TrailRenderer>().enabled = false;
         if (this.GetComponentInParent<EvacuationMinigame>().step == 0)
         {
             GlobalManager.Instance.DisplayError("There might be a more efficient route...", "Let's try finding a more direct path!");
@@ -63,6 +64,11 @@ public class evac_warning : MonoBehaviour
         else if (this.GetComponentInParent<EvacuationMinigame>().step == 6)
         {
             Destroy(this);
+        }
+
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            this.transform.parent.transform.GetChild(2).GetComponent<TrailRenderer>().enabled = true;
         }
     }
 }
