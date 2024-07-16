@@ -71,7 +71,6 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAudio.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\InventoryUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\Scripts\MinigameScripts\EvacuationMinigame.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\FaceCamera.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Teleporter.cs" />
@@ -134,6 +133,7 @@
     <Compile Include="Assets\Scripts\Our Scripts\Item.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\MinigameScripts\Map_warning.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\Error Message.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\MinigameWin.cs" />
@@ -152,6 +152,7 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\TriggerDialogue.cs" />
+    <Compile Include="Assets\Scripts\MinigameScripts\MapMinigame.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAnimController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
@@ -172,7 +173,6 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Damagers\MeleeWeapon.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerIdleBehaviour.cs" />
-    <Compile Include="Assets\Scripts\MinigameScripts\evac_warning.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\SpeakerLibrary.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\StealthRespawn.cs" />
