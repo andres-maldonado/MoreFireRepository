@@ -8254,6 +8254,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7116449916861649292, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
+      propertyPath: speed
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 9088656780719252597, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_Name
       value: Player Character
@@ -9399,7 +9403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd42827032b34151a76ae32fabcf085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue_file_name: prep_intro
+  dialogue_file_name: evacstart
   minigame_id: -1
   quests_to_start: 
   quests_to_complete: 
