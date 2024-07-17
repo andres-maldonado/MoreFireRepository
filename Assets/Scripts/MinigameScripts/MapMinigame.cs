@@ -53,7 +53,7 @@ public class EvacuationMinigame : MonoBehaviour
             animator.Play("MinigameMoveDown");
             GetComponentInParent<MinigameWin>().Win();
         }
-        prev_pos = player_icon.transform.position;
+        prev_pos = new Vector3 (player_icon.transform.position.x, player_icon.transform.position.y, 2896.903f);
         step++;
     }
     void OnTriggerExit2D()
@@ -62,6 +62,6 @@ public class EvacuationMinigame : MonoBehaviour
     }
     void Start()
     {
-        prev_pos = player_icon.transform.position;
+        prev_pos = new Vector3 (player_icon.transform.position.x, player_icon.transform.position.y, 2896.903f);
     }
 }
