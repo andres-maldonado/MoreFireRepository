@@ -14663,6 +14663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 1968262346}
+  in_trigger: 0
 --- !u!61 &736653205
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14746,9 +14747,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 180786079
+  m_SortingLayer: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 14ef991c625b4134dac4cb0e72671aa0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14769,7 +14770,7 @@ Transform:
   m_GameObject: {fileID: 736653203}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.582, y: -0.57, z: -2.854683}
+  m_LocalPosition: {x: -6.846, y: -0.496, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -5,19 +5,28 @@ using UnityEngine;
 public class GrabItem : MonoBehaviour
 {
     public GameObject inventory;
-    SpriteRenderer render;
-    private void OnTriggerStay2D()
+    public bool in_trigger = false;
+    private void OnTriggerEnter2D()
     {
-        if (Input.GetKeyDown(KeyCode.E) && inventory.GetComponent<Inventory>().inv.Count < 5)
+        in_trigger = true;
+    }
+
+    private void OnTriggerExit2D()
+    {
+        in_trigger = false;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && in_trigger && inventory.GetComponent<Inventory>().inv.Count < 5)
         {
             Item obj = ScriptableObject.CreateInstance<Item>();
             obj.Init(this.gameObject.name, this.gameObject.name, this.gameObject.transform.GetComponent<SpriteRenderer>().sprite);
             inventory.GetComponent<Inventory>().inv.Add(obj);
-            render = this.GetComponent<SpriteRenderer>();
             AudioManager.instance.PlayOneShot(FMODEvents.instance.itemPickup, this.transform.position);
-            Destroy(this);
+            Destroy(this.gameObject);
         }
-        else if (Input.GetKeyDown(KeyCode.E) && inventory.GetComponent<Inventory>().inv.Count >= 5)
+        else if (Input.GetKeyDown(KeyCode.E) && in_trigger && inventory.GetComponent<Inventory>().inv.Count >= 5)
         {
             print("Inventory is full");
         }
