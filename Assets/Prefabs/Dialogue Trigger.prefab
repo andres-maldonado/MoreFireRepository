@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226537220969778991}
   - component: {fileID: 2449410378972757896}
-  - component: {fileID: 2784184104858489085}
+  - component: {fileID: 8824044153227559786}
   m_Layer: 0
   m_Name: Dialogue Trigger
   m_TagString: Untagged
@@ -79,7 +79,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2784184104858489085
+--- !u!114 &8824044153227559786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,13 +88,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7037977476036806933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb22a3bd5b6fe1a4894a616921bc9a06, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cd42827032b34151a76ae32fabcf085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextFileAsset: {fileID: 0}
-  waitTime: 0.5
-  singleUseDialogue: 1
-  hasBeenUsed: 0
+  dialogue_file_name: dialogue_test_file
+  minigame_id: -1
+  quests_to_start: 
+  quests_to_complete: 
+  speaker_sprite: {fileID: 0}
+  fetch_item: {fileID: 0}
+  interactToTrigger: 1
 --- !u!1 &9088423234529894324
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,9 +169,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 180786079
+  m_SortingLayer: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 4529ba260ec570348bf31482413df176, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

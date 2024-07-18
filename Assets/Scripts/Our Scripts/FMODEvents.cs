@@ -13,6 +13,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference itemPickup { get; private set; }
     [field: Header("Minigame SFX")]
     [field: SerializeField] public EventReference minigameWinSound {  get; private set; }
+    [field: SerializeField] public EventReference backpackStart { get; private set; }
     public static FMODEvents instance {  get; private set; }
 
     private void Awake()

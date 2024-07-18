@@ -11,6 +11,31 @@ public class Inventory : MonoBehaviour
     public GameObject slot3;
     public GameObject slot4;
     public GameObject slot5;
+
+    public bool in_inventory(string item_name)
+    {
+        foreach(Item item in inv)
+        {
+            if (item.name == item_name)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void remove_item(string item_name)
+    {
+        foreach(Item item in inv)
+        {
+            if (item.name == item_name)
+            {
+                inv.Remove(item);
+                clear_all_sprites();
+                break;
+            }
+        }
+    }
     
     void get_item_sprite(List<Item> inventory, GameObject slot, int inventory_num)
     {

@@ -13,4 +13,12 @@ public class LoadSceneOnClick : MonoBehaviour {
     public void LoadByName(string scene_name, string entrance) {
         sceneManager.LoadScene(scene_name, entrance);
     }
+    public void Peepeepoopoo()
+    {
+        sceneManager.LoadScene(1, "1");
+    }
+    public void MahBaws()
+    {
+        Application.Quit();
+    }
 }

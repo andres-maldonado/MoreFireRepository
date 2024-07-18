@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb8ca8e504ce48a9aa7cb4b8fecbc03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message_prefab: {fileID: 0}
-  dialogue_prefab: {fileID: 965006869141837899, guid: 5fe5e0207da9e254ab58956252031efb, type: 3}
+  message_prefab: {fileID: 8087079555791211607, guid: 25186c7904cee184b81887004e56f272, type: 3}
+  dialogue_prefab: {fileID: 8701880014743609169, guid: ff0c140a2938e493ab62fee16441b4bd, type: 3}
   in_dialogue: 0

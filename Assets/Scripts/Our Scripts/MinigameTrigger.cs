@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Animations;
 using UnityEngine;
+using FMODUnity;
+using System;
 
 public class MinigameTrigger : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class MinigameTrigger : MonoBehaviour
     [SerializeField] bool oneTime;
     private bool inTrigger = false;
     private GameObject canvas;
+    [SerializeField] EventReference startSound;
 
     // Start is called before the first frame update
     void Start()
@@ -42,8 +45,10 @@ public class MinigameTrigger : MonoBehaviour
 
     private void StartGame()
     {
+        //AudioManager.instance.PlayOneShot(FMODEvents.instance.startSound);
         GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(true);
         //Instantiate(minigame, canvas.transform);
+        AudioManager.instance.PlayOneShot(startSound, this.transform.position);
         GlobalManager.Instance.StartMinigame(minigame_name);
         Destroy(gameObject);
     }

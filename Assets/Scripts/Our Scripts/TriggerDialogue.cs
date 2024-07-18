@@ -13,7 +13,7 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private string quests_to_start;
     [SerializeField] private string quests_to_complete;
     [SerializeField] private Sprite speaker_sprite;
-    [SerializeField] private Item fetch_item;
+    [SerializeField] private string fetch_item;
     [SerializeField] private bool interactToTrigger = true;
 
     private bool player_near = false;
@@ -22,17 +22,17 @@ public class TriggerDialogue : MonoBehaviour
 
     private void Update() {
         if (player_near && (Input.GetKeyDown(KeyCode.E)||!interactToTrigger) && !GlobalManager.Instance.in_dialogue) {
+            Debug.Log("Player Triggered");
             GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(true); // stop movement
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open close inventory
             {
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
             }
-            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Contains(fetch_item)) {
+            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().in_inventory(fetch_item)) {
                 dialogue_file_name = "dialogue_test_postfetch";
                 quests_to_complete = "water_fetch";
                 quests_to_start = "";
-                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Remove(fetch_item);
-                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().clear_all_sprites();
+                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().remove_item(fetch_item);
             }
             GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
             GlobalManager.Instance.in_dialogue = true;
@@ -46,6 +46,7 @@ public class TriggerDialogue : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         if (other.GetComponent<NewPlayerMovement>() != null) {
             player_near = true;
+            Debug.Log("Player Entered");
         }
     }
 
