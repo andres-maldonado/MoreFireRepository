@@ -71928,6 +71928,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: minigame
+      value: 
+      objectReference: {fileID: 4899945111046429214, guid: 6032f4e24e2ff804da1527712775e3d0, type: 3}
     - target: {fileID: 9177342171301116380, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.914
