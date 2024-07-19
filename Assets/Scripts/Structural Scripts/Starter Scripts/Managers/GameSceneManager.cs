@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceProviders;
 
 public class GameSceneManager : MonoBehaviour
 {
@@ -26,6 +29,8 @@ public class GameSceneManager : MonoBehaviour
     GameObject player;
     bool canTransition;
 
+    AsyncOperationHandle<SceneInstance> scene_handle;
+
 //Like the GameManager, this should be it's own gameobject
 
 [Tooltip("The black screen transition that will be used")]
@@ -45,24 +50,28 @@ public class GameSceneManager : MonoBehaviour
 
 
     //This function should be called to other scripts so that way you have the transition working
-    public void LoadScene(int SceneIndex, string entrance)
+    public void LoadScene(string scene_name, string entrance)
     {
         if (canTransition)
         {
             StartCoroutine(FadeOut());
-            StartCoroutine(LoadAsyncScene(SceneIndex, entrance));
+            StartCoroutine(LoadAsyncScene(scene_name, entrance));
         }
     }
 
-    IEnumerator LoadAsyncScene(int SceneIndex, string entrance)
+    IEnumerator LoadAsyncScene(string scene_name, string entrance)
     {
         yield return new WaitForSeconds(.5f);
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneIndex);
+
+        scene_handle = Addressables.LoadSceneAsync(scene_name, LoadSceneMode.Single);
+        yield return scene_handle;
+
+        /*AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneIndex);
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
             yield return null;
-        }
+        }*/
         Transform entranceCoord = GameObject.Find(entrance).transform;
         player = GameObject.FindWithTag("Player");
         player.transform.localPosition = entranceCoord.transform.localPosition;

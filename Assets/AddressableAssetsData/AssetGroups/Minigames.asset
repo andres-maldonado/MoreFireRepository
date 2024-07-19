@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Minigames
+  m_EditorClassIdentifier: 
+  m_GroupName: Minigames
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e5fbecd58c2414d29bb0566c354e4e7e
+  m_SerializeEntries:
+  - m_GUID: 989086c5631f64aeda8573f011e4e507
+    m_Address: BikeMinigame
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - minigame
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 23f0f5eea00da4434b005c6267acafea
+    m_Address: PhoneMinigame
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - minigame
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45b2217b8894a4846b3f1da213bd7eef
+    m_Address: PackingMinigame
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - minigame
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 8b174af6aea80457a8b0a232aa777f5e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4c165c68ff8f54f34b65bcd227f69576, type: 2}
+    - {fileID: 11400000, guid: 9fefffb027ab943a5996a21feddc834c, type: 2}

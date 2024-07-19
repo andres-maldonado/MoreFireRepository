@@ -14,18 +14,13 @@ public class MinigameWin : MonoBehaviour
         player = GameObject.FindWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Win()
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.minigameWinSound, this.transform.position);
         GetComponent<Animator>().SetBool("isBeaten", true);
         StartCoroutine(EndGame());
     }
+
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(.5f);
@@ -34,6 +29,7 @@ public class MinigameWin : MonoBehaviour
         {
             QuestManager.Instance.CompleteQuest(q.Trim());
         }
+        GlobalManager.Instance.FreeMinigame();
         Destroy(gameObject);
         yield return null;
     }
