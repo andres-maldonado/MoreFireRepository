@@ -35,7 +35,6 @@ public class TriggerDialogue : MonoBehaviour
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().remove_item(fetch_item);
             }
             GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
-            GlobalManager.Instance.in_dialogue = true;
             if(!interactToTrigger)
             {
                 Destroy(gameObject);

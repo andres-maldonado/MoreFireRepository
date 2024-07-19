@@ -121,5 +121,6 @@ public class GlobalManager : MonoBehaviour
         GameObject d = Instantiate(dialogue_prefab, GameObject.FindWithTag("MainCanvas").transform);
         DialogueScript s = d.GetComponent<DialogueScript>();
         s.Set(branch_name, sp_sprite, game_id, quests_to_start, quests_to_end, tpl);
+        in_dialogue = true;
     }
 }
