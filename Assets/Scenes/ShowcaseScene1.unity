@@ -363,6 +363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSceneManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6248706224470645796, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9131,7 +9135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &370941096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9148,8 +9152,8 @@ MonoBehaviour:
   minigame_id: -1
   quests_to_start: 
   quests_to_complete: 
-  speaker_sprite: {fileID: 0}
-  fetch_item: {fileID: 0}
+  speaker_sprite: {fileID: 1422549481, guid: e81c73c86b360c34aa3825152056f16d, type: 3}
+  fetch_item: {fileID: 11400000, guid: c4c8f5685376147e6a080a2929ff928a, type: 2}
   interactToTrigger: 0
 --- !u!61 &370941097
 BoxCollider2D:
@@ -15655,6 +15659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlobalManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5041791897672239202, guid: c0388d027459b44dea0d968182658a10, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17296,6 +17304,10 @@ PrefabInstance:
       propertyPath: scene
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: scene_name
+      value: ShowcaseScene2
+      objectReference: {fileID: 0}
     - target: {fileID: 1685593635682384271, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -17522,6 +17534,10 @@ PrefabInstance:
     - target: {fileID: 3201730289575543248, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
       propertyPath: m_Name
       value: QuestManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201730289575543248, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7263854640418022599, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
       propertyPath: questlog_UI
@@ -20640,6 +20656,10 @@ PrefabInstance:
       propertyPath: minigame
       value: 
       objectReference: {fileID: 8123014525805291546, guid: 989086c5631f64aeda8573f011e4e507, type: 3}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: minigame_name
+      value: BikeMinigame
+      objectReference: {fileID: 0}
     - target: {fileID: 9116064496366930636, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.25
@@ -20700,6 +20720,10 @@ PrefabInstance:
     - target: {fileID: 1448485886020603967, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
       propertyPath: m_Name
       value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448485886020603967, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2429283934144682599, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
       propertyPath: m_LocalPosition.x

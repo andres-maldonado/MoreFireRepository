@@ -72,6 +72,7 @@ public class QuestManager : MonoBehaviour
     }
 
     public void CompleteQuest(string quest_name) {
+        if (quest_name.Length == 0) return;
         if (active_quests.Contains(quest_bank[quest_name].Item1)) {
             active_quests.Remove(quest_bank[quest_name].Item1);
             Debug.Log("Why young hero, it seems you have completed the " + quest_name + " quest!");

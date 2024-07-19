@@ -8,6 +8,7 @@ public class SceneTrigger : MonoBehaviour
     GameSceneManager gameSceneManager;
     private bool inTrigger = false;
     public int scene;
+    public string scene_name;
     public string exit;
     Animator doorIcon;
     // Start is called before the first frame update
@@ -26,7 +27,7 @@ public class SceneTrigger : MonoBehaviour
             {
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
             }
-            gameSceneManager.LoadScene(scene, exit);
+            gameSceneManager.LoadScene(scene_name, exit);
         }
     }
 

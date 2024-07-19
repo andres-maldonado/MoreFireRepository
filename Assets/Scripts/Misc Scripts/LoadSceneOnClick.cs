@@ -7,14 +7,10 @@ public class LoadSceneOnClick : MonoBehaviour {
     [SerializeField] GameSceneManager sceneManager;
     public void LoadByIndex(int sceneIndex, string entrance)
     {
-        sceneManager.LoadScene(sceneIndex, entrance);
+        //sceneManager.LoadScene(sceneIndex, entrance);
     }
-    public void Peepeepoopoo()
-    {
-        sceneManager.LoadScene(1, "1");
-    }
-    public void MahBaws()
-    {
-        Application.Quit();
+
+    public void LoadByName(string scene_name, string entrance) {
+        sceneManager.LoadScene(scene_name, entrance);
     }
 }

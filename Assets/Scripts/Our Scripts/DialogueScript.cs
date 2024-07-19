@@ -73,7 +73,7 @@ public class DialogueScript : MonoBehaviour
             }
 
             if (minigame_id > -1) {
-                GlobalManager.Instance.StartMinigame(minigame_id);
+                GlobalManager.Instance.StartMinigame("BikeMinigame");
             }
         }
         prompter_time = -3.0;

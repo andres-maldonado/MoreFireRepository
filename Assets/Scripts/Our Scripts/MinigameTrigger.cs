@@ -7,7 +7,7 @@ using System;
 
 public class MinigameTrigger : MonoBehaviour
 {
-    [SerializeField] GameObject minigame;
+    [SerializeField] private string minigame_name;
     [SerializeField] bool oneTime;
     private bool inTrigger = false;
     private GameObject canvas;
@@ -16,6 +16,7 @@ public class MinigameTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (GlobalManager.Instance.IsComplete(minigame_name)) Destroy(gameObject);
         canvas = GameObject.FindWithTag("MainCanvas");
     }
 
@@ -46,8 +47,9 @@ public class MinigameTrigger : MonoBehaviour
     {
         //AudioManager.instance.PlayOneShot(FMODEvents.instance.startSound);
         GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(true);
-        Instantiate(minigame, canvas.transform);
+        //Instantiate(minigame, canvas.transform);
         AudioManager.instance.PlayOneShot(startSound, this.transform.position);
+        GlobalManager.Instance.StartMinigame(minigame_name);
         Destroy(gameObject);
     }
 }

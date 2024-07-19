@@ -264,6 +264,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1424139805}
     m_Modifications:
+    - target: {fileID: 725979291009808118, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 955563248908239849, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_Name
       value: Evacuation
@@ -292,6 +296,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2610517231003625200, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2630249888299700746, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -303,6 +311,14 @@ PrefabInstance:
     - target: {fileID: 4318338534848395615, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075281263639423808, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_Name
+      value: step5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075281263639423808, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5937367284972722251, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_LocalScale.x
@@ -368,6 +384,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5992215356306163271, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6157745867926565567, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -379,6 +399,18 @@ PrefabInstance:
     - target: {fileID: 7032626313210197588, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_SortingOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621007661258018521, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_Name
+      value: step6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621007661258018521, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192759702487856073, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8231271860319279672, guid: 124e03747fb3cfd449185630f3d1fc3e, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x

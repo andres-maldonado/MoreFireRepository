@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class Level_Change : MonoBehaviour
 {
     public int levelIndex = 0;
+    public string levelName = "";
     public string exit;
     //IE if you want the fade to black to work
     public bool useGameSceneManager = true;
@@ -19,11 +20,11 @@ public class Level_Change : MonoBehaviour
             //The scene number to load (in File->Build Settings)
             if (useGameSceneManager)
             {
-                GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GameSceneManager>().LoadScene(levelIndex, exit);
+                GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GameSceneManager>().LoadScene(levelName, exit);
             }
             else
             {
-                SceneManager.LoadScene(levelIndex);
+                SceneManager.LoadScene(levelName);
             }
         }
     }
