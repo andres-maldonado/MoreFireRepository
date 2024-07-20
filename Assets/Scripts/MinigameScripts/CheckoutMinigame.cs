@@ -7,6 +7,7 @@ using FMODUnity;
 
 public class CheckoutMinigame : MonoBehaviour
 {
+    [SerializeField] GameObject inventory;
     [SerializeField] BoxCollider2D collider;
     [SerializeField] Animator wallet;
     [SerializeField] private TMP_Text item_listUI;
@@ -36,6 +37,21 @@ public class CheckoutMinigame : MonoBehaviour
             AudioManager.instance.PlayOneShot(checkoutScan, this.transform.position);
             done_pay();
         }
+    }
+
+    void add_to_inv()
+    {
+        Item obj = ScriptableObject.CreateInstance<Item>();
+        obj.Init("batteries", "mmmm batteries", Resources.Load<Sprite>("battery"));
+        inventory.GetComponent<Inventory>().inv.Add(obj);
+
+        Item obj2 = ScriptableObject.CreateInstance<Item>();
+        obj2.Init("energybar", "mmmm energybar", Resources.Load<Sprite>("energy_food"));
+        inventory.GetComponent<Inventory>().inv.Add(obj2);
+
+        Item obj3 = ScriptableObject.CreateInstance<Item>();
+        obj3.Init("medkit", "mmmm medkit", Resources.Load<Sprite>("first_aid_kit"));
+        inventory.GetComponent<Inventory>().inv.Add(obj3);
     }
 
     void checkout_done()
@@ -71,6 +87,7 @@ public class CheckoutMinigame : MonoBehaviour
         }
         if (paid)
         {
+            add_to_inv();
             wallet.Play("MinigameMoveDown");
             GetComponentInParent<MinigameWin>().Win();
         }
