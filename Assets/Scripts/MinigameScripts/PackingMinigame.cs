@@ -20,7 +20,6 @@ public class PackingMinigame : MonoBehaviour
                 return false;
             }
         }
-
         return true;
     }
 
