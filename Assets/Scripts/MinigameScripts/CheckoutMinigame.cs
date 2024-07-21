@@ -74,6 +74,8 @@ public class CheckoutMinigame : MonoBehaviour
         if (paid)
         {
             wallet.Play("MinigameMoveDown");
+            // this.transform.Find("SceneTrigger").gameObject.GetComponent<SceneTrigger>().evening = true;
+            // print(this.transform.Find("SceneTrigger").gameObject.GetComponent<SceneTrigger>().evening);
             GetComponentInParent<MinigameWin>().Win();
         }
     }
