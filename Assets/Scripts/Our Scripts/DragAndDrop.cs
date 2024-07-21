@@ -8,7 +8,6 @@ public class DragAndDrop : MonoBehaviour
     [SerializeField] EventReference dragItem;
     [SerializeField] private bool flip_direction = true;
     // moves the object to the mouse location and stops its velocity
-
     private Rigidbody2D rb;
 
     void Start() {
@@ -16,7 +15,7 @@ public class DragAndDrop : MonoBehaviour
     }
 
     void OnMouseDrag() {
-        Vector3 mouse_position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z + Camera.main.nearClipPlane));
+        Vector3 mouse_position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x + Camera.main.transform.position.x, Input.mousePosition.y, Camera.main.transform.position.z + Camera.main.nearClipPlane));
         mouse_position.z = 0f;
         Debug.Log(mouse_position);
         AudioManager.instance.PlayOneShot(dragItem, this.transform.position);

@@ -17023,7 +17023,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 85410152}
-  m_PlaneDistance: 2
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -17296,6 +17296,10 @@ PrefabInstance:
       propertyPath: scene
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: scene_name
+      value: PrepExterior
+      objectReference: {fileID: 0}
     - target: {fileID: 1685593635682384271, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -17334,7 +17338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5552439527513669480, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5552439527513669480, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25583,7 +25587,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b954c8c87895a3a4db54581af92ba5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigame_name: 
+  inventory: {fileID: 1968262346}
+  item_reqs: []
+  minigame_name: MapMinigame
   oneTime: 0
   startSound:
     Guid:

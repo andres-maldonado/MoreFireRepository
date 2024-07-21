@@ -12789,6 +12789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b954c8c87895a3a4db54581af92ba5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  item_reqs: []
   minigame_name: 
   oneTime: 0
   startSound:
@@ -28835,6 +28837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b954c8c87895a3a4db54581af92ba5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  item_reqs: []
   minigame_name: 
   oneTime: 0
   startSound:
