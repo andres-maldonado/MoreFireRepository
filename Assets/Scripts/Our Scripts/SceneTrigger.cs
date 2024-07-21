@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneTrigger : MonoBehaviour
 {
-    GameSceneManager gameSceneManager;
+    NewGameSceneManager gameSceneManager;
     private bool inTrigger = false;
     public int scene;
     public string scene_name;
@@ -14,7 +14,7 @@ public class SceneTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameSceneManager = GameSceneManager.Instance;
+        gameSceneManager = NewGameSceneManager.Instance;
         doorIcon = transform.GetChild(0).GetComponent<Animator>();
     }
 
