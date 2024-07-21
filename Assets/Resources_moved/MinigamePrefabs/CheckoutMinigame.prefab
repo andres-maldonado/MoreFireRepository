@@ -614,7 +614,7 @@ Transform:
   m_GameObject: {fileID: 3890041099755398038}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.68, y: 1.11, z: 0}
+  m_LocalPosition: {x: 0.94, y: 1.43, z: 0}
   m_LocalScale: {x: 0.3, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1194,7 +1194,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  flip_direction: 1
+  flip_direction: 0
 --- !u!50 &3901996687290838635
 Rigidbody2D:
   serializedVersion: 4
@@ -1535,7 +1535,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  flip_direction: 1
+  flip_direction: 0
 --- !u!50 &7368906127574972205
 Rigidbody2D:
   serializedVersion: 4
@@ -1925,7 +1925,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  flip_direction: 1
+  flip_direction: 0
 --- !u!50 &6190970342106151667
 Rigidbody2D:
   serializedVersion: 4

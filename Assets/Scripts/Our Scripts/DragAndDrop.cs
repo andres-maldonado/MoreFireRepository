@@ -11,7 +11,7 @@ public class DragAndDrop : MonoBehaviour
     void OnMouseDrag() {
         Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
 
-        Vector3 mouse_position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z + Camera.main.nearClipPlane));
+        Vector3 mouse_position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x + Camera.main.transform.position.x, Input.mousePosition.y, Camera.main.transform.position.z + Camera.main.nearClipPlane));
         mouse_position.z = 0f;
         Debug.Log(mouse_position.z);
         AudioManager.instance.PlayOneShot(dragItem, this.transform.position);
