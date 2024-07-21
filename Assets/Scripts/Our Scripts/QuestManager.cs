@@ -7,6 +7,7 @@ using TMPro;
 
 public class QuestManager : MonoBehaviour
 {
+    [SerializeField] GameObject inventory;
     [SerializeField] private TMP_Text questlog_UI;
 
     public List<Quest> all_quests = new List<Quest>();
@@ -70,6 +71,29 @@ public class QuestManager : MonoBehaviour
             UpdateLogText();
         }
     }
+    void add_to_inv()
+    {
+        if (quest_bank["route_map"].Item2 == true)
+        {
+            Item obj = ScriptableObject.CreateInstance<Item>();
+            obj.Init("map", "mmmm map", Resources.Load<Sprite>("map"));
+            inventory.GetComponent<Inventory>().inv.Add(obj);
+        }
+        else if (quest_bank["checkout"].Item2 == true)
+        {
+            Item obj = ScriptableObject.CreateInstance<Item>();
+            obj.Init("batteries", "mmmm batteries", Resources.Load<Sprite>("battery"));
+            inventory.GetComponent<Inventory>().inv.Add(obj);
+
+            Item obj2 = ScriptableObject.CreateInstance<Item>();
+            obj2.Init("energybar", "mmmm energybar", Resources.Load<Sprite>("energy_food"));
+            inventory.GetComponent<Inventory>().inv.Add(obj2);
+
+            Item obj3 = ScriptableObject.CreateInstance<Item>();
+            obj3.Init("medkit", "mmmm medkit", Resources.Load<Sprite>("first_aid_kit"));
+            inventory.GetComponent<Inventory>().inv.Add(obj3);
+        }        
+    }
 
     public void CompleteQuest(string quest_name) {
         if (quest_name.Length == 0) return;
@@ -78,6 +102,7 @@ public class QuestManager : MonoBehaviour
             Debug.Log("Why young hero, it seems you have completed the " + quest_name + " quest!");
             quest_bank[quest_name] = (quest_bank[quest_name].Item1, true);
             UpdateLogText();
+            add_to_inv();
         }
         else {
             Debug.LogError("Tried to complete quest \"" + quest_name + "\", but this quest was never started!");

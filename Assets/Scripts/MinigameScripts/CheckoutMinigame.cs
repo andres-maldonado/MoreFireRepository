@@ -7,6 +7,7 @@ using FMODUnity;
 
 public class CheckoutMinigame : MonoBehaviour
 {
+    [SerializeField] GameObject inventory;
     [SerializeField] BoxCollider2D collider;
     [SerializeField] Animator wallet;
     [SerializeField] private TMP_Text item_listUI;

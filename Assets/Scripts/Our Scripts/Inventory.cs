@@ -59,13 +59,6 @@ public class Inventory : MonoBehaviour
         clear_sprite(slot5);
     }
 
-    void Start()
-    {
-        Item item1 = ScriptableObject.CreateInstance<Item>();
-        item1.Init("bread", "very yum very soft", Resources.Load<Sprite>("bread"));
-        inv.Add(item1);
-    }
-
     void Update() //makes sure that the inventory is always displaying the correct items
     {
         if (inv.Count >= 1)

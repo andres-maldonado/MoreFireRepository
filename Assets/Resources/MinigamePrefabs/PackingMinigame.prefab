@@ -126,6 +126,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b91e1375804ad69e763f2f60f1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragItem:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  flip_direction: 1
 --- !u!61 &7801213988273247402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -342,6 +350,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b91e1375804ad69e763f2f60f1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragItem:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  flip_direction: 1
 --- !u!1 &2260100170874813390
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +529,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b91e1375804ad69e763f2f60f1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragItem:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  flip_direction: 1
 --- !u!1 &2449997871628733793
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +595,7 @@ MonoBehaviour:
   - Extinguisher
   - FirstAid
   - Batteries
+  non_essential: 0
 --- !u!114 &7165006285729771525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,6 +816,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b91e1375804ad69e763f2f60f1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragItem:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  flip_direction: 1
 --- !u!1 &5249452785173906628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1316,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b91e1375804ad69e763f2f60f1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragItem:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  flip_direction: 1
 --- !u!61 &6773527119180765806
 BoxCollider2D:
   m_ObjectHideFlags: 0
