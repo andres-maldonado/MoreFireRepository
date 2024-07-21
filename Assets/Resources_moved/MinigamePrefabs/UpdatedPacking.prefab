@@ -237,6 +237,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  flip_direction: 0
 --- !u!61 &3007181689661137388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -460,6 +461,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  flip_direction: 0
 --- !u!1 &2131891536740761246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1096,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  flip_direction: 0
 --- !u!1 &5995698802282714877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1348,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  flip_direction: 0
 --- !u!61 &8208248645061066893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1558,6 +1562,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  flip_direction: 0
 --- !u!1 &7904694976297947143
 GameObject:
   m_ObjectHideFlags: 0
