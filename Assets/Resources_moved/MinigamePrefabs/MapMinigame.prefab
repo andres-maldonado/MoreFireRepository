@@ -1538,7 +1538,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  flip_direction: 1
+  flip_direction: 0
 --- !u!50 &527628397476346980
 Rigidbody2D:
   serializedVersion: 4
