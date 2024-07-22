@@ -1790,7 +1790,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests_to_complete: route_map
-  player: {fileID: 0}
+  dialogue_sprite: {fileID: 0}
+  dialogue_to_queue: after_map
 --- !u!1 &8596305586309058044
 GameObject:
   m_ObjectHideFlags: 0

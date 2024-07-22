@@ -43,8 +43,7 @@ public class NewGameSceneManager : MonoBehaviour
         if (transition == null) {
             transition = GameObject.FindWithTag("MainCanvas").transform.GetChild(1).gameObject;
         }
-        StartCoroutine(FadeOut());
-        StartCoroutine(AsyncLoadScene(scene_name, entrance_name));
+        StartCoroutine(FadeOut(scene_name, entrance_name));
     }
 
     IEnumerator AsyncLoadScene(string scene_name, string entrance_name) {
@@ -67,6 +66,8 @@ public class NewGameSceneManager : MonoBehaviour
 
     public IEnumerator FadeIn()
     {
+
+        transition.GetComponent<Animator>().SetBool("FadeOut", false);
         transition.SetActive(true);
         transition.GetComponent<Animator>().SetBool("FadeIn", true);
         yield return new WaitForSeconds(1);
@@ -75,13 +76,12 @@ public class NewGameSceneManager : MonoBehaviour
         //canTransition = true;
     }
 
-    public IEnumerator FadeOut()
+    public IEnumerator FadeOut(string scene_name, string entrance_name)
     {
         //canTransition = false;
         transition.SetActive(true);
         transition.GetComponent<Animator>().SetBool("FadeOut", true);
         yield return new WaitForSeconds(.5f);
-        transition.GetComponent<Animator>().SetBool("FadeOut", false);
-        StartCoroutine(FadeIn());
+        StartCoroutine(AsyncLoadScene(scene_name, entrance_name));
     }
 }

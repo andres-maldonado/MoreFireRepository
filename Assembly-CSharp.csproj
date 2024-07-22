@@ -224,6 +224,7 @@
     <None Include="Assets\Resources\Dialogue\dialogue_test_file.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\dialogue_test_postfetch.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\StreamingAssets\Dialogue\after_map.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\diologue_water.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
