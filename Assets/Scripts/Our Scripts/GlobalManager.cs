@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using FMODUnity;
 
 public class GlobalManager : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class GlobalManager : MonoBehaviour
     private Dictionary<string, bool> minigame_completion = new Dictionary<string, bool>();
 
     public bool in_dialogue = false;
-
+    [SerializeField] EventReference error;
     public class GameTime {
         private float raw_time, gametime_scale_factor;
         public int hours, minutes;
@@ -116,6 +117,7 @@ public class GlobalManager : MonoBehaviour
     public void DisplayError(string error_title, string error_message) {
         GameObject e = Instantiate(message_prefab, GameObject.FindWithTag("MainCanvas").transform);
         e.GetComponent<ErrorMessage>().SetText(error_title, error_message);
+        AudioManager.instance.PlayOneShot(error, this.transform.position);
     }
 
     public void StartDialogue(string branch_name, Sprite sp_sprite, string game_id = "", string quests_to_start = "", string quests_to_end = "", int tpl = 2) {
