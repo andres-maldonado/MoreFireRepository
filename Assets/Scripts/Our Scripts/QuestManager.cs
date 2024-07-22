@@ -20,19 +20,6 @@ public class QuestManager : MonoBehaviour
     public static QuestManager Instance { get { return _instance; } }
 
     private void LoadQuestBank() {
-        /*foreach (string path in Directory.GetFiles("Assets/Resources/Quests")) {
-            // this successfully trims a filepath of the form "Assets/Resources/Quests/[quest_name].[extension]"
-            // to "Quests/[quest_name]", which makes it compatible with Resources.Load()
-            string snipped_path = path.Substring(17).Substring(0, path.LastIndexOf('.') - 17);
-            Quest q = Resources.Load(snipped_path) as Quest;
-
-            if (q != null) {
-                quest_bank.Add(q.quest_name, (q, false));
-                if (q.is_starter_quest) {
-                    active_quests.Add(q);
-                }
-            }
-        }*/
         foreach (Quest q in all_quests)
         {
             quest_bank.Add(q.quest_name, (q, false));
@@ -41,6 +28,15 @@ public class QuestManager : MonoBehaviour
                 active_quests.Add(q);
             }
         }
+    }
+
+    public bool IsComplete(string quest_name) {
+        if (!quest_bank.ContainsKey(quest_name)) {
+            Debug.LogError("No quest named " + quest_name + "!");
+            return false;
+        }
+
+        return quest_bank[quest_name].Item2;
     }
 
     private void Awake() {

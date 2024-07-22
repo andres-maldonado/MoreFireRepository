@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class PackingMinigame : MonoBehaviour
     BoxCollider2D collection_trigger;
     bool trigger_once = true;
     [SerializeField] bool non_essential = false;
+    [SerializeField] EventReference backpackStuff;
 
     bool Validate() {
         // ensures all the items which are supposed to be packed actually exist
@@ -61,6 +63,7 @@ public class PackingMinigame : MonoBehaviour
             packed[other.name] = true;
             Debug.Log(other.name);
             Destroy(other.gameObject);
+            AudioManager.instance.PlayOneShot(backpackStuff, this.transform.position);
             CheckForWin();
         }
         else {

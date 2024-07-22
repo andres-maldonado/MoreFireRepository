@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: Transition
       value: 
       objectReference: {fileID: 1904605073}
+    - target: {fileID: 3474072175954844147, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1904605073}
     - target: {fileID: 5686671606748854618, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9151,6 +9155,9 @@ MonoBehaviour:
   speaker_sprite: {fileID: 0}
   fetch_item: 
   interactToTrigger: 0
+  do_fetch_quest: 0
+  fetch_obj: {fileID: 0}
+  post_fetch_dialogue_file_name: 
 --- !u!61 &370941097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17294,7 +17301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: scene
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: scene_name
+      value: PrepExterior
       objectReference: {fileID: 0}
     - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: newSong.Path
@@ -20754,7 +20765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 694469586231803011, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10137.272
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 694469586231803011, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20774,11 +20785,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 694469586231803011, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -14.642707
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 694469586231803011, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -34.917343
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 694469586231803011, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -25609,11 +25620,11 @@ MonoBehaviour:
   oneTime: 0
   startSound:
     Guid:
-      Data1: 413030679
-      Data2: 1158289678
-      Data3: 50594
-      Data4: -1829169732
-    Path: event:/Minigames/Backpack/BackpackOpen
+      Data1: -1662265532
+      Data2: 1265830664
+      Data3: 596769409
+      Data4: 2039944781
+    Path: event:/Minigames/Map/MapOpen
 --- !u!4 &9116064495961304578
 Transform:
   m_ObjectHideFlags: 0

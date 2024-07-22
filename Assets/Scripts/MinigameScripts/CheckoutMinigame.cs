@@ -14,6 +14,7 @@ public class CheckoutMinigame : MonoBehaviour
     [SerializeField] private List<string> checkout_screen = new List<string>();
     [SerializeField] string[] items_checkout;
     Dictionary<string, bool> checked_out = new Dictionary<string, bool>();
+    private bool done_scanning;
     BoxCollider2D checkout_trigger;
     [SerializeField] EventReference checkoutScan;
     [SerializeField] EventReference konbiniCoin;
@@ -29,19 +30,20 @@ public class CheckoutMinigame : MonoBehaviour
             checkout_screen.Add(other.name); 
             Debug.Log(other.name);
             Destroy(other.gameObject);
+            if (!done_scanning) { AudioManager.instance.PlayOneShot(checkoutScan, this.transform.position); }
+            else { AudioManager.instance.PlayOneShot(konbiniCoin, this.transform.position); }
             if (!finish_checkout)
             {
                 update_checkout_screen();
                 checkout_done();
             }
-            AudioManager.instance.PlayOneShot(checkoutScan, this.transform.position);
             done_pay();
         }
     }
 
     void checkout_done()
     {
-        bool done_scanning = true;
+        done_scanning = true;
         foreach(var item in checked_out)
         {
             if (item.Value == false)
