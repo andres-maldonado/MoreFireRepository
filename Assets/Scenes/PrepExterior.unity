@@ -1187,6 +1187,10 @@ PrefabInstance:
       propertyPath: dialogue_file_name
       value: NPC3
       objectReference: {fileID: 0}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: quests_to_complete
+      value: neighbor_talk2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1345,7 +1349,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: d3a69b360748be847a6632e85689309e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20033371e4d8643fbb5e68246db49036, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1365,8 +1369,8 @@ Transform:
   m_GameObject: {fileID: 488399242}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.523, y: 0.692, z: 0}
-  m_LocalScale: {x: 0.015, y: 0.015, z: 1}
+  m_LocalPosition: {x: 20.5, y: 0.5, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -85441,6 +85445,10 @@ PrefabInstance:
       propertyPath: dialogue_file_name
       value: NPC2
       objectReference: {fileID: 0}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: quests_to_complete
+      value: neighbor_talk3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -114032,6 +114040,14 @@ PrefabInstance:
     - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: scene_name
       value: PrepInteriorHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: failure_dialogue
+      value: exterior_transition_failure
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: necessary_quests
+      value: neighbor_talk1, neighbor_talk2, neighbor_talk3, alerts
       objectReference: {fileID: 0}
     - target: {fileID: 1685593635682384271, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalScale.x

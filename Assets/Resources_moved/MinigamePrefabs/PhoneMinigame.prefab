@@ -1823,7 +1823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf5d8af76a9ed84290d29b71d66f843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quests_to_complete: 
+  quests_to_complete: alerts
   dialogue_sprite: {fileID: 0}
   dialogue_to_queue: old_man_help
 --- !u!1 &5663821464675745062

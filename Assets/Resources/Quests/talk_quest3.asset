@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest_name: neighbor_talk3
   quest_desc: Tell Satou-san about the fire
-  is_starter_quest: 0
+  is_starter_quest: 1
