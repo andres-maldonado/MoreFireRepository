@@ -48,6 +48,11 @@ public class NewGameSceneManager : MonoBehaviour
     }
 
     IEnumerator AsyncLoadScene(string scene_name, string entrance_name) {
+        if (scene_handle.IsValid()) {
+            AsyncOperationHandle<SceneInstance> unload_handle = Addressables.UnloadSceneAsync(scene_handle);
+            yield return unload_handle;
+        }
+       
         yield return new WaitForSeconds(0.2f);
         scene_handle = Addressables.LoadSceneAsync(scene_name, LoadSceneMode.Single);
         yield return scene_handle;
