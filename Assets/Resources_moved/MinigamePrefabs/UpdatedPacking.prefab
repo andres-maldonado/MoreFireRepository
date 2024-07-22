@@ -59,6 +59,13 @@ MonoBehaviour:
   - FirstAid
   - Batteries
   non_essential: 0
+  backpackStuff:
+    Guid:
+      Data1: 57620214
+      Data2: 1198845401
+      Data3: -970467193
+      Data4: -1533375681
+    Path: event:/Minigames/Backpack/BackpackStuff
 --- !u!61 &4442154959743772174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -232,11 +239,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragItem:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 975706660
+      Data2: 1133025115
+      Data3: 21775237
+      Data4: -1179897858
+    Path: event:/DragItem
   flip_direction: 0
 --- !u!61 &3007181689661137388
 BoxCollider2D:
@@ -456,11 +463,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragItem:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 975706660
+      Data2: 1133025115
+      Data3: 21775237
+      Data4: -1179897858
+    Path: event:/DragItem
   flip_direction: 0
 --- !u!1 &2131891536740761246
 GameObject:
@@ -1091,11 +1098,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragItem:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 975706660
+      Data2: 1133025115
+      Data3: 21775237
+      Data4: -1179897858
+    Path: event:/DragItem
   flip_direction: 0
 --- !u!1 &5995698802282714877
 GameObject:
@@ -1343,11 +1350,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragItem:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 975706660
+      Data2: 1133025115
+      Data3: 21775237
+      Data4: -1179897858
+    Path: event:/DragItem
   flip_direction: 0
 --- !u!61 &8208248645061066893
 BoxCollider2D:
@@ -1557,11 +1564,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragItem:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 975706660
+      Data2: 1133025115
+      Data3: 21775237
+      Data4: -1179897858
+    Path: event:/DragItem
   flip_direction: 0
 --- !u!1 &7904694976297947143
 GameObject:

@@ -8059,11 +8059,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.9899993
+      value: -4.39
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.4100003
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9153,7 +9153,7 @@ MonoBehaviour:
   quests_to_start: 
   quests_to_complete: 
   speaker_sprite: {fileID: 1422549481, guid: e81c73c86b360c34aa3825152056f16d, type: 3}
-  fetch_item: {fileID: 11400000, guid: c4c8f5685376147e6a080a2929ff928a, type: 2}
+  fetch_item: 
   interactToTrigger: 0
 --- !u!61 &370941097
 BoxCollider2D:
@@ -14481,8 +14481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779f36ec1a42f6f47a3c3c8f3555fd9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c4c8f5685376147e6a080a2929ff928a, type: 2}
   inventory: {fileID: 1968262346}
+  in_trigger: 0
 --- !u!61 &736653205
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17684,7 +17684,7 @@ MonoBehaviour:
   quests_to_start: water_fetch
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
-  fetch_item: {fileID: 11400000, guid: c4c8f5685376147e6a080a2929ff928a, type: 2}
+  fetch_item: 
   interactToTrigger: 1
 --- !u!212 &1503842760
 SpriteRenderer:
@@ -20658,7 +20658,27 @@ PrefabInstance:
       objectReference: {fileID: 8123014525805291546, guid: 989086c5631f64aeda8573f011e4e507, type: 3}
     - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: minigame_name
-      value: BikeMinigame
+      value: PackingMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Path
+      value: event:/Minigames/Backpack/BackpackOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Guid.Data1
+      value: 413030679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Guid.Data2
+      value: 1158289678
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Guid.Data3
+      value: 50594
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Guid.Data4
+      value: -1829169732
       objectReference: {fileID: 0}
     - target: {fileID: 9116064496366930636, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: m_LocalPosition.z

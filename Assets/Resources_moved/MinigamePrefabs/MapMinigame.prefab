@@ -544,6 +544,13 @@ MonoBehaviour:
   animator: {fileID: 9043465148730494591}
   player_icon: {fileID: 8431805831029227526}
   step: 0
+  mapDraw:
+    Guid:
+      Data1: 733162921
+      Data2: 1200063806
+      Data3: 1602083257
+      Data4: -1332456862
+    Path: event:/Minigames/Map/MapDraw
 --- !u!61 &8231271860319279672
 BoxCollider2D:
   m_ObjectHideFlags: 0
