@@ -14,7 +14,7 @@ public class AddressableScenes : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator Init()
     {
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject);
         foreach (string m in manager_names) {
             AsyncOperationHandle<GameObject> loadOp = Addressables.LoadAssetAsync<GameObject>(m);
             yield return loadOp;
@@ -29,6 +29,7 @@ public class AddressableScenes : MonoBehaviour
     }
 
     void Awake() {
+        DontDestroyOnLoad(gameObject);
         StartCoroutine(Init());
     }
 }

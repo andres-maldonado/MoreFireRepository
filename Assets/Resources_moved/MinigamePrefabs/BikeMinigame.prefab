@@ -461,4 +461,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests_to_complete: 
-  player: {fileID: 0}
+  dialogue_sprite: {fileID: 21300000, guid: ab5325eaf2de36247a37f1b813760abc, type: 3}
+  dialogue_to_queue: old_man

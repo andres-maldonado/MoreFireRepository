@@ -5,16 +5,17 @@ using UnityEngine;
 public class TriggerDialogue : MonoBehaviour
 {
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
-    //[SerializeField] private TextAsset first_dialogue;
-    //[SerializeField] private TextAsset second_dialogue;
-    //private TextAsset current_asset;
 
-    [SerializeField] private int minigame_id = -1;
+    [SerializeField] private string minigame_id = "";
     [SerializeField] private string quests_to_start;
     [SerializeField] private string quests_to_complete;
     [SerializeField] private Sprite speaker_sprite;
     [SerializeField] private string fetch_item;
     [SerializeField] private bool interactToTrigger = true;
+
+    [SerializeField] private bool do_fetch_quest = false;
+    [SerializeField] private Item fetch_obj;
+    [SerializeField] private string post_fetch_dialogue_file_name;
 
     private bool player_near = false;
 
@@ -29,13 +30,10 @@ public class TriggerDialogue : MonoBehaviour
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
             }
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().in_inventory(fetch_item)) {
-                dialogue_file_name = "dialogue_test_postfetch";
-                quests_to_complete = "water_fetch";
-                quests_to_start = "";
+                dialogue_file_name = post_fetch_dialogue_file_name;
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().remove_item(fetch_item);
             }
             GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
-            GlobalManager.Instance.in_dialogue = true;
             if(!interactToTrigger)
             {
                 Destroy(gameObject);

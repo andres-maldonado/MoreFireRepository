@@ -10,7 +10,7 @@ public class TowelMinigame : MonoBehaviour
     private bool game_won = false;
 
     void Update() {
-        if (wetness > 1.5f) {
+        if (wetness > 1.5f && wetness < 1.6f) {
             transform.Find("Towel").GetComponent<SpriteRenderer>().sprite = wet_towel_image;
         }
         if (wetness > 2.1f && !game_won) {
@@ -18,8 +18,6 @@ public class TowelMinigame : MonoBehaviour
             Destroy(transform.Find("Towel").gameObject);
             game_won = true;
         }
-
-        Debug.Log(wetness);
     }
 
     void OnTriggerStay2D(Collider2D other) {

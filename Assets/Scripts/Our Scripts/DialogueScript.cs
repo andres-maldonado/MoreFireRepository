@@ -14,20 +14,25 @@ public class DialogueScript : MonoBehaviour
 {
     private TMP_Text mainText;
     private GameObject prompter;
-    private SpriteRenderer speaker_sprite;
 
     private Vector3 prompter_origin;
     private double prompter_time;
 
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
-    [SerializeField] private int minigame_id = -1;
+    [SerializeField] private string minigame_id = "BikeMinigame";
     [SerializeField] private int ticks_per_letter = 25;
     [SerializeField] private string[] start_quests;
     [SerializeField] private string[] end_quests;
+
+    private SpriteRenderer mc_sprite, speaker_sprite;
+    // (false) => other speaker
+    // (true) => MC
+    private bool speaking = true;
     
     private int letters_displayed = 0;
     private int counter = 0;
     private string current_text = "";
+    private int first_letter = 0;
 
     private StreamReader file_reader;
 
@@ -38,7 +43,7 @@ public class DialogueScript : MonoBehaviour
         prompter_origin = prompter.transform.position;
     }
 
-    public void Set(string file_name, Sprite speaker_image, int game_id = -1, string quests_to_start = "", string quests_to_end = "", int tpl = 25) {
+    public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", int tpl = 25) {
         dialogue_file_name = file_name;
         speaker_sprite.sprite = speaker_image;
         minigame_id = game_id;
@@ -56,6 +61,9 @@ public class DialogueScript : MonoBehaviour
 
         file_reader = File.OpenText(Application.streamingAssetsPath + "/Dialogue/" + dialogue_file_name + ".txt");
 
+        mc_sprite = GameObject.Find("MCPortrait").GetComponent<SpriteRenderer>();
+        speaker_sprite = GameObject.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
+
         ReadDialogue();
     }
 
@@ -64,7 +72,7 @@ public class DialogueScript : MonoBehaviour
             // queue destruction / start minigame
             Destroy(gameObject);
             GlobalManager.Instance.in_dialogue = false;
-            GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(false);
+            NewPlayerMovement.Instance.DisablePlayer(false);
             foreach (string q in end_quests) {
                 if (q.Trim() != "") QuestManager.Instance.CompleteQuest(q.Trim());
             }
@@ -72,17 +80,25 @@ public class DialogueScript : MonoBehaviour
                 if (q.Trim() != "") QuestManager.Instance.StartQuest(q.Trim());
             }
 
-            if (minigame_id > -1) {
-                GlobalManager.Instance.StartMinigame("BikeMinigame");
+            if (minigame_id != "") {
+                GlobalManager.Instance.StartMinigame(minigame_id);
             }
         }
+
+        first_letter = current_text.IndexOf(":") + 1;
+        if (current_text.Substring(0, first_letter - 1).Trim() == "MC") speaking = true;
+        else speaking = false;
+        
         prompter_time = -3.0;
         prompter.GetComponent<Image>().enabled = false;
         letters_displayed = 0;
     }
 
     void Update() {
-        mainText.text = current_text.Substring(0, letters_displayed >= current_text.Length ? current_text.Length : letters_displayed);
+        mc_sprite.color = new Color(1.0f, 1.0f, 1.0f, Mathf.Lerp(mc_sprite.color.a, (speaking ? 1.0f : 0.25f), 0.12f));
+        speaker_sprite.color = new Color(1.0f, 1.0f, 1.0f, Mathf.Lerp(speaker_sprite.color.a, (speaking ? 0.25f : 1.0f), 0.12f));
+
+        mainText.text = current_text.Substring(first_letter + 1, letters_displayed >= current_text.Length - first_letter - 1 ? current_text.Length - first_letter - 1 : letters_displayed);
         if (counter > ticks_per_letter) {
             counter = 0;
             letters_displayed++;

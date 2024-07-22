@@ -316,9 +316,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1920385301904249421, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920385301904249421, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
       propertyPath: Transition
       value: 
       objectReference: {fileID: 1904605073}
+    - target: {fileID: 1920385301904249421, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
+      propertyPath: startWithFadeIn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5686671606748854618, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -370,7 +378,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6248706224470645796, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1983719567}
   m_SourcePrefab: {fileID: 100100000, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
 --- !u!1 &97698529
 GameObject:
@@ -9155,6 +9166,9 @@ MonoBehaviour:
   speaker_sprite: {fileID: 1422549481, guid: e81c73c86b360c34aa3825152056f16d, type: 3}
   fetch_item: 
   interactToTrigger: 0
+  do_fetch_quest: 0
+  fetch_obj: {fileID: 0}
+  post_fetch_dialogue_file_name: 
 --- !u!61 &370941097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17031,7 +17045,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 85410152}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -17686,6 +17700,9 @@ MonoBehaviour:
   speaker_sprite: {fileID: 0}
   fetch_item: 
   interactToTrigger: 1
+  do_fetch_quest: 0
+  fetch_obj: {fileID: 0}
+  post_fetch_dialogue_file_name: 
 --- !u!212 &1503842760
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21084,6 +21101,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5237329695552028228, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
   m_PrefabInstance: {fileID: 791067938}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1983719564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6248706224470645796, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
+  m_PrefabInstance: {fileID: 95304019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1983719567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983719564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674d7b959ba8f4a60b675f7cdd52cbed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 1904605073}
+  start_with_fade_in: 1
 --- !u!1 &2081651457
 GameObject:
   m_ObjectHideFlags: 0
