@@ -58,4 +58,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c7f19c79c4b034f6abec6bd84bdd88f2, type: 2}
   - {fileID: 11400000, guid: 98c5a957712584c0dab53097acafe624, type: 2}
   - {fileID: 11400000, guid: 7202469ba053a446eb9b5930ea9b13b6, type: 2}
+  - {fileID: 11400000, guid: cc58b705d2226bc4784f102acc757d83, type: 2}
   active_quests: []

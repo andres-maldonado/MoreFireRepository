@@ -149,6 +149,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\OnTriggerStay.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\CollectibleManagerTMP.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\DialogueOnStart.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Level_Change.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\MinigameScripts\CheckoutMinigame.cs" />
@@ -197,9 +198,9 @@
     <None Include="Assets\StreamingAssets\Dialogue\exit_fire_dialogue.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\Misc\dialogue_tree.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\prep_intro.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\StreamingAssets\Dialogue\bike_pumped.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\child2.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\TestDialogues\TestDoc.txt" />
@@ -213,9 +214,11 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\StreamingAssets\Dialogue\int_evening_stop.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Resources\Dialogue\dialogue_test_postfetch.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\NPC1.txt" />
+    <None Include="Assets\StreamingAssets\Dialogue\exterior_stop.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\evacstart.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\dialogue_test_file2.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -231,6 +234,7 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\StreamingAssets\Dialogue\bike_thought.txt" />
+    <None Include="Assets\StreamingAssets\Dialogue\old_man_help.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\konbini.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\StreamingAssets\Dialogue\NPC2.txt" />

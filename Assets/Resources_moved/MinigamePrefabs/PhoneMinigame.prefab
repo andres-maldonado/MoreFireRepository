@@ -1824,7 +1824,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests_to_complete: 
-  player: {fileID: 0}
+  dialogue_sprite: {fileID: 0}
+  dialogue_to_queue: old_man_help
 --- !u!1 &5663821464675745062
 GameObject:
   m_ObjectHideFlags: 0
