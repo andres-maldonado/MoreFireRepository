@@ -39,12 +39,12 @@ public class DialogueScript : MonoBehaviour
     void Awake() {
         mainText = transform.GetChild(1).GetComponent<TMP_Text>();
         prompter = transform.GetChild(2).gameObject;
-        speaker_sprite = transform.GetChild(3).GetComponent<SpriteRenderer>();
         prompter_origin = prompter.transform.position;
     }
 
     public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", int tpl = 25) {
         dialogue_file_name = file_name;
+        speaker_sprite = GameObject.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
         speaker_sprite.sprite = speaker_image;
         minigame_id = game_id;
         start_quests = quests_to_start.Split(",");
@@ -62,7 +62,7 @@ public class DialogueScript : MonoBehaviour
         file_reader = File.OpenText(Application.streamingAssetsPath + "/Dialogue/" + dialogue_file_name + ".txt");
 
         mc_sprite = GameObject.Find("MCPortrait").GetComponent<SpriteRenderer>();
-        speaker_sprite = GameObject.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
+        
 
         ReadDialogue();
     }
