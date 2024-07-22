@@ -52,6 +52,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public IEnumerator ChangeMusic(EventReference newTrack)
+    {
+        musicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        musicEventInstance = CreateInstance(newTrack);
+        musicEventInstance.start();
+        yield return null;
+    }
+
     public void MusicParameterChange(string parameterName, float parameterValue)
     {
         musicEventInstance.setParameterByName(parameterName, parameterValue);

@@ -17297,8 +17297,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
-      propertyPath: scene_name
-      value: PrepExterior
+      propertyPath: newSong.Path
+      value: event:/KonbiniMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: newSong.Guid.Data1
+      value: 351306192
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: newSong.Guid.Data2
+      value: 1305778957
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: newSong.Guid.Data3
+      value: -1438842465
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: newSong.Guid.Data4
+      value: -856280766
       objectReference: {fileID: 0}
     - target: {fileID: 1685593635682384271, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalScale.x
@@ -25597,7 +25613,7 @@ MonoBehaviour:
       Data2: 1158289678
       Data3: 50594
       Data4: -1829169732
-    Path: event:/Minigames/BackpackOpen
+    Path: event:/Minigames/Backpack/BackpackOpen
 --- !u!4 &9116064495961304578
 Transform:
   m_ObjectHideFlags: 0
