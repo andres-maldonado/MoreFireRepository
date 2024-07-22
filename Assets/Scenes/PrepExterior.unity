@@ -114023,7 +114023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: scene_name
-      value: PrepInteriorHouseEvening
+      value: PrepInteriorHouse
       objectReference: {fileID: 0}
     - target: {fileID: 1685593635682384271, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalScale.x
