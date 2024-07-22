@@ -42,6 +42,46 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75d282fc846371e4fb37ba1f193ede3d
+    m_Address: EvacExterior
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afafd7d2df417fd48824b435eba4f1b1
+    m_Address: EvacInteriorHouse
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e67e90cf80f27ea43a1b66697b021026
+    m_Address: Konbini
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a8781de17c101d4c94e58ce8ed43c67
+    m_Address: PrepInteriorHouse
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b8f39d2403aa9e41bebe516cc274f61
+    m_Address: PrepInteriorHouseEvening
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0e53b6f5c0f441449afb025719ffdb6
+    m_Address: TitleScreen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4a0c7fc8ce631d4781cad0a9bff3b66
+    m_Address: PrepExteriorEvening
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7282cbc807f6e45698746c0f0c5bb1a3
+    m_Address: PrepExterior
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8b174af6aea80457a8b0a232aa777f5e, type: 2}
   m_SchemaSet:
