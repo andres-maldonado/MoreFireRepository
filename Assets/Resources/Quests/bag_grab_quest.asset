@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2b409d45ddc64cceb1dfbef1f83b5bc, type: 3}
-  m_Name: pump_quest
+  m_Name: bag_grab_quest
   m_EditorClassIdentifier: 
-  quest_name: bike_pump
-  quest_desc: Fill your bike tires with air
+  quest_name: bag_grab
+  quest_desc: Grab your essentials bag
   is_starter_quest: 0

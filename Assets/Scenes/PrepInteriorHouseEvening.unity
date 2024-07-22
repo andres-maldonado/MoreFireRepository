@@ -9134,6 +9134,18 @@ PrefabInstance:
       propertyPath: scene_name
       value: PrepExterior
       objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: blank_sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aacd947588eeb48068b5a30c493830d3, type: 3}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: failure_dialogue
+      value: child
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: necessary_quests
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1685593635682384271, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -9252,6 +9264,9 @@ MonoBehaviour:
   speaker_sprite: {fileID: 0}
   fetch_item: 
   interactToTrigger: 0
+  do_fetch_quest: 0
+  fetch_obj: {fileID: 0}
+  post_fetch_dialogue_file_name: 
 --- !u!61 &370941097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17945,6 +17960,9 @@ MonoBehaviour:
   speaker_sprite: {fileID: 0}
   fetch_item: water
   interactToTrigger: 1
+  do_fetch_quest: 0
+  fetch_obj: {fileID: 0}
+  post_fetch_dialogue_file_name: 
 --- !u!212 &1503842760
 SpriteRenderer:
   m_ObjectHideFlags: 0
