@@ -1396,6 +1396,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correct_passcode: 1984
+  text:
+    Guid:
+      Data1: -1911932885
+      Data2: 1319730163
+      Data3: 1250349755
+      Data4: -1074309249
+    Path: event:/Minigames/Phone/ButtonPress
+  wrongPasscode:
+    Guid:
+      Data1: 1052904315
+      Data2: 1269499229
+      Data3: 1439361975
+      Data4: -1079050352
+    Path: event:/Minigames/Phone/PhoneWrongPasscode
+  open:
+    Guid:
+      Data1: -240069740
+      Data2: 1223516626
+      Data3: 1885165992
+      Data4: 1703445150
+    Path: event:/Minigames/Phone/PhoneOpen
 --- !u!1 &4242522742331792764
 GameObject:
   m_ObjectHideFlags: 0

@@ -1189,11 +1189,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragItem:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 975706660
+      Data2: 1133025115
+      Data3: 21775237
+      Data4: -1179897858
+    Path: event:/DragItem
   flip_direction: 0
 --- !u!50 &3901996687290838635
 Rigidbody2D:
@@ -1530,11 +1530,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragItem:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 975706660
+      Data2: 1133025115
+      Data3: 21775237
+      Data4: -1179897858
+    Path: event:/DragItem
   flip_direction: 0
 --- !u!50 &7368906127574972205
 Rigidbody2D:
@@ -1920,11 +1920,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragItem:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 975706660
+      Data2: 1133025115
+      Data3: 21775237
+      Data4: -1179897858
+    Path: event:/DragItem
   flip_direction: 0
 --- !u!50 &6190970342106151667
 Rigidbody2D:

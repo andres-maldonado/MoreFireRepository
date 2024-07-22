@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Our Scripts\Quest.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Patrol.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\ErrorTrigger.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\LockedObject.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAudio.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\GameSceneManager.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\FMODEvents.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\ExtinguishMinigame.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\MinigameTrigger.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CollectibleItemTMP.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyHealth.cs" />
@@ -101,6 +103,7 @@
     <Compile Include="Assets\Scripts\Our Scripts\Inventory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\FireScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\LoadSceneOnClick.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\AudioManager.cs" />
@@ -169,6 +172,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\MinigameHandler.cs" />
+    <Compile Include="Assets\NewGameSceneManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\HealingItem.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyChaseBehaviour.cs" />

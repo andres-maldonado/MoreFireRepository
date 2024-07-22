@@ -8070,11 +8070,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.9899993
+      value: -4.39
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.4100003
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15622,6 +15622,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1196813550145553596, guid: c0388d027459b44dea0d968182658a10, type: 3}
+      propertyPath: error.Path
+      value: event:/Error
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196813550145553596, guid: c0388d027459b44dea0d968182658a10, type: 3}
       propertyPath: message_prefab
       value: 
       objectReference: {fileID: 8087079555791211607, guid: 25186c7904cee184b81887004e56f272, type: 3}
@@ -15629,6 +15633,22 @@ PrefabInstance:
       propertyPath: dialogue_prefab
       value: 
       objectReference: {fileID: 8701880014743609169, guid: ff0c140a2938e493ab62fee16441b4bd, type: 3}
+    - target: {fileID: 1196813550145553596, guid: c0388d027459b44dea0d968182658a10, type: 3}
+      propertyPath: error.Guid.Data1
+      value: 1742321238
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196813550145553596, guid: c0388d027459b44dea0d968182658a10, type: 3}
+      propertyPath: error.Guid.Data2
+      value: 1302659465
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196813550145553596, guid: c0388d027459b44dea0d968182658a10, type: 3}
+      propertyPath: error.Guid.Data3
+      value: 1426197439
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196813550145553596, guid: c0388d027459b44dea0d968182658a10, type: 3}
+      propertyPath: error.Guid.Data4
+      value: 200840057
+      objectReference: {fileID: 0}
     - target: {fileID: 2115155517574641165, guid: c0388d027459b44dea0d968182658a10, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -20676,6 +20696,26 @@ PrefabInstance:
     - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: minigame_name
       value: PackingMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Path
+      value: event:/Minigames/Backpack/BackpackOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Guid.Data1
+      value: 413030679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Guid.Data2
+      value: 1158289678
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Guid.Data3
+      value: 50594
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: startSound.Guid.Data4
+      value: -1829169732
       objectReference: {fileID: 0}
     - target: {fileID: 9116064496366930636, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: m_LocalPosition.z

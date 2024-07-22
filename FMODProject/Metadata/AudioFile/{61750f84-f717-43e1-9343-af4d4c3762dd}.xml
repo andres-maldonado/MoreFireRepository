@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{249ad7d2-88a6-4dfe-a3b5-ec1761497a30}">
+	<object class="AudioFile" id="{61750f84-f717-43e1-9343-af4d4c3762dd}">
 		<property name="assetPath">
-			<value>Type2.wav</value>
+			<value>FireExtinguisher.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.11364583333333333</value>
+			<value>1.4772916666666667</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{e7702afe-73be-408a-9b3a-926a22ff5c31}</destination>

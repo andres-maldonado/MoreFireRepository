@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Resources_moved/Scenes/StartScreen.unity
     guid: d0da00d2a0dfd254a9f92b446a214e27
   - enabled: 0
-    path: Assets/Resources_moved/Scenes/PrepInteriorHouse.unity
+    path: Assets/Scenes/PrepInteriorHouse.unity
     guid: 4a8781de17c101d4c94e58ce8ed43c67
   - enabled: 0
     path: Assets/Resources_moved/Scenes/PrepExterior.unity
