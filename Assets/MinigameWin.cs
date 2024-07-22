@@ -30,11 +30,11 @@ public class MinigameWin : MonoBehaviour
         player.GetComponent<NewPlayerMovement>().DisablePlayer(false);
         foreach (string q in quests_to_complete.Split(","))
         {
-            QuestManager.Instance.CompleteQuest(q.Trim());
+            //QuestManager.Instance.CompleteQuest(q.Trim());
         }
         GlobalManager.Instance.FreeMinigame();
         if (dialogue_to_queue != "") {
-            GlobalManager.Instance.StartDialogue(dialogue_to_queue, dialogue_sprite, -1, "", "");
+            GlobalManager.Instance.StartDialogue(dialogue_to_queue, dialogue_sprite, "", "", "");
         }
         Destroy(gameObject);
         yield return null;

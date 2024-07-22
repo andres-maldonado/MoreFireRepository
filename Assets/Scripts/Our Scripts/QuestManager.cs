@@ -15,8 +15,6 @@ public class QuestManager : MonoBehaviour
 
     [SerializeField] private List<Quest> active_quests = new List<Quest>();
 
-
-
     // SINGLETON BOILER-PLATE
     private static QuestManager _instance;
     public static QuestManager Instance { get { return _instance; } }

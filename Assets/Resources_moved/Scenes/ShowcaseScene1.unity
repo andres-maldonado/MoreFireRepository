@@ -9166,6 +9166,9 @@ MonoBehaviour:
   speaker_sprite: {fileID: 1422549481, guid: e81c73c86b360c34aa3825152056f16d, type: 3}
   fetch_item: 
   interactToTrigger: 0
+  do_fetch_quest: 0
+  fetch_obj: {fileID: 0}
+  post_fetch_dialogue_file_name: 
 --- !u!61 &370941097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17697,6 +17700,9 @@ MonoBehaviour:
   speaker_sprite: {fileID: 0}
   fetch_item: 
   interactToTrigger: 1
+  do_fetch_quest: 0
+  fetch_obj: {fileID: 0}
+  post_fetch_dialogue_file_name: 
 --- !u!212 &1503842760
 SpriteRenderer:
   m_ObjectHideFlags: 0
