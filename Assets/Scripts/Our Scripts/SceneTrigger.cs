@@ -11,9 +11,7 @@ public class SceneTrigger : MonoBehaviour
     [Tooltip("Name of dialogue file which will be queued when the trigger is interacted with and the necessary quests have not been completed")]
     public string failure_dialogue;
     public Sprite blank_sprite;
-
     NewGameSceneManager gameSceneManager;
-    public bool evening = false;
     private bool inTrigger = false;
     public int scene;
     public string scene_name;
