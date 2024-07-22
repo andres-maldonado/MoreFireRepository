@@ -7,7 +7,6 @@ using FMODUnity;
 
 public class CheckoutMinigame : MonoBehaviour
 {
-    [SerializeField] GameObject inventory;
     [SerializeField] BoxCollider2D collider;
     [SerializeField] Animator wallet;
     [SerializeField] private TMP_Text item_listUI;
@@ -19,7 +18,6 @@ public class CheckoutMinigame : MonoBehaviour
     [SerializeField] EventReference checkoutScan;
     [SerializeField] EventReference konbiniCoin;
     [SerializeField] EventReference konbiniWallet;
-
     bool finish_checkout = false;
 
     void OnTriggerEnter2D(Collider2D other) 
@@ -76,9 +74,9 @@ public class CheckoutMinigame : MonoBehaviour
         if (paid)
         {
             wallet.Play("MinigameMoveDown");
-            // this.transform.Find("SceneTrigger").gameObject.GetComponent<SceneTrigger>().evening = true;
-            // print(this.transform.Find("SceneTrigger").gameObject.GetComponent<SceneTrigger>().evening);
             GetComponentInParent<MinigameWin>().Win();
+            NewGameSceneManager gameSceneManager = NewGameSceneManager.Instance;
+            gameSceneManager.LoadScene("PrepExteriorEvening", "Batteries");
         }
     }
 

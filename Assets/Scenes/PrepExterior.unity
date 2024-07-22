@@ -85607,6 +85607,10 @@ PrefabInstance:
       value: QuestManager
       objectReference: {fileID: 0}
     - target: {fileID: 7263854640418022599, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1724171278}
+    - target: {fileID: 7263854640418022599, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
       propertyPath: questlog_UI
       value: 
       objectReference: {fileID: 728909848}

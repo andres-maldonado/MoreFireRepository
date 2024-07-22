@@ -53,6 +53,8 @@ public class PackingMinigame : MonoBehaviour
         }
         if (has_won && !non_essential) {
             GetComponentInParent<MinigameWin>().Win();
+            NewGameSceneManager gameSceneManager = NewGameSceneManager.Instance;
+            gameSceneManager.LoadScene("EvacInteriorHouse", "Player Character");
             Debug.Log("You win!");
         }
     }

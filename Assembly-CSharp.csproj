@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\LockedObject.cs" />
     <Compile Include="Assets\Scripts\MinigameScripts\map_step2.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\OpenMap.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Player\PlayerAudio.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\InventoryUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
@@ -224,6 +225,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\StreamingAssets\Dialogue\exterior_transition_failure.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\int_evening_stop.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Resources\Dialogue\dialogue_test_postfetch.txt" />
