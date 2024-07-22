@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class SceneTrigger : MonoBehaviour
     public string scene_name;
     public string exit;
     Animator doorIcon;
+    [SerializeField] EventReference newSong;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class SceneTrigger : MonoBehaviour
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
             }
             gameSceneManager.LoadScene(scene_name, exit);
+            AudioManager.instance.ChangeMusic(newSong);
         }
     }
 
