@@ -6,7 +6,10 @@ public class MinigameWin : MonoBehaviour
 {
     [Tooltip("Comma-separated list of quest names to complete upon minigame win")]
     [SerializeField] private string quests_to_complete;
-    public GameObject player;
+    [SerializeField] private Sprite dialogue_sprite;
+    [SerializeField] private string dialogue_to_queue;
+
+    private GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,9 @@ public class MinigameWin : MonoBehaviour
             QuestManager.Instance.CompleteQuest(q.Trim());
         }
         GlobalManager.Instance.FreeMinigame();
+        if (dialogue_to_queue != "") {
+            GlobalManager.Instance.StartDialogue(dialogue_to_queue, dialogue_sprite, "", "", "");
+        }
         Destroy(gameObject);
         yield return null;
     }

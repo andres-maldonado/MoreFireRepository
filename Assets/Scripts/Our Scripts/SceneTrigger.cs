@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneTrigger : MonoBehaviour
 {
-    GameSceneManager gameSceneManager;
+    [Tooltip("A comma-separated list of the quests that must be completed before the scene trigger can take place")]
+    public string necessary_quests;
+    [Tooltip("Name of dialogue file which will be queued when the trigger is interacted with and the necessary quests have not been completed")]
+    public string failure_dialogue;
+    public Sprite blank_sprite;
+
+    NewGameSceneManager gameSceneManager;
     public bool evening = false;
     private bool inTrigger = false;
     public int scene;
@@ -17,8 +23,18 @@ public class SceneTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameSceneManager = GameSceneManager.Instance;
+        gameSceneManager = NewGameSceneManager.Instance;
         doorIcon = transform.GetChild(0).GetComponent<Animator>();
+    }
+
+    private bool QuestsComplete() {
+        if (necessary_quests.Length == 0) return true;
+        foreach (string q in necessary_quests.Split(",")) {
+            if (!QuestManager.Instance.IsComplete(q.Trim())) {
+                return false;
+            }
+        }
+        return true;
     }
 
     // Update is called once per frame
@@ -26,12 +42,17 @@ public class SceneTrigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && inTrigger == true)
         {
-            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open close inventory
-            {
-                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
+            if (QuestsComplete()) {
+                if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open close inventory
+                {
+                    GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
+                }
+                gameSceneManager.LoadScene(scene_name, exit);
+                AudioManager.instance.ChangeMusic(newSong);
             }
-            gameSceneManager.LoadScene(scene_name, exit);
-            AudioManager.instance.ChangeMusic(newSong);
+            else {
+                GlobalManager.Instance.StartDialogue(failure_dialogue, blank_sprite);
+            }
         }
     }
 

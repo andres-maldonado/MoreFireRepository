@@ -5,14 +5,23 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
+  - enabled: 0
+    path: Assets/Resources_moved/Scenes/StartScreen.unity
     guid: d0da00d2a0dfd254a9f92b446a214e27
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrepInteriorHouse.unity
     guid: 4a8781de17c101d4c94e58ce8ed43c67
-  - enabled: 1
-    path: Assets/Scenes/PrepExterior.unity
+  - enabled: 0
+    path: Assets/Resources_moved/Scenes/PrepExterior.unity
     guid: 56455736a16bc0f46a4acd1e9e39b15b
+  - enabled: 0
+    path: Assets/Resources_moved/Scenes/ShowcaseScene1.unity
+    guid: 5d3d03966301147dbae0a8b9095b2396
+  - enabled: 1
+    path: Assets/Resources_moved/Scenes/AddressableInitiator.unity
+    guid: e5b8546e535c946bc9c8a68e04a4ad7d
+  - enabled: 0
+    path: Assets/Resources_moved/Scenes/ShowcaseScene2.unity
+    guid: 28b16391c65585b44ba4388e62ed7764
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: aaf762e632a65497e9889aa6f81522d3, type: 2}

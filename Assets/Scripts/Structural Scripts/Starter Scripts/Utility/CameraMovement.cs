@@ -28,10 +28,11 @@ public class CameraMovement : MonoBehaviour
 
 	void Start()
 	{
-		if (PlayerCharacter == null)//We make sure that the player is found somewhere
-		{
-			PlayerCharacter = GameObject.FindGameObjectWithTag("Player").transform;
-		}
+		//if (PlayerCharacter == null)//We make sure that the player is found somewhere
+		//{
+			PlayerCharacter = NewPlayerMovement.Instance.transform;
+			// GameObject.FindGameObjectWithTag("Player").transform;
+		//}
 
 		cam = GetComponent<Camera>();
 	}

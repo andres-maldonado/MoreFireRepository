@@ -44,9 +44,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 122294cb6532040ba84543e5cba79abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
   questlog_UI: {fileID: 0}
   all_quests:
-  - {fileID: 11400000, guid: 1bd45b1dc62604074b516dc489a6dcf1, type: 2}
   - {fileID: 11400000, guid: 8b6424a79700544ddb6f83378d2d1fe6, type: 2}
+  - {fileID: 11400000, guid: fa06bb57199234fa1936034eda0deb47, type: 2}
+  - {fileID: 11400000, guid: fb09c5ff70cea4543934c5b66c7dc9b1, type: 2}
+  - {fileID: 11400000, guid: 14df4e9d0b2bf4c85a35c943ca3df79c, type: 2}
+  - {fileID: 11400000, guid: 0cc788835779b8344a7b9c07886bd88e, type: 2}
   - {fileID: 11400000, guid: 7d3eb38e31d25433692d707ac73b3ffb, type: 2}
+  - {fileID: 11400000, guid: 0aebd5754ffa84bfbbd1cca8d4c6cfcb, type: 2}
+  - {fileID: 11400000, guid: a3a63066ee4864d37a714ed7a08bbc1e, type: 2}
+  - {fileID: 11400000, guid: c7f19c79c4b034f6abec6bd84bdd88f2, type: 2}
+  - {fileID: 11400000, guid: 98c5a957712584c0dab53097acafe624, type: 2}
+  - {fileID: 11400000, guid: 7202469ba053a446eb9b5930ea9b13b6, type: 2}
+  - {fileID: 11400000, guid: cc58b705d2226bc4784f102acc757d83, type: 2}
   active_quests: []

@@ -91,13 +91,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd42827032b34151a76ae32fabcf085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue_file_name: dialogue_test_file
+  dialogue_file_name: NPC1
   minigame_id: -1
   quests_to_start: 
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
-  fetch_item: {fileID: 0}
+  fetch_item: 
   interactToTrigger: 1
+  do_fetch_quest: 0
+  fetch_obj: {fileID: 0}
+  post_fetch_dialogue_file_name: 
 --- !u!1 &9088423234529894324
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,8 +128,8 @@ Transform:
   m_GameObject: {fileID: 9088423234529894324}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: -0.017, y: 0.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1226537220969778991}

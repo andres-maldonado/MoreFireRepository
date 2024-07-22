@@ -7,6 +7,7 @@ using FMOD.Studio;
 public class AudioManager : MonoBehaviour
 {
     private EventInstance musicEventInstance;
+    private EventInstance dialogue;
     public static AudioManager instance { get; private set; }
     private void Start()
     {
