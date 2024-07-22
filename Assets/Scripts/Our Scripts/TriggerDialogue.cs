@@ -18,20 +18,25 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private string post_fetch_dialogue_file_name;
 
     private bool player_near = false;
+    private InventoryUI inv_ui;
+    private Inventory inv;
 
-    private void Start() {  }
+    private void Start() {
+        inv_ui = GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>();
+        inv = GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>();
+    }
 
     private void Update() {
         if (player_near && (Input.GetKeyDown(KeyCode.E)||!interactToTrigger) && !GlobalManager.Instance.in_dialogue) {
             Debug.Log("Player Triggered");
             GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(true); // stop movement
-            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open close inventory
+            if (inv_ui.inventory_isopen) //if the inventory is open close inventory
             {
-                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
+                inv_ui.close_inventory();
             }
-            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().in_inventory(fetch_item)) {
+            if (inv.in_inventory(fetch_item)) {
                 dialogue_file_name = post_fetch_dialogue_file_name;
-                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().remove_item(fetch_item);
+                inv.remove_item(fetch_item);
             }
             GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
             if(!interactToTrigger)
