@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: 0
+  scene_name: 
+  exit: 
 --- !u!61 &4274043730932706653
 BoxCollider2D:
   m_ObjectHideFlags: 0

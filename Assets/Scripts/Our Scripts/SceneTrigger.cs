@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class SceneTrigger : MonoBehaviour
 {
     GameSceneManager gameSceneManager;
+    public bool evening = false;
     private bool inTrigger = false;
     public int scene;
     public string scene_name;
