@@ -85864,6 +85864,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory
       objectReference: {fileID: 0}
+    - target: {fileID: 5658004928863852474, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+      propertyPath: m_margin.w
+      value: -382.03717
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658004928863852474, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+      propertyPath: m_margin.x
+      value: -207.62508
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658004928863852474, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+      propertyPath: m_margin.y
+      value: -141.15878
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658004928863852474, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+      propertyPath: m_margin.z
+      value: -339.6726
+      objectReference: {fileID: 0}
     - target: {fileID: 7402124607090068483, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.009
