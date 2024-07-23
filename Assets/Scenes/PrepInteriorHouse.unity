@@ -9150,7 +9150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_file_name: prep_intro
   minigame_id: 
-  quests_to_start: 
+  quests_to_start: route_map
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
   fetch_item: 
@@ -17335,6 +17335,10 @@ PrefabInstance:
     - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: scene
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: isLong
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: scene_name

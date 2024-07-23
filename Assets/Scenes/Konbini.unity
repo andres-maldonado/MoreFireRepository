@@ -256,6 +256,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5237329695552028228, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
   m_PrefabInstance: {fileID: 69369728}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &69369731 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5658004928863852474, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+  m_PrefabInstance: {fileID: 69369728}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &136181881
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,7 +578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &483319368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +601,7 @@ MonoBehaviour:
   do_fetch_quest: 0
   fetch_obj: {fileID: 0}
   post_fetch_dialogue_file_name: 
-  give_obj: {fileID: 0}
+  give_obj: {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
 --- !u!4 &483319369
 Transform:
   m_ObjectHideFlags: 0
@@ -665,7 +676,7 @@ PrefabInstance:
     - target: {fileID: 7263854640418022599, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
       propertyPath: questlog_UI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 69369731}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -967,7 +978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
+  m_IgnoreReversedGraphics: 0
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2

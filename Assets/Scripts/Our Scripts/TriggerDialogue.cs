@@ -16,7 +16,7 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private bool do_fetch_quest = false;
     [SerializeField] private Item fetch_obj;
     [SerializeField] private string post_fetch_dialogue_file_name;
-    [SerializeField] private Item give_obj;
+    [SerializeField] private List<Item> give_objs = new List<Item>();
 
     private bool player_near = false;
     private InventoryUI inv_ui;
@@ -39,7 +39,7 @@ public class TriggerDialogue : MonoBehaviour
                 dialogue_file_name = post_fetch_dialogue_file_name;
                 inv.remove_item(fetch_item);
             }
-            GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete, give_obj); // queue dialogue
+            GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete, give_objs); // queue dialogue
             if(!interactToTrigger)
             {
                 Destroy(gameObject);
