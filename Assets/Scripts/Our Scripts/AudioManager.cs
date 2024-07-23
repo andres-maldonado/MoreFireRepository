@@ -55,6 +55,7 @@ public class AudioManager : MonoBehaviour
 
     public IEnumerator ChangeMusic(EventReference newTrack)
     {
+        Debug.Log("AAA");
         musicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         musicEventInstance = CreateInstance(newTrack);
         musicEventInstance.start();

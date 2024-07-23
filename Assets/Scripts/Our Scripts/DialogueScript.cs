@@ -123,11 +123,13 @@ public class DialogueScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z)) {
             // if the message is finished typing, move on to the next message
-            if (letters_displayed >= current_text.Length) ReadDialogue();
-            // if it's not finished yet, show the whole message
-            else { letters_displayed = current_text.Length;
+            if (letters_displayed >= current_text.Length)
+            {
+                ReadDialogue();
                 AudioManager.instance.PlayOneShot(dialogueProgress, this.transform.position);
             }
+            // if it's not finished yet, show the whole message
+            else { letters_displayed = current_text.Length; }
         }
     }
 }

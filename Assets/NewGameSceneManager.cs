@@ -10,7 +10,6 @@ public class NewGameSceneManager : MonoBehaviour
 {
     private static NewGameSceneManager _instance;
     public static NewGameSceneManager Instance { get { return _instance; } }
-
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -40,6 +39,12 @@ public class NewGameSceneManager : MonoBehaviour
     }
 
     public void LoadScene(string scene_name, string entrance_name, bool isLong) {
+        player = null;
+        player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            player.GetComponent<Collider2D>().enabled = false;
+        }
         if (transition == null) {
             transition = GameObject.FindWithTag("MainCanvas").transform.GetChild(1).gameObject;
         }
@@ -56,11 +61,17 @@ public class NewGameSceneManager : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         scene_handle = Addressables.LoadSceneAsync(scene_name, LoadSceneMode.Single);
         yield return scene_handle;
+        if(transition == null)
+        {
+            transition = GameObject.FindWithTag("BlackScreen");
+        }
         StartCoroutine(FadeIn());
+        player.GetComponent<Collider2D>().enabled = true;
+        Vector3 entranceCoord = GameObject.Find(entrance_name).transform.localPosition;
+        player.transform.localPosition = entranceCoord;
+        Camera.main.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         if (scene_handle.Status == AsyncOperationStatus.Succeeded) {
-            Vector3 entranceCoord = GameObject.Find(entrance_name).transform.localPosition;
-            player.transform.localPosition = entranceCoord;
-            Camera.main.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+            
         }
     }
 

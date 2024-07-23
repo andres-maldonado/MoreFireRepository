@@ -17,6 +17,7 @@ public class SceneTrigger : MonoBehaviour
     public string scene_name;
     public string exit;
     public bool isLong;
+    public bool noButton = false;
     Animator doorIcon;
     [SerializeField] EventReference newSong;
     // Start is called before the first frame update
@@ -39,15 +40,11 @@ public class SceneTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && inTrigger == true)
+        if ((Input.GetKeyDown(KeyCode.E) || noButton) && inTrigger == true)
         {
-            if (QuestsComplete()) {
-                if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open close inventory
-                {
-                    GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
-                }
+            if (QuestsComplete())
+            {
                 gameSceneManager.LoadScene(scene_name, exit, isLong);
-                AudioManager.instance.ChangeMusic(newSong);
             }
             else {
                 GlobalManager.Instance.StartDialogue(failure_dialogue, blank_sprite);

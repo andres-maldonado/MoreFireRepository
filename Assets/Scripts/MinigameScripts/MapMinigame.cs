@@ -8,6 +8,8 @@ public class EvacuationMinigame : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] GameObject player_icon;
     [SerializeField] public int step = 0;
+    [SerializeField] private int stepcomp = 0;
+    [SerializeField] EventReference mapDraw;
     private bool finished = false;
     void Update()
     {
@@ -24,6 +26,11 @@ public class EvacuationMinigame : MonoBehaviour
                 GetComponentInParent<MinigameWin>().Win();
                 finished = !finished;
             }
+        }
+        if (step != stepcomp)
+        {
+            AudioManager.instance.PlayOneShot(mapDraw, this.transform.position);
+            step = stepcomp;
         }
     }
 }

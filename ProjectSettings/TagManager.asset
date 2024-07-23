@@ -11,6 +11,7 @@ TagManager:
   - AudioManager
   - SceneManager
   - MainCanvas
+  - BlackScreen
   layers:
   - Default
   - TransparentFX

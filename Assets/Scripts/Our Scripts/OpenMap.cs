@@ -5,15 +5,25 @@ using UnityEngine;
 public class OpenMap : MonoBehaviour
 {
     [SerializeField] Animator map;
+    bool open = false;
+    private void Start()
+    {
+        map = GetComponent<Animator>();
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
-            map.Play("MapEnter");
-        }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            map.Play("MapExit");
+            if (!open)
+            {
+                map.Play("MapEnter");
+                open = true;
+            }
+            else if (open)
+            {
+                map.Play("MapExit");
+                open = false;
+            }
         }
     }
 }

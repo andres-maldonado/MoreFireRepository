@@ -81,6 +81,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\ActivationTrigger.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\ErrorOnCollision.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\DrawTransformLines.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\Global Timer.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CollectibleItemTMP.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\OrthographicZoom.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\InventoryDestroyer.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Managers\CollectibleManager.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\MinigameScripts\map_step5.cs" />
