@@ -9149,7 +9149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_file_name: prep_intro
-  minigame_id: -1
+  minigame_id: 
   quests_to_start: 
   quests_to_complete: 
   speaker_sprite: {fileID: 0}

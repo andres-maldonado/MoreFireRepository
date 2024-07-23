@@ -1270,7 +1270,7 @@ MonoBehaviour:
   quests_to_complete: checkout
   dialogue_sprite: {fileID: 0}
   dialogue_to_queue: 
-  itemCount: 2
+  itemCount: 5
   reward_items:
   - {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
   - {fileID: 11400000, guid: 2073d4e21adb9cf40a6b034ecf31301d, type: 2}
