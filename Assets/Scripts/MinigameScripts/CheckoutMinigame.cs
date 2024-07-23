@@ -95,7 +95,7 @@ public class CheckoutMinigame : MonoBehaviour
         wallet.Play("MinigameMoveDown");
         GetComponentInParent<MinigameWin>().Win();
         NewGameSceneManager gameSceneManager = NewGameSceneManager.Instance;
-        gameSceneManager.LoadScene("PrepExteriorEvening", "Batteries", false);
+        gameSceneManager.LoadScene("PrepExteriorEvening", "Konbini", false);
     }
 
     void Start()
