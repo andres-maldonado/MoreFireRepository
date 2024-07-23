@@ -7,6 +7,7 @@ using FMODUnity;
 
 public class CheckoutMinigame : MonoBehaviour
 {
+    [SerializeField] Sprite finish_minigame;
     [SerializeField] BoxCollider2D collider;
     [SerializeField] Animator wallet;
     [SerializeField] private TMP_Text item_listUI;
@@ -54,8 +55,8 @@ public class CheckoutMinigame : MonoBehaviour
             finish_checkout = true;
             wallet.Play("WalletEnter");
             AudioManager.instance.PlayOneShot(konbiniWallet, this.transform.position);
-            collider.size = new Vector2 (1.5f, 0.4f);
-            collider.offset = new Vector2 (-5, -3.4f);
+            collider.size = new Vector2 (1f, 1f);
+            collider.offset = new Vector2 (-3, -3f);
             checked_out.Add("Coin", false);
             this.transform.GetChild(0).GetChild(0).GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         }        
@@ -73,9 +74,8 @@ public class CheckoutMinigame : MonoBehaviour
         }
         if (paid)
         {
-            wallet.Play("MinigameMoveDown");
-            GetComponentInParent<MinigameWin>().Win();
-            NewGameSceneManager gameSceneManager = NewGameSceneManager.Instance;
+            this.transform.GetChild(2).GetComponent<SpriteRenderer>().sprite = finish_minigame;
+            StartCoroutine(holdscreen());
         }
     }
 
@@ -87,6 +87,15 @@ public class CheckoutMinigame : MonoBehaviour
             receipt += checkout_screen[i] + (i == checkout_screen.Count - 1 ? "" : "\n");
         }
         item_listUI.text = receipt;
+    }
+
+    IEnumerator holdscreen()
+    {
+        yield return new WaitForSeconds(0.5f);
+        wallet.Play("MinigameMoveDown");
+        GetComponentInParent<MinigameWin>().Win();
+        NewGameSceneManager gameSceneManager = NewGameSceneManager.Instance;
+        gameSceneManager.LoadScene("PrepExteriorEvening", "Batteries");
     }
 
     void Start()
