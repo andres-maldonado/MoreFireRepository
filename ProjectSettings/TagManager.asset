@@ -12,6 +12,7 @@ TagManager:
   - SceneManager
   - MainCanvas
   - BlackScreen
+  - Inventory
   layers:
   - Default
   - TransparentFX
