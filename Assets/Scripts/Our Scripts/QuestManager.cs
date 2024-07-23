@@ -66,26 +66,7 @@ public class QuestManager : MonoBehaviour
             UpdateLogText();
         }
     }
-    /*void add_to_inv()
-    {
-        if (quest_bank["route_map"].Item2 == true)//map
-        {
-            if (!inventory.GetComponent<Inventory>().in_inventory("Map"))
-            {
-                //inventory.GetComponent<Inventory>().inv.Add(reward_items[0]);
-            }
-        }
-        else if (quest_bank["checkout"].Item2 == true)// checkout
-        {
-            if (!inventory.GetComponent<Inventory>().in_inventory("Batteries") && !inventory.GetComponent<Inventory>().in_inventory("EnergyFood") && !inventory.GetComponent<Inventory>().in_inventory("Medkit"))
-            {
-                inventory.GetComponent<Inventory>().inv.Add(reward_items[1]);
-                inventory.GetComponent<Inventory>().inv.Add(reward_items[2]);
-                inventory.GetComponent<Inventory>().inv.Add(reward_items[3]);
-            }
-        }        
-    }*/
-
+    
     public void CompleteQuest(string quest_name) {
         if (quest_name.Length == 0) return;
         if (active_quests.Contains(quest_bank[quest_name].Item1)) {
@@ -93,7 +74,6 @@ public class QuestManager : MonoBehaviour
             Debug.Log("Why young hero, it seems you have completed the " + quest_name + " quest!");
             quest_bank[quest_name] = (quest_bank[quest_name].Item1, true);
             UpdateLogText();
-            //add_to_inv();
         }
         else {
             Debug.LogError("Tried to complete quest \"" + quest_name + "\", but this quest was never started!");
