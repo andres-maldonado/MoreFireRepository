@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d17a21594effb4e9591490b009e7aa, type: 3}
-  m_Name: Konbini_BundledAssetGroupSchema
+  m_Name: EvacScenes_BundledAssetGroupSchema
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: ef5caa55e12064faf9ce332038d2744c, type: 2}
+  m_Group: {fileID: 11400000, guid: 19724c9d56b304469ae2c36cdc940793, type: 2}
   m_InternalBundleIdMode: 1
   m_Compression: 1
   m_IncludeAddressInCatalog: 1

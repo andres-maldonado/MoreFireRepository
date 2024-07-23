@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Test
+  m_Name: MorningScenes
   m_EditorClassIdentifier: 
-  m_GroupName: Test
+  m_GroupName: MorningScenes
   m_Data:
     m_SerializedData: []
-  m_GUID: 75a33b9499c444deea290570b8789630
+  m_GUID: 0d4480ec670cd4582abd8c29920a40ac
   m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8b174af6aea80457a8b0a232aa777f5e, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 8a060b5a3c72f41eeb2d2ebb50211bc6, type: 2}
-    - {fileID: 11400000, guid: 406954e767c8a4ef89676826ca64523d, type: 2}
+    - {fileID: 11400000, guid: 5556194183f8946369b73617dc4abaa6, type: 2}
+    - {fileID: 11400000, guid: a4209d7b51d634974ab1a3241e8f9d5e, type: 2}

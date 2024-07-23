@@ -24,7 +24,7 @@ public class AddressableScenes : MonoBehaviour
             }
         }
 
-        AsyncOperationHandle<SceneInstance> init_scene_op = Addressables.LoadSceneAsync("ShowcaseScene1", LoadSceneMode.Single);
+        AsyncOperationHandle<SceneInstance> init_scene_op = Addressables.LoadSceneAsync("StartScreen", LoadSceneMode.Single);
         yield return init_scene_op;
     }
 

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5834b5087d578d24c926ce20cd31e6d6, type: 3}
-  m_Name: Test_ContentUpdateGroupSchema
+  m_Name: EvacScenes_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: 9234cf2f784904507b54d3218ed754a2, type: 2}
+  m_Group: {fileID: 11400000, guid: 19724c9d56b304469ae2c36cdc940793, type: 2}
   m_StaticContent: 0
