@@ -29,6 +29,8 @@ public class DialogueScript : MonoBehaviour
     private Item give_object;
 
     private SpriteRenderer mc_sprite, speaker_sprite;
+    private Image prompter_img;
+
     // (false) => other speaker
     // (true) => MC
     private bool speaking = true;
@@ -43,6 +45,7 @@ public class DialogueScript : MonoBehaviour
     void Awake() {
         mainText = transform.GetChild(1).GetComponent<TMP_Text>();
         prompter = transform.GetChild(2).gameObject;
+        prompter_img = prompter.GetComponent<Image>();
         prompter_origin = prompter.transform.position;
     }
 
@@ -100,7 +103,7 @@ public class DialogueScript : MonoBehaviour
         else speaking = false;
         
         prompter_time = -3.0;
-        prompter.GetComponent<Image>().enabled = false;
+        prompter_img.enabled = false;
         letters_displayed = 0;
     }
 
@@ -116,8 +119,8 @@ public class DialogueScript : MonoBehaviour
 
         counter++;
         prompter_time += Time.deltaTime;
-        if (letters_displayed == current_text.Length && !prompter.GetComponent<Image>().enabled) {
-            prompter.GetComponent<Image>().enabled = true;
+        if (letters_displayed == current_text.Length && !prompter_img.enabled) {
+            prompter_img.enabled = true;
         }
         prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Abs(Math.Sin(prompter_time * 4) * 0.05f)), 0);
 
