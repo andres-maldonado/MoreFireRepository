@@ -10,7 +10,6 @@ public class NewGameSceneManager : MonoBehaviour
 {
     private static NewGameSceneManager _instance;
     public static NewGameSceneManager Instance { get { return _instance; } }
-
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -41,14 +40,21 @@ public class NewGameSceneManager : MonoBehaviour
         player = GameObject.FindWithTag("Player");
     }
 
-    public void LoadScene(string scene_name, string entrance_name) {
+    public void LoadScene(string scene_name, string entrance_name, bool isLong) {
+        player = null;
+        player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            player.GetComponent<Collider2D>().enabled = false;
+        }
         if (transition == null) {
             transition = GameObject.FindWithTag("MainCanvas").transform.GetChild(1).gameObject;
         }
-        StartCoroutine(FadeOut(scene_name, entrance_name));
+        StartCoroutine(FadeOut(scene_name, entrance_name, isLong));
     }
 
     IEnumerator AsyncLoadScene(string scene_name, string entrance_name) {
+        Debug.Log("AsyncLoadScene");
         if (scene_handle.IsValid()) {
             AsyncOperationHandle<SceneInstance> unload_handle = Addressables.UnloadSceneAsync(scene_handle);
             yield return unload_handle;
@@ -57,19 +63,24 @@ public class NewGameSceneManager : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         scene_handle = Addressables.LoadSceneAsync(scene_name, LoadSceneMode.Single);
         yield return scene_handle;
-        
+        if(transition == null)
+        {
+            transition = GameObject.FindWithTag("BlackScreen");
+        }
+        StartCoroutine(FadeIn());
+        player.GetComponent<Collider2D>().enabled = true;
+        Vector3 entranceCoord = GameObject.Find(entrance_name).transform.localPosition;
+        player.transform.localPosition = entranceCoord;
+        Camera.main.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         if (scene_handle.Status == AsyncOperationStatus.Succeeded) {
-            Vector3 entranceCoord = GameObject.Find(entrance_name).transform.localPosition;
-            player.transform.localPosition = entranceCoord;
-            Camera.main.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
-            StartCoroutine(FadeIn());
+            
         }
     }
 
     public IEnumerator FadeIn()
     {
-
-        transition_anim.SetBool("FadeOut", false);
+        Debug.Log("FadeIn");
+        transition.GetComponent<Animator>().SetBool("FadeOut", false);
         transition.SetActive(true);
         transition_anim.SetBool("FadeIn", true);
         yield return new WaitForSeconds(1);
@@ -78,12 +89,14 @@ public class NewGameSceneManager : MonoBehaviour
         //canTransition = true;
     }
 
-    public IEnumerator FadeOut(string scene_name, string entrance_name)
+    public IEnumerator FadeOut(string scene_name, string entrance_name, bool isLong)
     {
+        Debug.Log("FadeOut");
         //canTransition = false;
         transition.SetActive(true);
-        transition_anim.SetBool("FadeOut", true);
-        yield return new WaitForSeconds(.5f);
+        transition.GetComponent<Animator>().SetBool("FadeOut", true);
+        if (!isLong) { yield return new WaitForSeconds(.5f); }
+        if (isLong) { yield return new WaitForSeconds(4f); }
         StartCoroutine(AsyncLoadScene(scene_name, entrance_name));
     }
 }

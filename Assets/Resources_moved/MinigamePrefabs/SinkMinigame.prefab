@@ -321,7 +321,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  flip_direction: 1
+  flip_direction: 0
 --- !u!61 &1123356547259868375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ BoxCollider2D:
     m_Bits: 8
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295

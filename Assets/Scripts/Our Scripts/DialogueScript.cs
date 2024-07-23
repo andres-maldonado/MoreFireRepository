@@ -7,6 +7,7 @@ using UnityEngine.UI;
 // custom imports
 using System.IO;
 using TMPro;
+using FMODUnity;
 
 // this script will handle dialogue boxes
 
@@ -17,6 +18,8 @@ public class DialogueScript : MonoBehaviour
 
     private Vector3 prompter_origin;
     private double prompter_time;
+
+    [SerializeField] EventReference dialogueProgress;
 
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
     [SerializeField] private string minigame_id = "BikeMinigame";
@@ -123,7 +126,11 @@ public class DialogueScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z)) {
             // if the message is finished typing, move on to the next message
-            if (letters_displayed >= current_text.Length) ReadDialogue();
+            if (letters_displayed >= current_text.Length)
+            {
+                ReadDialogue();
+                AudioManager.instance.PlayOneShot(dialogueProgress, this.transform.position);
+            }
             // if it's not finished yet, show the whole message
             else { letters_displayed = current_text.Length; }
         }

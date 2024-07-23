@@ -19,14 +19,14 @@ public class MinigameTrigger : MonoBehaviour
     private bool check_item_reqs(string[] item_reqs)
     {
         int count = 0;
-        for (int i = 0; i < item_reqs.Length; i ++)
+        for (int i = 0; i < item_reqs.Length; i++)
         {
-            if(inventory.GetComponent<Inventory>().inv[i].name == item_reqs[i])
+            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().in_inventory(item_reqs[i]))
             {
-                count++;
+                count++; //is in inventory
             }
         }
-        if(count == item_reqs.Length)
+        if (count == item_reqs.Length)
         {
             return true;
         }
@@ -35,17 +35,16 @@ public class MinigameTrigger : MonoBehaviour
             return false;
         }
     }
-    // Start is called before the first frame update
     void Start()
     {
         if (GlobalManager.Instance.IsComplete(minigame_name)) Destroy(gameObject);
         canvas = GameObject.FindWithTag("MainCanvas");
-        has_req_items = check_item_reqs(item_reqs);
     }
 
     // Update is called once per frame
     void Update()
     {
+        has_req_items = check_item_reqs(item_reqs);
         if (Input.GetKeyDown(KeyCode.E) && inTrigger && has_req_items)
         {
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open

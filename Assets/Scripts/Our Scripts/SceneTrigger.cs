@@ -11,13 +11,13 @@ public class SceneTrigger : MonoBehaviour
     [Tooltip("Name of dialogue file which will be queued when the trigger is interacted with and the necessary quests have not been completed")]
     public string failure_dialogue;
     public Sprite blank_sprite;
-
     NewGameSceneManager gameSceneManager;
-    public bool evening = false;
     private bool inTrigger = false;
     public int scene;
     public string scene_name;
     public string exit;
+    public bool isLong;
+    public bool noButton = false;
     Animator doorIcon;
     [SerializeField] EventReference newSong;
     // Start is called before the first frame update
@@ -40,15 +40,11 @@ public class SceneTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && inTrigger == true)
+        if ((Input.GetKeyDown(KeyCode.E) || noButton) && inTrigger == true)
         {
-            if (QuestsComplete()) {
-                if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open close inventory
-                {
-                    GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
-                }
-                gameSceneManager.LoadScene(scene_name, exit);
-                AudioManager.instance.ChangeMusic(newSong);
+            if (QuestsComplete())
+            {
+                gameSceneManager.LoadScene(scene_name, exit, isLong);
             }
             else {
                 GlobalManager.Instance.StartDialogue(failure_dialogue, blank_sprite);

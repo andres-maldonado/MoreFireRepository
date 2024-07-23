@@ -59,4 +59,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 98c5a957712584c0dab53097acafe624, type: 2}
   - {fileID: 11400000, guid: 7202469ba053a446eb9b5930ea9b13b6, type: 2}
   - {fileID: 11400000, guid: cc58b705d2226bc4784f102acc757d83, type: 2}
+  reward_items:
+  - {fileID: 11400000, guid: ac3df9aa818d694439d997402b3c6fe7, type: 2}
+  - {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
+  - {fileID: 11400000, guid: 2073d4e21adb9cf40a6b034ecf31301d, type: 2}
+  - {fileID: 11400000, guid: 9878928d58422744e9d60b5a908f0cfd, type: 2}
   active_quests: []

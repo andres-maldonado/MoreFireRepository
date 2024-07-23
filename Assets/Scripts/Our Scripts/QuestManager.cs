@@ -11,6 +11,7 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private TMP_Text questlog_UI;
 
     public List<Quest> all_quests = new List<Quest>();
+    public List<Item> reward_items = new List<Item>();
     private Dictionary<string, (Quest, bool)> quest_bank = new Dictionary<string, (Quest, bool)>();
 
     [SerializeField] private List<Quest> active_quests = new List<Quest>();
@@ -67,25 +68,21 @@ public class QuestManager : MonoBehaviour
     }
     void add_to_inv()
     {
-        if (quest_bank["route_map"].Item2 == true)
+        if (quest_bank["route_map"].Item2 == true)//map
         {
-            Item obj = ScriptableObject.CreateInstance<Item>();
-            obj.Init("map", "mmmm map", Resources.Load<Sprite>("map"));
-            inventory.GetComponent<Inventory>().inv.Add(obj);
+            if (!inventory.GetComponent<Inventory>().in_inventory("Map"))
+            {
+                inventory.GetComponent<Inventory>().inv.Add(reward_items[0]);
+            }
         }
-        else if (quest_bank["checkout"].Item2 == true)
+        else if (quest_bank["checkout"].Item2 == true && inventory.GetComponent<Inventory>().in_inventory(""))// checkout
         {
-            Item obj = ScriptableObject.CreateInstance<Item>();
-            obj.Init("batteries", "mmmm batteries", Resources.Load<Sprite>("battery"));
-            inventory.GetComponent<Inventory>().inv.Add(obj);
-
-            Item obj2 = ScriptableObject.CreateInstance<Item>();
-            obj2.Init("energybar", "mmmm energybar", Resources.Load<Sprite>("energy_food"));
-            inventory.GetComponent<Inventory>().inv.Add(obj2);
-
-            Item obj3 = ScriptableObject.CreateInstance<Item>();
-            obj3.Init("medkit", "mmmm medkit", Resources.Load<Sprite>("first_aid_kit"));
-            inventory.GetComponent<Inventory>().inv.Add(obj3);
+            if (!inventory.GetComponent<Inventory>().in_inventory("Batteries") && !inventory.GetComponent<Inventory>().in_inventory("EnergyFood") && !inventory.GetComponent<Inventory>().in_inventory("Medkit"))
+            {
+                inventory.GetComponent<Inventory>().inv.Add(reward_items[1]);
+                inventory.GetComponent<Inventory>().inv.Add(reward_items[2]);
+                inventory.GetComponent<Inventory>().inv.Add(reward_items[3]);
+            }
         }        
     }
 

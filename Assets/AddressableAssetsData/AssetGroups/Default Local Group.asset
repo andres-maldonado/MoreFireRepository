@@ -52,11 +52,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e67e90cf80f27ea43a1b66697b021026
-    m_Address: Konbini
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4a8781de17c101d4c94e58ce8ed43c67
     m_Address: PrepInteriorHouse
     m_ReadOnly: 0
@@ -64,11 +59,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3b8f39d2403aa9e41bebe516cc274f61
     m_Address: PrepInteriorHouseEvening
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a0e53b6f5c0f441449afb025719ffdb6
-    m_Address: TitleScreen
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -84,6 +74,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5cdd9f102ae9449e6abdd24e3370df06
     m_Address: Konbini
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 530e94ee233f86847ae3735828f70320
+    m_Address: End
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

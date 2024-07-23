@@ -53,7 +53,6 @@ public class PackingMinigame : MonoBehaviour
         }
         if (has_won && !non_essential) {
             GetComponentInParent<MinigameWin>().Win();
-            Debug.Log("You win!");
         }
     }
 

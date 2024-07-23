@@ -65,10 +65,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What's that? There's a fire coming?
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3f363f8d57322b241aefa6f912bbcac2, type: 2}
+  m_sharedMaterial: {fileID: -6039146468370362774, guid: 3f363f8d57322b241aefa6f912bbcac2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -501,6 +501,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c7d2ea209ae44d8add1f92d0c30d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueProgress:
+    Guid:
+      Data1: -1593075970
+      Data2: 1240231395
+      Data3: -1347747915
+      Data4: 973656764
+    Path: event:/ProgressDialogue
   dialogue_file_name: dialogue_test_file
   minigame_id: 
   ticks_per_letter: 2
