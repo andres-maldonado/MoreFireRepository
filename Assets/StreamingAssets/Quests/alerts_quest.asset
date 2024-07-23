@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest_name: alerts
   quest_desc: Help Norio set up weather alerts on his phone
-  is_starter_quest: 1
+  is_starter_quest: 0

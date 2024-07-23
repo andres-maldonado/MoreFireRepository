@@ -4959,6 +4959,8 @@ MonoBehaviour:
   quests_to_complete: extinguish_fire
   dialogue_sprite: {fileID: 0}
   dialogue_to_queue: 
+  itemCount: 0
+  reward_items: []
 --- !u!1 &2834252738591925887
 GameObject:
   m_ObjectHideFlags: 0
@@ -14847,13 +14849,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6238072905977273378}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.33, y: 0.33, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 205653715215505124}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
 --- !u!212 &775018852628354172
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14895,9 +14897,9 @@ SpriteRenderer:
   m_SortingLayerID: 180786079
   m_SortingLayer: 1
   m_SortingOrder: 16
-  m_Sprite: {fileID: 21300000, guid: 9a8dbabc90a0d4114bd35813287984e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d05a8a10ad8ac904c83aac1ec1fb781b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
