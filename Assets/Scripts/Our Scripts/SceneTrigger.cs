@@ -16,6 +16,7 @@ public class SceneTrigger : MonoBehaviour
     public int scene;
     public string scene_name;
     public string exit;
+    public bool isLong;
     Animator doorIcon;
     [SerializeField] EventReference newSong;
     // Start is called before the first frame update
@@ -45,7 +46,7 @@ public class SceneTrigger : MonoBehaviour
                 {
                     GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory();
                 }
-                gameSceneManager.LoadScene(scene_name, exit);
+                gameSceneManager.LoadScene(scene_name, exit, isLong);
                 AudioManager.instance.ChangeMusic(newSong);
             }
             else {
