@@ -62,11 +62,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a0e53b6f5c0f441449afb025719ffdb6
-    m_Address: TitleScreen
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d4a0c7fc8ce631d4781cad0a9bff3b66
     m_Address: PrepExteriorEvening
     m_ReadOnly: 0
