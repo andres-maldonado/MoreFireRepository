@@ -52,11 +52,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e67e90cf80f27ea43a1b66697b021026
-    m_Address: Konbini
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4a8781de17c101d4c94e58ce8ed43c67
     m_Address: PrepInteriorHouse
     m_ReadOnly: 0
