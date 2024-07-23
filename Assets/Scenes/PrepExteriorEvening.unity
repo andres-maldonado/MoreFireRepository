@@ -806,6 +806,14 @@ PrefabInstance:
       propertyPath: minigame_name
       value: BikeMinigame
       objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: item_reqs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
+      propertyPath: item_reqs.Array.data[0]
+      value: BikePump
+      objectReference: {fileID: 0}
     - target: {fileID: 9177342171301116380, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -4385,11 +4393,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8570004
+      value: 17.92
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.808
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5723,7 +5731,7 @@ Transform:
   m_GameObject: {fileID: 1063309577}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.812, y: -12.027, z: 0.008450856}
+  m_LocalPosition: {x: 3.5, y: -7.51, z: 0.008450856}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85465,6 +85473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7263854640418022599, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1054607744}
     - target: {fileID: 7263854640418022599, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
       propertyPath: questlog_UI
       value: 
