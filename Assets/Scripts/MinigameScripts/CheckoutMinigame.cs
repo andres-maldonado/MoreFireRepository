@@ -7,6 +7,7 @@ using FMODUnity;
 
 public class CheckoutMinigame : MonoBehaviour
 {
+    [SerializeField] Sprite finish_minigame;
     [SerializeField] BoxCollider2D collider;
     [SerializeField] Animator wallet;
     [SerializeField] private TMP_Text item_listUI;
@@ -73,11 +74,8 @@ public class CheckoutMinigame : MonoBehaviour
         }
         if (paid)
         {
-            
-            wallet.Play("MinigameMoveDown");
-            GetComponentInParent<MinigameWin>().Win();
-            NewGameSceneManager gameSceneManager = NewGameSceneManager.Instance;
-            gameSceneManager.LoadScene("PrepExteriorEvening", "Batteries");
+            this.transform.GetChild(2).GetComponent<SpriteRenderer>().sprite = finish_minigame;
+            StartCoroutine(holdscreen());
         }
     }
 
@@ -89,6 +87,15 @@ public class CheckoutMinigame : MonoBehaviour
             receipt += checkout_screen[i] + (i == checkout_screen.Count - 1 ? "" : "\n");
         }
         item_listUI.text = receipt;
+    }
+
+    IEnumerator holdscreen()
+    {
+        yield return new WaitForSeconds(0.5f);
+        wallet.Play("MinigameMoveDown");
+        GetComponentInParent<MinigameWin>().Win();
+        NewGameSceneManager gameSceneManager = NewGameSceneManager.Instance;
+        gameSceneManager.LoadScene("PrepExteriorEvening", "Batteries");
     }
 
     void Start()
