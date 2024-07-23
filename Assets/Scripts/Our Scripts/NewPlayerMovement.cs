@@ -121,7 +121,7 @@ public class NewPlayerMovement : MonoBehaviour
     {
         anim.SetFloat("MoveHorizontal", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("MoveVertical", Input.GetAxisRaw("Vertical"));
-        if (Input.GetAxisRaw("Horizontal") != 0 || rb.velocity.y != 0)
+        if (Input.GetAxisRaw("Horizontal") != 0 || rb.velocity.y != 0 && !disabled)
         {
             anim.SetBool("isMoving", true);
         }

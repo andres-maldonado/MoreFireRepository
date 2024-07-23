@@ -15,6 +15,11 @@ public class AddressableScenes : MonoBehaviour
     IEnumerator Init()
     {
         // DontDestroyOnLoad(gameObject);
+        AsyncOperationHandle<SceneInstance> init_scene_op = Addressables.LoadSceneAsync("StartScreen", LoadSceneMode.Single);
+        yield return init_scene_op;
+    }
+
+    IEnumerator SpawnManagers() {
         foreach (string m in manager_names) {
             AsyncOperationHandle<GameObject> loadOp = Addressables.LoadAssetAsync<GameObject>(m);
             yield return loadOp;
@@ -23,9 +28,6 @@ public class AddressableScenes : MonoBehaviour
                 Instantiate(loadOp.Result, transform);
             }
         }
-
-        AsyncOperationHandle<SceneInstance> init_scene_op = Addressables.LoadSceneAsync("StartScreen", LoadSceneMode.Single);
-        yield return init_scene_op;
     }
 
     void Awake() {

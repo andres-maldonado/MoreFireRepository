@@ -122,6 +122,8 @@ public class GlobalManager : MonoBehaviour
     }
 
     public void StartDialogue(string branch_name, Sprite sp_sprite, string game_id = "", string quests_to_start = "", string quests_to_end = "", Item obj = null, int tpl = 2) {
+        NewPlayerMovement.Instance.DisablePlayer(true);
+        
         GameObject d = Instantiate(dialogue_prefab, GameObject.FindWithTag("MainCanvas").transform);
         DialogueScript s = d.GetComponent<DialogueScript>();
         s.Set(branch_name, sp_sprite, game_id, quests_to_start, quests_to_end, obj, tpl);

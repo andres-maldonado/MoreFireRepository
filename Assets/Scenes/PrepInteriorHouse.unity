@@ -367,6 +367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSceneManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6248706224470645796, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9150,7 +9154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_file_name: prep_intro
   minigame_id: 
-  quests_to_start: 
+  quests_to_start: route_map
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
   fetch_item: 
