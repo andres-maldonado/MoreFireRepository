@@ -423,7 +423,7 @@ MonoBehaviour:
       m_Height: 71
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
+    m_ClassDefinitionType: 0.0
   - m_Index: 64
     m_Metrics:
       m_Width: 26.359375

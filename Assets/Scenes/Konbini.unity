@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_file_name: dialogue_test_file
-  minigame_id: 
+  minigame_id: CheckoutMinigame
   quests_to_start: 
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
@@ -758,7 +758,11 @@ PrefabInstance:
     - target: {fileID: 1920385301904249421, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
       propertyPath: Transition
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1615962127}
+    - target: {fileID: 3474072175954844147, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1615962127}
     - target: {fileID: 5686671606748854618, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -885,6 +889,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+--- !u!1 &1615962127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 694469586231803010, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
+  m_PrefabInstance: {fileID: 442874509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1915309324
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +989,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 813223768}
   m_PlaneDistance: 2
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
