@@ -14743,10 +14743,17 @@ MonoBehaviour:
   bassValue: 1
   plucksValue: 0
   arpValue: 0
+  drumsValue: -1
+  rideValue: -1
+  prepOrEvacValue: -1
   padExitValue: -1
   bassExitValue: -1
   plucksExitValue: -1
   arpExitValue: -1
+  drumsExitValue: -1
+  rideExitValue: -1
+  prepOrEvacExitValue: -1
+  onTrigger: 0
 --- !u!1 &926850343
 GameObject:
   m_ObjectHideFlags: 0
@@ -15703,10 +15710,17 @@ MonoBehaviour:
   bassValue: 0
   plucksValue: 0
   arpValue: 0
+  drumsValue: -1
+  rideValue: -1
+  prepOrEvacValue: -1
   padExitValue: 0
   bassExitValue: 0
   plucksExitValue: 0
   arpExitValue: 0
+  drumsExitValue: -1
+  rideExitValue: -1
+  prepOrEvacExitValue: -1
+  onTrigger: 0
 --- !u!4 &978270960
 Transform:
   m_ObjectHideFlags: 0
@@ -20567,8 +20581,28 @@ PrefabInstance:
       value: Audio Manager
       objectReference: {fileID: 0}
     - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Path
+      value: event:/Song
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
       propertyPath: <itemPickup>k__BackingField.Path
       value: event:/ItemPickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Guid.Data1
+      value: -384821194
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Guid.Data2
+      value: 1253098548
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Guid.Data3
+      value: -1978948714
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Guid.Data4
+      value: 1059782278
       objectReference: {fileID: 0}
     - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
       propertyPath: <itemPickup>k__BackingField.Guid.Data1
