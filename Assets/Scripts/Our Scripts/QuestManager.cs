@@ -72,10 +72,10 @@ public class QuestManager : MonoBehaviour
         {
             if (!inventory.GetComponent<Inventory>().in_inventory("Map"))
             {
-                inventory.GetComponent<Inventory>().inv.Add(reward_items[0]);
+                //inventory.GetComponent<Inventory>().inv.Add(reward_items[0]);
             }
         }
-        else if (quest_bank["checkout"].Item2 == true && inventory.GetComponent<Inventory>().in_inventory(""))// checkout
+        else if (quest_bank["checkout"].Item2 == true)// checkout
         {
             if (!inventory.GetComponent<Inventory>().in_inventory("Batteries") && !inventory.GetComponent<Inventory>().in_inventory("EnergyFood") && !inventory.GetComponent<Inventory>().in_inventory("Medkit"))
             {
