@@ -16,6 +16,7 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private bool do_fetch_quest = false;
     [SerializeField] private Item fetch_obj;
     [SerializeField] private string post_fetch_dialogue_file_name;
+    [SerializeField] private Item give_obj;
 
     private bool player_near = false;
     private InventoryUI inv_ui;
@@ -29,7 +30,7 @@ public class TriggerDialogue : MonoBehaviour
     private void Update() {
         if (player_near && (Input.GetKeyDown(KeyCode.E)||!interactToTrigger) && !GlobalManager.Instance.in_dialogue) {
             Debug.Log("Player Triggered");
-            GameObject.FindWithTag("Player").GetComponent<NewPlayerMovement>().DisablePlayer(true); // stop movement
+            NewPlayerMovement.Instance.DisablePlayer(true); // stop movement
             if (inv_ui.inventory_isopen) //if the inventory is open close inventory
             {
                 inv_ui.close_inventory();
@@ -38,7 +39,7 @@ public class TriggerDialogue : MonoBehaviour
                 dialogue_file_name = post_fetch_dialogue_file_name;
                 inv.remove_item(fetch_item);
             }
-            GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete); // queue dialogue
+            GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete, give_obj); // queue dialogue
             if(!interactToTrigger)
             {
                 Destroy(gameObject);

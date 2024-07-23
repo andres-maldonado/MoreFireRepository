@@ -120,10 +120,10 @@ public class GlobalManager : MonoBehaviour
         AudioManager.instance.PlayOneShot(error, this.transform.position);
     }
 
-    public void StartDialogue(string branch_name, Sprite sp_sprite, string game_id = "", string quests_to_start = "", string quests_to_end = "", int tpl = 2) {
+    public void StartDialogue(string branch_name, Sprite sp_sprite, string game_id = "", string quests_to_start = "", string quests_to_end = "", Item obj = null, int tpl = 2) {
         GameObject d = Instantiate(dialogue_prefab, GameObject.FindWithTag("MainCanvas").transform);
         DialogueScript s = d.GetComponent<DialogueScript>();
-        s.Set(branch_name, sp_sprite, game_id, quests_to_start, quests_to_end, tpl);
+        s.Set(branch_name, sp_sprite, game_id, quests_to_start, quests_to_end, obj, tpl);
         in_dialogue = true;
     }
 }
