@@ -2,6 +2,7 @@ MC: Hey [NPC3], have you heard about the wildfire nearby? I wanted to make sure 
 NPC3: Yep, and I’ve got an essentials bag packed in case we need to evacuate too! I recommend that you put one together yourself.
 MC: Oh, that’s actually what I’m doing right now! I’m going to the store to grab what I need.
 NPC3: Good on you! I'll go ahead and leave you to it.
-NPC3: Oh, before you go, I actually had a spare first aid kit lying around. You can have it if you want!
+MC: Hmmm wait, I do need a bike pump though, would you happen to have one I could borrow?
+NPC3: Oh, yes actually. Let me go get that for you!
 MC: Really? That'd be great, thanks!
 NPC3: Sure thing! Good luck getting the rest of what you need!

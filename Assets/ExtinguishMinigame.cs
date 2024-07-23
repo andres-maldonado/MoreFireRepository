@@ -6,8 +6,8 @@ public class ExtinguishMinigame : MonoBehaviour
 {
     private GameObject fires_parent;
     private GameObject nozzle;
-
     private bool game_won = false;
+    
 
     void Start() {
         fires_parent = transform.Find("Fires").gameObject;

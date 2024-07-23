@@ -1126,7 +1126,11 @@ PrefabInstance:
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: give_obj
       value: 
-      objectReference: {fileID: 11400000, guid: eaa635d0871ec4d8c9844027feac4e6d, type: 2}
+      objectReference: {fileID: 11400000, guid: 53102600e745653439e30468b5973bc2, type: 2}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: do_fetch_quest
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: speaker_sprite
       value: 
@@ -1287,7 +1291,7 @@ Transform:
   m_GameObject: {fileID: 488399242}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.594, y: 0.747, z: 0}
+  m_LocalPosition: {x: 20.55, y: 0.31, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
