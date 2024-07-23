@@ -536,8 +536,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
-  sourceBankPath: 
+  sourceProjectPath: FMODProject/Fire Game.fspro
+  sourceBankPath: FMODProject/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -572,7 +572,7 @@ MonoBehaviour:
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
   CurrentVersion: 131618
-  HideSetupWizard: 0
+  HideSetupWizard: 1
   LastEventReferenceScanVersion: 131618
   Platforms:
   - {fileID: -5515313896957410273}

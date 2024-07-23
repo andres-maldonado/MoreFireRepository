@@ -42,7 +42,7 @@ public class DialogueScript : MonoBehaviour
     void Awake() {
         mainText = transform.GetChild(1).GetComponent<TMP_Text>();
         prompter = transform.GetChild(2).gameObject;
-        prompter_image = prompter.GetComponent<Image>();
+        prompter_img = prompter.GetComponent<Image>();
         prompter_origin = prompter.transform.position;
     }
 
