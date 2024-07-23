@@ -1268,6 +1268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests_to_complete: checkout
+  quests_to_start: 
   dialogue_sprite: {fileID: 0}
   dialogue_to_queue: 
   itemCount: 3
@@ -1275,6 +1276,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
   - {fileID: 11400000, guid: 2073d4e21adb9cf40a6b034ecf31301d, type: 2}
   - {fileID: 11400000, guid: eaa635d0871ec4d8c9844027feac4e6d, type: 2}
+  bat: {fileID: 21300000, guid: 01313c9ac8993ac4f8d78f0d354e0275, type: 3}
 --- !u!1 &5567487572999066710
 GameObject:
   m_ObjectHideFlags: 0

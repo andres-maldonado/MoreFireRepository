@@ -27,11 +27,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e5b8546e535c946bc9c8a68e04a4ad7d
-    m_Address: AddressableInitiator
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6032f4e24e2ff804da1527712775e3d0
     m_Address: CheckoutMinigame
     m_ReadOnly: 0
@@ -39,46 +34,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 124e03747fb3cfd449185630f3d1fc3e
     m_Address: MapMinigame
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 75d282fc846371e4fb37ba1f193ede3d
-    m_Address: EvacExterior
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: afafd7d2df417fd48824b435eba4f1b1
-    m_Address: EvacInteriorHouse
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4a8781de17c101d4c94e58ce8ed43c67
-    m_Address: PrepInteriorHouse
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3b8f39d2403aa9e41bebe516cc274f61
-    m_Address: PrepInteriorHouseEvening
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d4a0c7fc8ce631d4781cad0a9bff3b66
-    m_Address: PrepExteriorEvening
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7282cbc807f6e45698746c0f0c5bb1a3
-    m_Address: PrepExterior
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5cdd9f102ae9449e6abdd24e3370df06
-    m_Address: Konbini
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 530e94ee233f86847ae3735828f70320
-    m_Address: End
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

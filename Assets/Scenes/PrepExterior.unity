@@ -975,6 +975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Konbini Scence Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 1896654458712852026, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4274043730932706653, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_Size.x
       value: 2
@@ -989,6 +993,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4274043730932706653, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_Offset.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274043730932706653, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5552439527513669480, guid: b83dde05c93e7c64790059400aafee33, type: 3}
@@ -4039,6 +4047,107 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 694469586231803011, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
   m_PrefabInstance: {fileID: 1663908586}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &674649379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674649381}
+  - component: {fileID: 674649380}
+  - component: {fileID: 674649382}
+  m_Layer: 0
+  m_Name: checkoutgame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!61 &674649380
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674649379}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &674649381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674649379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.936, y: -12.089, z: 117.39333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674649382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674649379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b954c8c87895a3a4db54581af92ba5d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1724171278}
+  item_reqs: []
+  minigame_name: CheckoutMinigame
+  oneTime: 0
+  startSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &691885636
 GameObject:
   m_ObjectHideFlags: 0
@@ -4558,6 +4667,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4411698806701405162, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_IncludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116449916861649292, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116449916861649292, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
+      propertyPath: disabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9088656780719252597, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
@@ -85165,6 +85282,14 @@ PrefabInstance:
       value: Dialogue Trigger (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: give_obj
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: minigame_id
+      value: CheckoutMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: speaker_sprite
       value: 
       objectReference: {fileID: 21300000, guid: 737d64596540d4e0588b0718b1ab0baf, type: 3}
@@ -85176,6 +85301,22 @@ PrefabInstance:
       propertyPath: quests_to_complete
       value: neighbor_talk3
       objectReference: {fileID: 0}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: give_objs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: give_objs.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: give_objs.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2073d4e21adb9cf40a6b034ecf31301d, type: 2}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: give_objs.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: eaa635d0871ec4d8c9844027feac4e6d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -85221,7 +85362,7 @@ MonoBehaviour:
   do_fetch_quest: 0
   fetch_obj: {fileID: 0}
   post_fetch_dialogue_file_name: 
-  give_obj: {fileID: 0}
+  give_objs: []
 --- !u!61 &1604256838
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85934,7 +86075,7 @@ GameObject:
   - component: {fileID: 1782997491}
   - component: {fileID: 1782997490}
   m_Layer: 0
-  m_Name: NPC (Fetch)
+  m_Name: Child NPC (Fetch)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86084,6 +86225,10 @@ PrefabInstance:
       propertyPath: speaker_sprite
       value: 
       objectReference: {fileID: 21300000, guid: 97b31de6b7e8e4fc0a9e6f0011950047, type: 3}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: quests_to_start
+      value: batteries_fetch
+      objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: dialogue_file_name
       value: child
@@ -114083,3 +114228,4 @@ SceneRoots:
   - {fileID: 942921618}
   - {fileID: 356150098}
   - {fileID: 171527067}
+  - {fileID: 674649381}
