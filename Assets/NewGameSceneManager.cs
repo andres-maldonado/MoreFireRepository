@@ -28,6 +28,7 @@ public class NewGameSceneManager : MonoBehaviour
     private GameObject player;
     private bool can_transition;
     public GameObject transition;
+    private Animator transition_anim;
 
     private AsyncOperationHandle<SceneInstance> scene_handle;
 
@@ -35,6 +36,7 @@ public class NewGameSceneManager : MonoBehaviour
     public bool start_with_fade_in = true;
 
     private void Start() {
+        transition_anim = transition.GetComponent<Animator>();
         if (start_with_fade_in) StartCoroutine(FadeIn());
         player = GameObject.FindWithTag("Player");
     }
@@ -67,11 +69,11 @@ public class NewGameSceneManager : MonoBehaviour
     public IEnumerator FadeIn()
     {
 
-        transition.GetComponent<Animator>().SetBool("FadeOut", false);
+        transition_anim.SetBool("FadeOut", false);
         transition.SetActive(true);
-        transition.GetComponent<Animator>().SetBool("FadeIn", true);
+        transition_anim.SetBool("FadeIn", true);
         yield return new WaitForSeconds(1);
-        transition.GetComponent<Animator>().SetBool("FadeIn", false);
+        transition_anim.SetBool("FadeIn", false);
         transition.SetActive(false);
         //canTransition = true;
     }
@@ -80,7 +82,7 @@ public class NewGameSceneManager : MonoBehaviour
     {
         //canTransition = false;
         transition.SetActive(true);
-        transition.GetComponent<Animator>().SetBool("FadeOut", true);
+        transition_anim.SetBool("FadeOut", true);
         yield return new WaitForSeconds(.5f);
         StartCoroutine(AsyncLoadScene(scene_name, entrance_name));
     }
