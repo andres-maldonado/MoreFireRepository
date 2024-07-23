@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{d9a51ae3-57b4-4d7c-96c9-a100e2f72713}">
+		<property name="name">
+			<value>Ride</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1078279-6266-466b-b073-4be208c99cc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{6999457f-124b-4bfa-b1a8-18461aeaaad2}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{6999457f-124b-4bfa-b1a8-18461aeaaad2}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

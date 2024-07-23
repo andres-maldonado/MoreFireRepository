@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{c7a9e527-106d-47e7-8e04-d6257b6aa927}">
+		<property name="name">
+			<value>PrepOrEvac</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1078279-6266-466b-b073-4be208c99cc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{34d62e76-6188-438d-98b3-9788350aa814}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{34d62e76-6188-438d-98b3-9788350aa814}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
