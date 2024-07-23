@@ -884,6 +884,8 @@ MonoBehaviour:
   dialogue_to_queue: time_for_bed
   itemCount: 0
   reward_items: []
+  itemCount: 0
+  reward_items: []
 --- !u!1 &3509839386319517798
 GameObject:
   m_ObjectHideFlags: 0
