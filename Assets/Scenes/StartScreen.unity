@@ -202,7 +202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &561933808
@@ -722,7 +722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 694469586231803010, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 694469586231803011, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
       propertyPath: m_Pivot.x
@@ -1157,8 +1157,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1818815131}
-        m_TargetAssemblyTypeName: LoadSceneOnClick, Assembly-CSharp
-        m_MethodName: MahBaws
+        m_TargetAssemblyTypeName: EndGame, Assembly-CSharp
+        m_MethodName: end_game
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1215,11 +1215,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1818815126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46e32442358b5d94ca52f7a92a1cee38, type: 3}
+  m_Script: {fileID: 11500000, guid: 49ba8e469ad0e824887018edda21ed48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 
-  entrance: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -8,6 +8,9 @@ public class MinigameWin : MonoBehaviour
     [SerializeField] private string quests_to_complete;
     [SerializeField] private Sprite dialogue_sprite;
     [SerializeField] private string dialogue_to_queue;
+    private GameObject inventory;
+    [SerializeField] int itemCount;
+    public List<Item> reward_items = new List<Item>();
 
     private GameObject player;
 
@@ -15,28 +18,34 @@ public class MinigameWin : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+        inventory = GameObject.FindWithTag("Inventory");
     }
 
     public void Win()
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.minigameWinSound, this.transform.position);
         GetComponent<Animator>().SetBool("isBeaten", true);
+        for (int i = 0; i < itemCount; i++) { inventory.GetComponent<Inventory>().inv.Add(reward_items[i]); }
         StartCoroutine(EndGame());
     }
 
     IEnumerator EndGame()
     {
+        Debug.Log("Ending");
         yield return new WaitForSeconds(.5f);
         player.GetComponent<NewPlayerMovement>().DisablePlayer(false);
         foreach (string q in quests_to_complete.Split(","))
         {
             QuestManager.Instance.CompleteQuest(q.Trim());
         }
+        Debug.Log("Ending2");
         GlobalManager.Instance.FreeMinigame();
         if (dialogue_to_queue != "") {
             GlobalManager.Instance.StartDialogue(dialogue_to_queue, dialogue_sprite, "", "", "");
         }
+        Debug.Log("Ending3");
         Destroy(gameObject);
+        Debug.Log("Ending4");
         yield return null;
     }
 }

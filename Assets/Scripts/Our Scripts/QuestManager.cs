@@ -11,7 +11,7 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private TMP_Text questlog_UI;
 
     public List<Quest> all_quests = new List<Quest>();
-    public List<Item> reward_items = new List<Item>();
+    //public List<Item> reward_items = new List<Item>();
     private Dictionary<string, (Quest, bool)> quest_bank = new Dictionary<string, (Quest, bool)>();
 
     [SerializeField] private List<Quest> active_quests = new List<Quest>();
@@ -66,16 +66,16 @@ public class QuestManager : MonoBehaviour
             UpdateLogText();
         }
     }
-    void add_to_inv()
+    /*void add_to_inv()
     {
         if (quest_bank["route_map"].Item2 == true)//map
         {
             if (!inventory.GetComponent<Inventory>().in_inventory("Map"))
             {
-                inventory.GetComponent<Inventory>().inv.Add(reward_items[0]);
+                //inventory.GetComponent<Inventory>().inv.Add(reward_items[0]);
             }
         }
-        else if (quest_bank["checkout"].Item2 == true && inventory.GetComponent<Inventory>().in_inventory(""))// checkout
+        else if (quest_bank["checkout"].Item2 == true)// checkout
         {
             if (!inventory.GetComponent<Inventory>().in_inventory("Batteries") && !inventory.GetComponent<Inventory>().in_inventory("EnergyFood") && !inventory.GetComponent<Inventory>().in_inventory("Medkit"))
             {
@@ -84,7 +84,7 @@ public class QuestManager : MonoBehaviour
                 inventory.GetComponent<Inventory>().inv.Add(reward_items[3]);
             }
         }        
-    }
+    }*/
 
     public void CompleteQuest(string quest_name) {
         if (quest_name.Length == 0) return;
@@ -93,7 +93,7 @@ public class QuestManager : MonoBehaviour
             Debug.Log("Why young hero, it seems you have completed the " + quest_name + " quest!");
             quest_bank[quest_name] = (quest_bank[quest_name].Item1, true);
             UpdateLogText();
-            add_to_inv();
+            //add_to_inv();
         }
         else {
             Debug.LogError("Tried to complete quest \"" + quest_name + "\", but this quest was never started!");

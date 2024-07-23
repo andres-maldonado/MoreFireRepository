@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a0cdd896-9f32-4a55-8985-c2b2250439cb}">
+		<property name="assetPath">
+			<value>OverworldMusic/Ride2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>35.555562500000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e7702afe-73be-408a-9b3a-926a22ff5c31}</destination>
+		</relationship>
+	</object>
+</objects>
