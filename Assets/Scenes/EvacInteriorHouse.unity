@@ -8220,11 +8220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.9899993
+      value: -3.58
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.4100003
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12598,7 +12598,7 @@ GameObject:
   - component: {fileID: 459548714}
   - component: {fileID: 459548716}
   m_Layer: 0
-  m_Name: Fire1 (5)
+  m_Name: DoorFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12619,7 +12619,7 @@ Transform:
   m_Children:
   - {fileID: 1569965033}
   - {fileID: 1036649178}
-  m_Father: {fileID: 1601342595}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &459548714
 Animator:
@@ -18807,6 +18807,10 @@ PrefabInstance:
       propertyPath: scene
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
+      propertyPath: scene_name
+      value: EvacExterior
+      objectReference: {fileID: 0}
     - target: {fileID: 1685593635682384271, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -19792,7 +19796,6 @@ Transform:
   - {fileID: 1850790626}
   - {fileID: 1291761530}
   - {fileID: 892271916}
-  - {fileID: 459548713}
   - {fileID: 1394607143}
   - {fileID: 1562982730}
   - {fileID: 1618530644}
@@ -23284,7 +23287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 694469586231803010, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 694469586231803011, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
       propertyPath: m_Pivot.x
@@ -28229,6 +28232,7 @@ SceneRoots:
   - {fileID: 97698530}
   - {fileID: 978270960}
   - {fileID: 370941098}
+  - {fileID: 459548713}
   - {fileID: 1601342595}
   - {fileID: 826324252}
   - {fileID: 401221316}
