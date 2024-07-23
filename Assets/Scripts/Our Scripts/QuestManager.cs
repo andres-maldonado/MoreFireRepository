@@ -68,11 +68,11 @@ public class QuestManager : MonoBehaviour
     }
     void add_to_inv()
     {
-        if (quest_bank["route_map"].Item2 == true)
+        if (quest_bank["route_map"].Item2 == true)//map
         {
             inventory.GetComponent<Inventory>().inv.Add(reward_items[0]);
         }
-        else if (quest_bank["checkout"].Item2 == true)
+        else if (quest_bank["checkout"].Item2 == true)// checkout
         {
             inventory.GetComponent<Inventory>().inv.Add(reward_items[1]);
             inventory.GetComponent<Inventory>().inv.Add(reward_items[2]);
