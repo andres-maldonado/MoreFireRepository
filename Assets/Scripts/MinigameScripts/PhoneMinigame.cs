@@ -14,6 +14,7 @@ public class PhoneMinigame : MonoBehaviour
     [SerializeField] EventReference text;
     [SerializeField] EventReference wrongPasscode;
     [SerializeField] EventReference open;
+    [SerializeField] Sprite AlertsOn;
 
     private void Start() {
         keypad = transform.Find("Keypad").gameObject;
@@ -25,6 +26,7 @@ public class PhoneMinigame : MonoBehaviour
 
     public void ReceiveAlerts() {
         Debug.Log("clicked :D");
+        gameObject.transform.GetChild(3).GetComponent<Image>().sprite = AlertsOn;
         GetComponentInParent<MinigameWin>().Win();
     }
 
