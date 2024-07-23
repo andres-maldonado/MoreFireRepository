@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest_name: batteries_fetch
   quest_desc: Buy batteries to give to Takumi
-  is_starter_quest: 1
+  is_starter_quest: 0

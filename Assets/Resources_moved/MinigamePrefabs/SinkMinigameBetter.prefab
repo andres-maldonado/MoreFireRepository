@@ -67,7 +67,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf5d8af76a9ed84290d29b71d66f843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quests_to_complete: 
+  quests_to_complete: get_towel
+  quests_to_start: 
   dialogue_sprite: {fileID: 0}
   dialogue_to_queue: 
   itemCount: 0

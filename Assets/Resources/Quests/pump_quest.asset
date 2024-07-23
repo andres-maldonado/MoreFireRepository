@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest_name: bike_pump
   quest_desc: Fill your bike tires with air
-  is_starter_quest: 1
+  is_starter_quest: 0

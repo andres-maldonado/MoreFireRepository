@@ -9408,8 +9408,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_file_name: evacstart
-  minigame_id: -1
-  quests_to_start: 
+  minigame_id: 
+  quests_to_start: bag_grab, get_towel
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
   fetch_item: 

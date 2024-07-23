@@ -9149,8 +9149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_file_name: prep_intro
-  minigame_id: -1
-  quests_to_start: 
+  minigame_id: 
+  quests_to_start: route_map
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
   fetch_item: 
@@ -17579,14 +17579,6 @@ PrefabInstance:
       propertyPath: questlog_UI
       value: 
       objectReference: {fileID: 1258267086}
-    - target: {fileID: 7263854640418022599, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
-      propertyPath: all_quests.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7263854640418022599, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
-      propertyPath: all_quests.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 0cc788835779b8344a7b9c07886bd88e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

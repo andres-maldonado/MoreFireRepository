@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest_name: route_map
   quest_desc: Plan out an evacuation route
-  is_starter_quest: 1
+  is_starter_quest: 0
