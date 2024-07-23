@@ -183,6 +183,7 @@
     <Compile Include="Assets\Scripts\Our Scripts\MinigameHandler.cs" />
     <Compile Include="Assets\NewGameSceneManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\EndGame.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\HealingItem.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyChaseBehaviour.cs" />
     <Compile Include="Assets\Scripts\MinigameScripts\map_step3.cs" />
