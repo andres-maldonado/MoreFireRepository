@@ -97,6 +97,7 @@ public class GlobalManager : MonoBehaviour
                 current_minigame = address;
                 minigame_completion.Add(address, false);
             }
+            NewPlayerMovement.Instance.DisablePlayer(true);
             Instantiate(minigame_handle.Result, GameObject.FindWithTag("MainCanvas").transform);
         }
     }

@@ -35,14 +35,14 @@ MonoBehaviour:
     m_SerializedLabels:
     - minigame
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: af96d4ff5bb984f918ce98d28757b7cb
-    m_Address: SinkMinigame
+  - m_GUID: 02ca763a3fe51474bb1be480ab9ce071
+    m_Address: ExtinguishMinigame
     m_ReadOnly: 0
     m_SerializedLabels:
     - minigame
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 02ca763a3fe51474bb1be480ab9ce071
-    m_Address: ExtinguishMinigame
+  - m_GUID: 7400aa141fb3f4d539d37df11ee90924
+    m_Address: SinkMinigame
     m_ReadOnly: 0
     m_SerializedLabels:
     - minigame

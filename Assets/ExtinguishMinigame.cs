@@ -5,6 +5,7 @@ using UnityEngine;
 public class ExtinguishMinigame : MonoBehaviour
 {
     private GameObject fires_parent;
+    private GameObject door_fire;
     private GameObject nozzle;
     private bool game_won = false;
     
@@ -12,6 +13,7 @@ public class ExtinguishMinigame : MonoBehaviour
     void Start() {
         fires_parent = transform.Find("Fires").gameObject;
         nozzle = transform.Find("Nozzle").gameObject;
+        door_fire = GameObject.Find("/DoorFire");
     }
 
     void Update() {
@@ -21,6 +23,7 @@ public class ExtinguishMinigame : MonoBehaviour
 
         if (fires_parent.transform.childCount == 0 && !game_won) {
             GetComponentInParent<MinigameWin>().Win();
+            Destroy(door_fire);
             game_won = true;
         }
     }
