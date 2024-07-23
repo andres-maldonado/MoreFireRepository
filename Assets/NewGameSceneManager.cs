@@ -65,7 +65,9 @@ public class NewGameSceneManager : MonoBehaviour
             transition = GameObject.FindWithTag("BlackScreen");
         }
         StartCoroutine(FadeIn());
-        NewPlayerMovement.Instance.GetComponent<Collider2D>().enabled = true;
+        if (NewPlayerMovement.Instance != null) {
+            NewPlayerMovement.Instance.GetComponent<Collider2D>().enabled = true;
+        }
         if (GameObject.Find(entrance_name) != null) {
             Vector3 entranceCoord = GameObject.Find(entrance_name).transform.localPosition;
             player.transform.localPosition = entranceCoord;
