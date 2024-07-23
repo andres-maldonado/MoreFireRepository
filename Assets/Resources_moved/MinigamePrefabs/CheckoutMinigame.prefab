@@ -480,6 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50518c5f575cc74996b362a51fbd8df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finish_minigame: {fileID: 21300000, guid: e77efeb680999a14197127cd354dc9d8, type: 3}
   collider: {fileID: 2418067825170910616}
   wallet: {fileID: 6578967392424222200}
   item_listUI: {fileID: 440934211340135345}
@@ -1344,7 +1345,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 180786079
   m_SortingLayer: 1
-  m_SortingOrder: 6
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 6f2890afb3975894d81996df5ec17e51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1685,7 +1686,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 180786079
   m_SortingLayer: 1
-  m_SortingOrder: 6
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 01313c9ac8993ac4f8d78f0d354e0275, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
