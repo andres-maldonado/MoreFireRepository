@@ -6,6 +6,8 @@ public class MinigameWin : MonoBehaviour
 {
     [Tooltip("Comma-separated list of quest names to complete upon minigame win")]
     [SerializeField] private string quests_to_complete;
+    [Tooltip("Comma-separated list of quest names to start upon minigame win")]
+    [SerializeField] private string quests_to_start = "";
     [SerializeField] private Sprite dialogue_sprite;
     [SerializeField] private string dialogue_to_queue;
     private GameObject inventory;
@@ -25,10 +27,7 @@ public class MinigameWin : MonoBehaviour
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.minigameWinSound, this.transform.position);
         GetComponent<Animator>().SetBool("isBeaten", true);
-        if (itemCount != 0 && reward_items.Count != 0)
-        {
-            for (int i = 0; i < itemCount; i++) { inventory.GetComponent<Inventory>().inv.Add(reward_items[i]); }
-        }
+        for (int i = 0; i < 3; i++) { inventory.GetComponent<Inventory>().inv.Add(reward_items[i]); }
         StartCoroutine(EndGame());
     }
 
@@ -44,7 +43,7 @@ public class MinigameWin : MonoBehaviour
         Debug.Log("Ending2");
         GlobalManager.Instance.FreeMinigame();
         if (dialogue_to_queue != "") {
-            GlobalManager.Instance.StartDialogue(dialogue_to_queue, dialogue_sprite, "", "", "");
+            GlobalManager.Instance.StartDialogue(dialogue_to_queue, dialogue_sprite, "", quests_to_start, "");
         }
         Debug.Log("Ending3");
         Destroy(gameObject);

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest_name: checkout
   quest_desc: Buy essentials at the convenience store
-  is_starter_quest: 1
+  is_starter_quest: 0

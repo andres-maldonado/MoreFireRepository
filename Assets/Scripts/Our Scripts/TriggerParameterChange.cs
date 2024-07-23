@@ -58,7 +58,7 @@ public class TriggerParameterChange : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log("inside is " + inside+", onTrigger is "+onTrigger+", "+Input.GetKeyDown(KeyCode.E));
+       // Debug.Log("inside is " + inside+", onTrigger is "+onTrigger+", "+Input.GetKeyDown(KeyCode.E));
         if(onTrigger && inside && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Go!");

@@ -3335,8 +3335,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests_to_complete: route_map
+  quests_to_start: neighbor_talk1, neighbor_talk2, neighbor_talk3, alerts, checkout
   dialogue_sprite: {fileID: 0}
   dialogue_to_queue: after_map
+  itemCount: 0
+  reward_items: []
 --- !u!1 &8596305586309058044
 GameObject:
   m_ObjectHideFlags: 0
