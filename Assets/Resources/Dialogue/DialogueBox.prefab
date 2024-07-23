@@ -501,6 +501,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c7d2ea209ae44d8add1f92d0c30d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueProgress:
+    Guid:
+      Data1: -1593075970
+      Data2: 1240231395
+      Data3: -1347747915
+      Data4: 973656764
+    Path: event:/ProgressDialogue
   dialogue_file_name: dialogue_test_file
   minigame_id: 
   ticks_per_letter: 2

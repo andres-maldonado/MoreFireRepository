@@ -39,14 +39,15 @@ public class NewGameSceneManager : MonoBehaviour
         player = GameObject.FindWithTag("Player");
     }
 
-    public void LoadScene(string scene_name, string entrance_name) {
+    public void LoadScene(string scene_name, string entrance_name, bool isLong) {
         if (transition == null) {
             transition = GameObject.FindWithTag("MainCanvas").transform.GetChild(1).gameObject;
         }
-        StartCoroutine(FadeOut(scene_name, entrance_name));
+        StartCoroutine(FadeOut(scene_name, entrance_name, isLong));
     }
 
     IEnumerator AsyncLoadScene(string scene_name, string entrance_name) {
+        Debug.Log("AsyncLoadScene");
         if (scene_handle.IsValid()) {
             AsyncOperationHandle<SceneInstance> unload_handle = Addressables.UnloadSceneAsync(scene_handle);
             yield return unload_handle;
@@ -55,18 +56,17 @@ public class NewGameSceneManager : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         scene_handle = Addressables.LoadSceneAsync(scene_name, LoadSceneMode.Single);
         yield return scene_handle;
-        
+        StartCoroutine(FadeIn());
         if (scene_handle.Status == AsyncOperationStatus.Succeeded) {
             Vector3 entranceCoord = GameObject.Find(entrance_name).transform.localPosition;
             player.transform.localPosition = entranceCoord;
             Camera.main.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
-            StartCoroutine(FadeIn());
         }
     }
 
     public IEnumerator FadeIn()
     {
-
+        Debug.Log("FadeIn");
         transition.GetComponent<Animator>().SetBool("FadeOut", false);
         transition.SetActive(true);
         transition.GetComponent<Animator>().SetBool("FadeIn", true);
@@ -76,12 +76,14 @@ public class NewGameSceneManager : MonoBehaviour
         //canTransition = true;
     }
 
-    public IEnumerator FadeOut(string scene_name, string entrance_name)
+    public IEnumerator FadeOut(string scene_name, string entrance_name, bool isLong)
     {
+        Debug.Log("FadeOut");
         //canTransition = false;
         transition.SetActive(true);
         transition.GetComponent<Animator>().SetBool("FadeOut", true);
-        yield return new WaitForSeconds(.5f);
+        if (!isLong) { yield return new WaitForSeconds(.5f); }
+        if (isLong) { yield return new WaitForSeconds(4f); }
         StartCoroutine(AsyncLoadScene(scene_name, entrance_name));
     }
 }
