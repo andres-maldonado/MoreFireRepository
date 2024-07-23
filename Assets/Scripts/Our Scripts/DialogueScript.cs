@@ -23,6 +23,7 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] private int ticks_per_letter = 25;
     [SerializeField] private string[] start_quests;
     [SerializeField] private string[] end_quests;
+    private Item give_object;
 
     private SpriteRenderer mc_sprite, speaker_sprite;
     // (false) => other speaker
@@ -42,7 +43,7 @@ public class DialogueScript : MonoBehaviour
         prompter_origin = prompter.transform.position;
     }
 
-    public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", int tpl = 25) {
+    public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", Item obj = null, int tpl = 25) {
         dialogue_file_name = file_name;
         speaker_sprite = GameObject.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
         speaker_sprite.sprite = speaker_image;
@@ -50,6 +51,7 @@ public class DialogueScript : MonoBehaviour
         start_quests = quests_to_start.Split(",");
         end_quests = quests_to_end.Split(",");
         ticks_per_letter = tpl;
+        give_object = obj;
     }
 
     void Start() {
@@ -62,7 +64,6 @@ public class DialogueScript : MonoBehaviour
         file_reader = File.OpenText(Application.streamingAssetsPath + "/Dialogue/" + dialogue_file_name + ".txt");
 
         mc_sprite = GameObject.Find("MCPortrait").GetComponent<SpriteRenderer>();
-        
 
         ReadDialogue();
     }
@@ -71,6 +72,12 @@ public class DialogueScript : MonoBehaviour
         if ((current_text = file_reader.ReadLine()) == null) {
             // queue destruction / start minigame
             Destroy(gameObject);
+            if (give_object != null) {
+                Inventory i = GameObject.FindWithTag("MainCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>();
+                if (i.inv.Count < 5) {
+                    i.inv.Add(give_object);
+                }
+            }
             GlobalManager.Instance.in_dialogue = false;
             NewPlayerMovement.Instance.DisablePlayer(false);
             foreach (string q in end_quests) {
