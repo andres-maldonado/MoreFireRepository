@@ -32,7 +32,7 @@ public class MinigameTrigger : MonoBehaviour
         }
         else
         {
-            GlobalManager.Instance.DisplayError("Hmmm I seem to be missing some important things...", "I should have them around here somewhere...");
+            //GlobalManager.Instance.StartDialogue("missing_items", null);
             return false;
         }
     }
@@ -63,6 +63,7 @@ public class MinigameTrigger : MonoBehaviour
             }
         }
     }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

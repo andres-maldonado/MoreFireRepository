@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 8986209654800781573}
   - component: {fileID: 2832639562311461808}
   - component: {fileID: 6870480160586069401}
+  - component: {fileID: 8635370853964759449}
   m_Layer: 3
   m_Name: SinkMinigameBetter
   m_TagString: Untagged
@@ -163,7 +164,27 @@ MonoBehaviour:
   itemCount: 0
   reward_items: []
   bat: {fileID: 0}
-  instance: 0
+  instance: 1
+--- !u!114 &8635370853964759449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300224488653663150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f901637c03fc446a264e669dbbbc61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sink:
+    Guid:
+      Data1: -831463905
+      Data2: 1206253406
+      Data3: 160197792
+      Data4: 824866549
+    Path: event:/Minigames/Sink/SinkRun
+  inside: 0
 --- !u!1 &2133966152107068018
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +511,7 @@ GameObject:
   - component: {fileID: 7711644743176366582}
   - component: {fileID: 914396854237552730}
   - component: {fileID: 776874619856806908}
+  - component: {fileID: 7954558880316274497}
   m_Layer: 3
   m_Name: Barrier
   m_TagString: Untagged
@@ -534,7 +556,7 @@ BoxCollider2D:
     m_Bits: 8
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -579,7 +601,7 @@ BoxCollider2D:
     m_Bits: 8
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -621,10 +643,10 @@ BoxCollider2D:
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -646,6 +668,51 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 10, y: 8}
+  m_EdgeRadius: 0
+--- !u!61 &7954558880316274497
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4949782701905177656}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -9.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 9}
   m_EdgeRadius: 0
 --- !u!1 &6627084063342610044
 GameObject:

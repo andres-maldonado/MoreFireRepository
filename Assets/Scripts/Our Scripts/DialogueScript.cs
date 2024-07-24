@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 // custom imports
 using System.IO;
@@ -23,9 +24,10 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] private int ticks_per_letter = 25;
     [SerializeField] private string[] start_quests;
     [SerializeField] private string[] end_quests;
+    [SerializeField] EventReference sound;
     private List<Item> give_objects;
 
-    private SpriteRenderer mc_sprite, speaker_sprite;
+    public SpriteRenderer mc_sprite, speaker_sprite;
     private Image prompter_img;
 
     // (false) => other speaker
@@ -48,7 +50,7 @@ public class DialogueScript : MonoBehaviour
 
     public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", List<Item> objs = null, int tpl = 25) {
         dialogue_file_name = file_name;
-        speaker_sprite = transform.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
+        speaker_sprite = GameObject.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
         speaker_sprite.sprite = speaker_image;
         minigame_id = game_id;
         start_quests = quests_to_start.Split(",");
@@ -129,7 +131,9 @@ public class DialogueScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E)) {
             // if the message is finished typing, move on to the next message
-            if (letters_displayed >= current_text.Length) ReadDialogue();
+            if (letters_displayed >= current_text.Length) { ReadDialogue();
+                AudioManager.instance.PlayOneShot(sound, this.transform.position);
+            }
             // if it's not finished yet, show the whole message
             else { letters_displayed = current_text.Length; }
         }

@@ -13,6 +13,7 @@ TagManager:
   - MainCanvas
   - BlackScreen
   - Inventory
+  - Map
   layers:
   - Default
   - TransparentFX

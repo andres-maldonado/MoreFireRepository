@@ -9153,6 +9153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_file_name: prep_intro
+  repeat: 0
   minigame_id: 
   quests_to_start: route_map
   quests_to_complete: 
@@ -14708,7 +14709,7 @@ Transform:
   m_GameObject: {fileID: 798786405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.909, y: -4.955, z: 0}
+  m_LocalPosition: {x: -4.98, y: 3.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
