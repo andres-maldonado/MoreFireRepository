@@ -16,6 +16,11 @@ public class GrabItem : MonoBehaviour
         in_trigger = false;
     }
 
+    void Start()
+    {
+        inventory = GameObject.FindWithTag("Inventory");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && in_trigger && inventory.GetComponent<Inventory>().inv.Count < 5)

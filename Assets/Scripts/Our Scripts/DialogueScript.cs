@@ -23,7 +23,7 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] private int ticks_per_letter = 25;
     [SerializeField] private string[] start_quests;
     [SerializeField] private string[] end_quests;
-    private Item give_object;
+    private List<Item> give_objects;
 
     private SpriteRenderer mc_sprite, speaker_sprite;
     private Image prompter_img;
@@ -46,7 +46,7 @@ public class DialogueScript : MonoBehaviour
         prompter_origin = prompter.transform.position;
     }
 
-    public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", Item obj = null, int tpl = 25) {
+    public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", List<Item> objs = null, int tpl = 25) {
         dialogue_file_name = file_name;
         speaker_sprite = GameObject.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
         speaker_sprite.sprite = speaker_image;
@@ -54,7 +54,7 @@ public class DialogueScript : MonoBehaviour
         start_quests = quests_to_start.Split(",");
         end_quests = quests_to_end.Split(",");
         ticks_per_letter = tpl;
-        give_object = obj;
+        give_objects = objs;
     }
 
     void Start() {
@@ -75,10 +75,14 @@ public class DialogueScript : MonoBehaviour
         if ((current_text = file_reader.ReadLine()) == null) {
             // queue destruction / start minigame
             Destroy(gameObject);
-            if (give_object != null) {
+            if (give_objects != null) {
                 Inventory i = GameObject.FindWithTag("MainCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>();
-                if (i.inv.Count < 5) {
-                    i.inv.Add(give_object);
+                for (int j = 0; j < give_objects.Count; j++) 
+                {
+                    if (i.inv.Count < 5) 
+                    {
+                        i.inv.Add(give_objects[j]);
+                    }
                 }
             }
             GlobalManager.Instance.in_dialogue = false;

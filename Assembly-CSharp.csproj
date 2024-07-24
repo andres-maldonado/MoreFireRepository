@@ -205,6 +205,7 @@
     <None Include="Assets\Resources\Dialogue\diologue_water.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\StreamingAssets\Dialogue\dialogue_test_file.txt" />
+    <None Include="Assets\StreamingAssets\Dialogue\essentials_bag.txt" />
     <None Include="Assets\Resources\Dialogue\prep_intro.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\TestDialogues\D1.txt" />
@@ -233,6 +234,7 @@
     <None Include="Assets\StreamingAssets\Dialogue\int_evening_stop.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Resources\Dialogue\dialogue_test_postfetch.txt" />
+    <None Include="Assets\AddressableAssetsData\link.xml" />
     <None Include="Assets\StreamingAssets\Dialogue\NPC1.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\exterior_stop.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\evacstart.txt" />

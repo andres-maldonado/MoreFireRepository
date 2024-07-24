@@ -13,6 +13,7 @@ public class MinigameWin : MonoBehaviour
     private GameObject inventory;
     [SerializeField] int itemCount;
     public List<Item> reward_items = new List<Item>();
+    [SerializeField] Sprite bat;
 
     private GameObject player;
 
