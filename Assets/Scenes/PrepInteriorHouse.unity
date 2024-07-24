@@ -369,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6248706224470645796, guid: 974b609f9c001384b8cbecddaec1d123, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9162,7 +9162,7 @@ MonoBehaviour:
   do_fetch_quest: 0
   fetch_obj: {fileID: 0}
   post_fetch_dialogue_file_name: 
-  give_obj: {fileID: 0}
+  give_objs: []
 --- !u!61 &370941097
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-MC: Hey [NPC1], have you heard about the wildfire nearby? I wanted to make sure you’re aware and prepared!
+MC: Hey Kazumi, have you heard about the wildfire nearby? I wanted to make sure you’re aware and prepared!
 NPC1: Oh yea, I saw something about that on the news.
 MC: Well, make sure that you’re ready to evacuate if you need to.
 NPC1: Thanks! I appreciate you letting me know. I’ll start packing!
