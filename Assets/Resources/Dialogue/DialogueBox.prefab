@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -400}
+  m_AnchoredPosition: {x: 0, y: -415}
   m_SizeDelta: {x: 1840, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6203007318910434029
@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3f363f8d57322b241aefa6f912bbcac2, type: 2}
-  m_sharedMaterial: {fileID: -6039146468370362774, guid: 3f363f8d57322b241aefa6f912bbcac2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -29.12738, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -252,8 +252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -400}
-  m_SizeDelta: {x: 1880, y: 240}
+  m_AnchoredPosition: {x: 0, y: -395}
+  m_SizeDelta: {x: 1880, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2043120016967412373
 CanvasRenderer:
@@ -501,13 +501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c7d2ea209ae44d8add1f92d0c30d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueProgress:
-    Guid:
-      Data1: -1593075970
-      Data2: 1240231395
-      Data3: -1347747915
-      Data4: 973656764
-    Path: event:/ProgressDialogue
   dialogue_file_name: dialogue_test_file
   minigame_id: 
   ticks_per_letter: 2

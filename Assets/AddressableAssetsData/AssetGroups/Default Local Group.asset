@@ -17,18 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 9e8321afb3de54d08941d15bad1754ac
   m_SerializeEntries:
-  - m_GUID: e5b8546e535c946bc9c8a68e04a4ad7d
-    m_Address: AddressableInitiator
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d0da00d2a0dfd254a9f92b446a214e27
     m_Address: StartScreen
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 530e94ee233f86847ae3735828f70320
-    m_Address: End
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

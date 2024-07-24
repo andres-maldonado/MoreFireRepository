@@ -16,22 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 0d4480ec670cd4582abd8c29920a40ac
-  m_SerializeEntries:
-  - m_GUID: 4a8781de17c101d4c94e58ce8ed43c67
-    m_Address: PrepInteriorHouse
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7282cbc807f6e45698746c0f0c5bb1a3
-    m_Address: PrepExterior
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5cdd9f102ae9449e6abdd24e3370df06
-    m_Address: Konbini
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8b174af6aea80457a8b0a232aa777f5e, type: 2}
   m_SchemaSet:

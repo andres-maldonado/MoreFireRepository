@@ -40,7 +40,7 @@ public class SceneTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.E) || noButton) && inTrigger == true)
+        if ((Input.GetKeyDown(KeyCode.E) || noButton) && inTrigger == true && !GlobalManager.Instance.in_dialogue)
         {
             if (QuestsComplete())
             {
