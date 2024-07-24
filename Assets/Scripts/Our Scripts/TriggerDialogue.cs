@@ -5,14 +5,13 @@ using UnityEngine;
 public class TriggerDialogue : MonoBehaviour
 {
     [SerializeField] private string dialogue_file_name = "dialogue_test_file";
-
+    [SerializeField] private bool repeat;
     [SerializeField] private string minigame_id = "";
     [SerializeField] private string quests_to_start;
     [SerializeField] private string quests_to_complete;
     [SerializeField] private Sprite speaker_sprite;
     [SerializeField] private string fetch_item;
     [SerializeField] private bool interactToTrigger = true;
-
     [SerializeField] private bool do_fetch_quest = false;
     [SerializeField] private Item fetch_obj;
     [SerializeField] private string post_fetch_dialogue_file_name;
@@ -40,7 +39,7 @@ public class TriggerDialogue : MonoBehaviour
                 inv.remove_item(fetch_item);
             }
             GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete, give_objs); // queue dialogue
-            if(!interactToTrigger)
+            if(!interactToTrigger && !repeat)
             {
                 Destroy(gameObject);
             }

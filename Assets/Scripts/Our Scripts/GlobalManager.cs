@@ -16,6 +16,8 @@ public class GlobalManager : MonoBehaviour
     private Dictionary<string, bool> minigame_completion = new Dictionary<string, bool>();
 
     public bool in_dialogue = false;
+    public bool in_minigame = false;
+
     [SerializeField] EventReference error;
     public class GameTime {
         private float raw_time, gametime_scale_factor;
@@ -98,6 +100,7 @@ public class GlobalManager : MonoBehaviour
                 minigame_completion.Add(address, false);
             }
             NewPlayerMovement.Instance.DisablePlayer(true);
+            in_minigame = true;
             Instantiate(minigame_handle.Result, GameObject.FindWithTag("MainCanvas").transform);
         }
     }
@@ -109,6 +112,7 @@ public class GlobalManager : MonoBehaviour
     }
 
     public void FreeMinigame() {
+        in_minigame = false;
         minigame_completion[current_minigame] = true;
         current_minigame = "";
         Addressables.Release(minigame_handle);

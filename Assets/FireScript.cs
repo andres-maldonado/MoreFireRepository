@@ -16,7 +16,8 @@ public class FireScript : MonoBehaviour
     }
 
     private void OnTriggerStay2D(Collider2D other) {
-        if (Input.GetMouseButton(0)) {
+        if (Input.GetMouseButton(0) && other.GetComponent<FireScript>() == null) {
+            Debug.Log("pressed!");
             fire_strength -= Time.deltaTime;
         }
     }

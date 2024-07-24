@@ -29,7 +29,7 @@ public class MinigameWin : MonoBehaviour
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.minigameWinSound, this.transform.position);
         GetComponent<Animator>().SetBool("isBeaten", true);
-        for (int i = 0; i < itemCount; i++) { inventory.GetComponent<Inventory>().inv.Add(reward_items[i]); }
+        //for (int i = 0; i < itemCount; i++) { inventory.GetComponent<Inventory>().inv.Add(reward_items[i]); }
         StartCoroutine(EndGame());
         if(instance)
         {
@@ -41,7 +41,7 @@ public class MinigameWin : MonoBehaviour
     {
         Debug.Log("Ending");
         yield return new WaitForSeconds(.5f);
-        player.GetComponent<NewPlayerMovement>().DisablePlayer(false);
+        if (dialogue_to_queue == "") NewPlayerMovement.Instance.DisablePlayer(false);
         foreach (string q in quests_to_complete.Split(","))
         {
             QuestManager.Instance.CompleteQuest(q.Trim());

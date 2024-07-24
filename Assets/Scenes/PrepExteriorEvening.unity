@@ -763,8 +763,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: item_reqs.Array.data[0]
-      value: BikePump
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 53102600e745653439e30468b5973bc2, type: 2}
     - target: {fileID: 9177342171301116380, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -4307,17 +4307,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &728909848 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5658004928863852474, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
-  m_PrefabInstance: {fileID: 1724171277}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &785473367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85628,7 +85617,7 @@ PrefabInstance:
     - target: {fileID: 7263854640418022599, guid: b31b1a58f899b433ea6e9743b5f5f60b, type: 3}
       propertyPath: questlog_UI
       value: 
-      objectReference: {fileID: 728909848}
+      objectReference: {fileID: 1724171278}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -85883,10 +85872,21 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9090576710849194814, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 7667687086748458832, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+--- !u!114 &1724171278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1680648802961908825, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+  m_PrefabInstance: {fileID: 1724171277}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1849763195
 GameObject:
   m_ObjectHideFlags: 0
