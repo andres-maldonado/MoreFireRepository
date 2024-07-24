@@ -2045,10 +2045,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quests_to_complete: alerts
   quests_to_start: 
-  dialogue_sprite: {fileID: 0}
+  dialogue_sprite: {fileID: 21300000, guid: 619421e6246a246a793a0c65622ca924, type: 3}
   dialogue_to_queue: old_man_help
   itemCount: 0
   reward_items: []
+  bat: {fileID: 0}
 --- !u!1 &5663821464675745062
 GameObject:
   m_ObjectHideFlags: 0
