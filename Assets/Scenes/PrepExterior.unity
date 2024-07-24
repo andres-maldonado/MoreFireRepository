@@ -85391,12 +85391,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
-      propertyPath: give_obj
-      value: 
-      objectReference: {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
-    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
-      propertyPath: minigame_id
-      value: CheckoutMinigame
+      propertyPath: do_fetch_quest
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: speaker_sprite
@@ -85412,7 +85408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: give_objs.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: give_objs.Array.data[0]
