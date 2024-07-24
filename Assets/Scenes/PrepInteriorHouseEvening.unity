@@ -12102,10 +12102,7 @@ GameObject:
   - component: {fileID: 469258189}
   - component: {fileID: 469258190}
   - component: {fileID: 469258191}
-<<<<<<< HEAD
   - component: {fileID: 469258192}
-=======
->>>>>>> 13086fa6f3f1012f4a2968fb4a996c3c1cb26554
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -12193,7 +12190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 1968262346}
-<<<<<<< HEAD
   item: {fileID: 11400000, guid: 49866fb5bae50ba43af74101fc37ba08, type: 2}
   in_trigger: 0
 --- !u!61 &469258192
@@ -12241,9 +12237,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
-=======
-  in_trigger: 0
->>>>>>> 13086fa6f3f1012f4a2968fb4a996c3c1cb26554
 --- !u!1 &497153504
 GameObject:
   m_ObjectHideFlags: 0
@@ -12438,14 +12431,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 1968262346}
   item_reqs:
-<<<<<<< HEAD
   - {fileID: 11400000, guid: a0307f14272f93b43a8238e1c44181e9, type: 2}
   - {fileID: 11400000, guid: 49866fb5bae50ba43af74101fc37ba08, type: 2}
   - {fileID: 11400000, guid: e801aa3d538e92940a41b04847d85466, type: 2}
-=======
->>>>>>> 13086fa6f3f1012f4a2968fb4a996c3c1cb26554
-  - {fileID: 11400000, guid: 2073d4e21adb9cf40a6b034ecf31301d, type: 2}
-  - {fileID: 11400000, guid: eaa635d0871ec4d8c9844027feac4e6d, type: 2}
   minigame_name: PackingMinigame
   oneTime: 0
   startSound:
@@ -15150,10 +15138,7 @@ GameObject:
   - component: {fileID: 840928929}
   - component: {fileID: 840928930}
   - component: {fileID: 840928931}
-<<<<<<< HEAD
   - component: {fileID: 840928932}
-=======
->>>>>>> 13086fa6f3f1012f4a2968fb4a996c3c1cb26554
   m_Layer: 0
   m_Name: Documents
   m_TagString: Untagged
@@ -15241,7 +15226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 1968262346}
-<<<<<<< HEAD
   item: {fileID: 11400000, guid: a0307f14272f93b43a8238e1c44181e9, type: 2}
   in_trigger: 0
 --- !u!61 &840928932
@@ -15289,9 +15273,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
-=======
-  in_trigger: 0
->>>>>>> 13086fa6f3f1012f4a2968fb4a996c3c1cb26554
 --- !u!1 &885375471
 GameObject:
   m_ObjectHideFlags: 0
@@ -15303,10 +15284,7 @@ GameObject:
   - component: {fileID: 885375472}
   - component: {fileID: 885375473}
   - component: {fileID: 885375474}
-<<<<<<< HEAD
   - component: {fileID: 885375475}
-=======
->>>>>>> 13086fa6f3f1012f4a2968fb4a996c3c1cb26554
   m_Layer: 0
   m_Name: Flashlight
   m_TagString: Untagged
@@ -15394,7 +15372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 1968262346}
-<<<<<<< HEAD
   item: {fileID: 11400000, guid: e801aa3d538e92940a41b04847d85466, type: 2}
   in_trigger: 0
 --- !u!61 &885375475
@@ -15442,9 +15419,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
-=======
-  in_trigger: 0
->>>>>>> 13086fa6f3f1012f4a2968fb4a996c3c1cb26554
 --- !u!1 &926850343
 GameObject:
   m_ObjectHideFlags: 0

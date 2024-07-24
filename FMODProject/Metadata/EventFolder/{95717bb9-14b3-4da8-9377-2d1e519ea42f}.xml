@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{95717bb9-14b3-4da8-9377-2d1e519ea42f}">
+		<property name="name">
+			<value>Sink</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a3de1b6c-dfca-4e2e-948c-9e7971675c43}</destination>
+		</relationship>
+	</object>
+</objects>

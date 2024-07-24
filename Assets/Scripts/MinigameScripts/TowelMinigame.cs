@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class TowelMinigame : MonoBehaviour
@@ -13,10 +14,11 @@ public class TowelMinigame : MonoBehaviour
         if (wetness > 1.5f && wetness < 1.6f) {
             transform.Find("Towel").GetComponent<SpriteRenderer>().sprite = wet_towel_image;
         }
-        if (wetness > 2.1f && !game_won) {
+        if (wetness > 2.1f && !game_won)
+        {
+            game_won = true;
             GetComponentInParent<MinigameWin>().Win();
             Destroy(transform.Find("Towel").gameObject);
-            game_won = true;
         }
     }
 

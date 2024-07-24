@@ -33,7 +33,12 @@ public class MinigameWin : MonoBehaviour
         StartCoroutine(EndGame());
         if(instance)
         {
-            gameObject.GetComponent<Extinguisher>().StopSound();
+            Extinguisher extinguisher = gameObject.GetComponent<Extinguisher>();
+            if(extinguisher == null)
+            {
+                gameObject.GetComponent<Sink>().StopSound();
+            }
+            extinguisher.StopSound();
         }
     }
 

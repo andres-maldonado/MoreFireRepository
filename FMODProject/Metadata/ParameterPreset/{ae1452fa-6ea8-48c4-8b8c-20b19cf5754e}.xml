@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ae1452fa-6ea8-48c4-8b8c-20b19cf5754e}">
+		<property name="name">
+			<value>Sink</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1078279-6266-466b-b073-4be208c99cc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e016942d-c493-48e2-bec5-371d53d6db6d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e016942d-c493-48e2-bec5-371d53d6db6d}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>4</value>
+		</property>
+	</object>
+</objects>
