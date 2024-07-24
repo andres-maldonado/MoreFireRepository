@@ -25,7 +25,7 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] private string[] end_quests;
     private List<Item> give_objects;
 
-    private SpriteRenderer mc_sprite, speaker_sprite;
+    public SpriteRenderer mc_sprite, speaker_sprite;
     private Image prompter_img;
 
     // (false) => other speaker
@@ -48,8 +48,8 @@ public class DialogueScript : MonoBehaviour
 
     public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", List<Item> objs = null, int tpl = 25) {
         dialogue_file_name = file_name;
-        speaker_sprite = transform.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
-        speaker_sprite.sprite = speaker_image;
+        speaker_sprite = GameObject.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
+        speaker_sprite.sprite = sp_sprite;
         minigame_id = game_id;
         start_quests = quests_to_start.Split(",");
         end_quests = quests_to_end.Split(",");

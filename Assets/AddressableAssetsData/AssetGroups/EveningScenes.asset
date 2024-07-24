@@ -16,7 +16,17 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 0ccc5ebab0fd14dafbb6bd4176c81549
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: d4a0c7fc8ce631d4781cad0a9bff3b66
+    m_Address: PrepExteriorEvening
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b8f39d2403aa9e41bebe516cc274f61
+    m_Address: PrepInteriorHouseEvening
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8b174af6aea80457a8b0a232aa777f5e, type: 2}
   m_SchemaSet:
