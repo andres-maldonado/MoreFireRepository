@@ -5,34 +5,34 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartScreen.unity
     guid: d0da00d2a0dfd254a9f92b446a214e27
   - enabled: 1
     path: Assets/Scenes/AddressableInitiator.unity
     guid: e5b8546e535c946bc9c8a68e04a4ad7d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrepInteriorHouse.unity
     guid: 4a8781de17c101d4c94e58ce8ed43c67
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrepExterior.unity
     guid: 7282cbc807f6e45698746c0f0c5bb1a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EvacExterior.unity
     guid: 75d282fc846371e4fb37ba1f193ede3d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EvacInteriorHouse.unity
     guid: afafd7d2df417fd48824b435eba4f1b1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Konbini.unity
     guid: 5cdd9f102ae9449e6abdd24e3370df06
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrepExteriorEvening.unity
     guid: d4a0c7fc8ce631d4781cad0a9bff3b66
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrepInteriorHouseEvening.unity
     guid: 3b8f39d2403aa9e41bebe516cc274f61
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/End.unity
     guid: 530e94ee233f86847ae3735828f70320
   m_configObjects:
