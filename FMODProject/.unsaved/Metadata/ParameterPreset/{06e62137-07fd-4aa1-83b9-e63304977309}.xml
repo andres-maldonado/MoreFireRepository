@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{06e62137-07fd-4aa1-83b9-e63304977309}">
+		<property name="name">
+			<value>PrepMaster</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d1078279-6266-466b-b073-4be208c99cc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9509f33b-b1c9-46ba-b261-b2fe29d908b1}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9509f33b-b1c9-46ba-b261-b2fe29d908b1}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>25</value>
+		</property>
+	</object>
+</objects>

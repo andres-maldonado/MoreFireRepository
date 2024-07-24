@@ -14918,7 +14918,8 @@ PrefabInstance:
       value: 0.88
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2694461095757688224, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9090576710849194814, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
@@ -20798,8 +20799,28 @@ PrefabInstance:
       value: Audio Manager
       objectReference: {fileID: 0}
     - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Path
+      value: event:/Song
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
       propertyPath: <itemPickup>k__BackingField.Path
       value: event:/ItemPickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Guid.Data1
+      value: -384821194
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Guid.Data2
+      value: 1253098548
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Guid.Data3
+      value: -1978948714
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
+      propertyPath: <song>k__BackingField.Guid.Data4
+      value: 1059782278
       objectReference: {fileID: 0}
     - target: {fileID: 2045673766280285314, guid: ea5677ff7f6b03042908adbaec74c01d, type: 3}
       propertyPath: <itemPickup>k__BackingField.Guid.Data1

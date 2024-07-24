@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
+using System.Runtime.CompilerServices;
 
 public class NewGameSceneManager : MonoBehaviour
 {
     private static NewGameSceneManager _instance;
     public static NewGameSceneManager Instance { get { return _instance; } }
+    private bool prepOn = false;
+    private float prepMix = 1;
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -33,6 +36,14 @@ public class NewGameSceneManager : MonoBehaviour
     [Tooltip("Should the scene start with a fade in from black?")]
     public bool start_with_fade_in = true;
 
+    private void Update()
+    {
+        if (prepOn && prepMix > 0)
+        {
+            prepMix -= (Time.deltaTime/5);
+            AudioManager.instance.MusicParameterChange("PrepMaster", prepMix);
+        }
+    }
     private void Start() {
         transition = GameObject.FindWithTag("MainCanvas").transform.Find("BlackScreen").gameObject;
         if (start_with_fade_in) StartCoroutine(FadeIn());
@@ -97,7 +108,11 @@ public class NewGameSceneManager : MonoBehaviour
         transition.SetActive(true);
         transition.GetComponent<Animator>().SetBool("FadeOut", true);
         if (!isLong) { yield return new WaitForSeconds(.5f); }
-        if (isLong) { yield return new WaitForSeconds(4f); }
+        if (isLong) 
+        {
+            prepOn = true;
+            yield return new WaitForSeconds(4f);
+        }
         StartCoroutine(AsyncLoadScene(scene_name, entrance_name));
     }
 }

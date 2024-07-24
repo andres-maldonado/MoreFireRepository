@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\Misc Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\Scripts\Misc Scripts\Parallax.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\DistanceMusic.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\FireScript.cs" />

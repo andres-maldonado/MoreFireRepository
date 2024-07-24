@@ -96,6 +96,7 @@
 	</object>
 	<object class="MultiSound" id="{3a944ab7-38d2-4071-a865-c09fc55233ae}" />
 	<object class="EventSound" id="{4a66026a-b2f5-437b-b0b9-8ba604871997}">
+		<property name="name" />
 		<relationship name="parameters">
 			<destination>{c651a545-f1cb-4076-82d9-fa282f3f6451}</destination>
 			<destination>{be822dbc-ea11-4ba7-b969-b0df37c5fcd5}</destination>
@@ -104,6 +105,7 @@
 			<destination>{a0dac5bd-e89b-4b6b-b223-afcb6344fbd3}</destination>
 			<destination>{c098b5b6-5ac4-4d76-ad16-e8678d7b7770}</destination>
 			<destination>{5ea5ca21-480b-4518-8b35-e7bf41f76767}</destination>
+			<destination>{1279151b-4926-40b6-adab-ffea705cfaf5}</destination>
 		</relationship>
 		<relationship name="event">
 			<destination>{db142a95-a7e4-4c91-9d12-c04e75518fa2}</destination>
@@ -167,6 +169,11 @@
 	<object class="ParameterProperty" id="{5ea5ca21-480b-4518-8b35-e7bf41f76767}">
 		<relationship name="parameter">
 			<destination>{c43ab064-b253-4644-b78f-cf9de5857488}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProperty" id="{1279151b-4926-40b6-adab-ffea705cfaf5}">
+		<relationship name="parameter">
+			<destination>{31081494-0577-46b8-ba19-9ccc6d7f55bd}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProperty" id="{17aa3905-e4fe-4243-8c87-14b9fad5e8f5}">
