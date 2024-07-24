@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrabItem : MonoBehaviour
 {
     public GameObject inventory;
+    [SerializeField] Item item;
     public bool in_trigger = false;
     private void OnTriggerEnter2D()
     {
@@ -25,9 +26,7 @@ public class GrabItem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && in_trigger && inventory.GetComponent<Inventory>().inv.Count < 5)
         {
-            Item obj = ScriptableObject.CreateInstance<Item>();
-            obj.Init(this.gameObject.name, this.gameObject.name, this.gameObject.transform.GetComponent<SpriteRenderer>().sprite);
-            inventory.GetComponent<Inventory>().inv.Add(obj);
+            inventory.GetComponent<Inventory>().inv.Add(item);
             AudioManager.instance.PlayOneShot(FMODEvents.instance.itemPickup, this.transform.position);
             Destroy(this.gameObject);
         }
