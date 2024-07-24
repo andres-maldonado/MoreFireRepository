@@ -62509,7 +62509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1198728616
 Transform:
   m_ObjectHideFlags: 0
@@ -85388,14 +85388,6 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: minigame_id
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
-      propertyPath: give_obj
-      value: 
-      objectReference: {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
-    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
-      propertyPath: minigame_id
       value: CheckoutMinigame
       objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
@@ -85655,7 +85647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1619894971
 MonoBehaviour:
   m_ObjectHideFlags: 0
