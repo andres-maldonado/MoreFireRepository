@@ -43,7 +43,7 @@ public class DialogueScript : MonoBehaviour
         mainText = transform.GetChild(1).GetComponent<TMP_Text>();
         prompter = transform.GetChild(2).gameObject;
         prompter_img = prompter.GetComponent<Image>();
-        prompter_origin = prompter.transform.position;
+        prompter_origin = prompter.transform.localPosition;
     }
 
     public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", List<Item> objs = null, int tpl = 25) {
@@ -125,7 +125,7 @@ public class DialogueScript : MonoBehaviour
         if (letters_displayed == current_text.Length && !prompter_img.enabled) {
             prompter_img.enabled = true;
         }
-        prompter.transform.position = prompter_origin + new Vector3(0, (float)(Math.Abs(Math.Sin(prompter_time * 4) * 0.05f)), 0);
+        prompter.transform.localPosition = prompter_origin + new Vector3(0, (float)(Math.Abs(Math.Sin(prompter_time * 4) * 15f)), 0);
 
         if (Input.GetKeyDown(KeyCode.Z)) {
             // if the message is finished typing, move on to the next message
