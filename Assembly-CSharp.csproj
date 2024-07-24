@@ -210,6 +210,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\TestDialogues\D1.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+    <None Include="Assets\StreamingAssets\Dialogue\evac_error.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\exit_fire_dialogue.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\time_for_bed.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
