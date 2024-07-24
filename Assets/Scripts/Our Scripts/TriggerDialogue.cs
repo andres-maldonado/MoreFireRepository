@@ -39,10 +39,7 @@ public class TriggerDialogue : MonoBehaviour
                 inv.remove_item(fetch_item);
             }
             GlobalManager.Instance.StartDialogue(dialogue_file_name, speaker_sprite, minigame_id, quests_to_start, quests_to_complete, give_objs); // queue dialogue
-            if(!interactToTrigger && !repeat)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 
