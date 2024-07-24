@@ -138,6 +138,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Utility\CheckPoint.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\ChangeSceneAfterSeconds.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\Extinguisher.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
@@ -149,6 +150,7 @@
     <Compile Include="Assets\Scripts\Our Scripts\Item.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\Our Scripts\EndMusic.cs" />
     <Compile Include="Assets\Scripts\MinigameScripts\Map_warning.cs" />
     <Compile Include="Assets\Scripts\Our Scripts\Error Message.cs" />
     <Compile Include="Assets\Scripts\Structural Scripts\Starter Scripts\Enemy\EnemyAttack.cs" />
