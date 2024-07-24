@@ -221,7 +221,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\TestDialogues\TestDoc.txt" />
     <None Include="Assets\Resources\Dialogue\dialogue_test_file2.txt" />
-    <None Include="Assets\AddressableAssetsData\link.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Resources\Dialogue\bike_thought.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\old_man.txt" />
@@ -235,6 +234,7 @@
     <None Include="Assets\StreamingAssets\Dialogue\int_evening_stop.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Resources\Dialogue\dialogue_test_postfetch.txt" />
+    <None Include="Assets\AddressableAssetsData\link.xml" />
     <None Include="Assets\StreamingAssets\Dialogue\NPC1.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\exterior_stop.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\evacstart.txt" />
