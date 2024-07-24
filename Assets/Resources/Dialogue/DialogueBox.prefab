@@ -506,3 +506,10 @@ MonoBehaviour:
   ticks_per_letter: 2
   start_quests: []
   end_quests: []
+  sound:
+    Guid:
+      Data1: -1593075970
+      Data2: 1240231395
+      Data3: -1347747915
+      Data4: 973656764
+    Path: event:/ProgressDialogue

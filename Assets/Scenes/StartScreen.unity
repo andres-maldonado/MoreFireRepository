@@ -638,7 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e32442358b5d94ca52f7a92a1cee38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: PrepInteriorHouse
+  scene: IntroCutscene
   entrance: 
 --- !u!224 &756956825 stripped
 RectTransform:
