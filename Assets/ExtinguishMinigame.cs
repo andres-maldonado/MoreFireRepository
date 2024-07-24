@@ -12,7 +12,7 @@ public class ExtinguishMinigame : MonoBehaviour
 
     void Start() {
         fires_parent = transform.Find("Fires").gameObject;
-        nozzle = transform.Find("Nozzle").gameObject;
+        nozzle = transform.Find("Extinguwuisher").gameObject;
         door_fire = GameObject.Find("/DoorFire");
     }
 
@@ -23,6 +23,7 @@ public class ExtinguishMinigame : MonoBehaviour
 
         if (fires_parent.transform.childCount == 0 && !game_won) {
             GetComponentInParent<MinigameWin>().Win();
+            Destroy(nozzle);
             Destroy(door_fire);
             game_won = true;
         }

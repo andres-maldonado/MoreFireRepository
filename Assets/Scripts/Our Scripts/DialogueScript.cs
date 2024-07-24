@@ -127,7 +127,7 @@ public class DialogueScript : MonoBehaviour
         }
         prompter.transform.localPosition = prompter_origin + new Vector3(0, (float)(Math.Abs(Math.Sin(prompter_time * 4) * 15f)), 0);
 
-        if (Input.GetKeyDown(KeyCode.Z)) {
+        if (Input.GetKeyDown(KeyCode.E)) {
             // if the message is finished typing, move on to the next message
             if (letters_displayed >= current_text.Length) ReadDialogue();
             // if it's not finished yet, show the whole message
