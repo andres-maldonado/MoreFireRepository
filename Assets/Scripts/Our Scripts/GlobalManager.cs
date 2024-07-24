@@ -109,10 +109,10 @@ public class GlobalManager : MonoBehaviour
     }
 
     public void FreeMinigame() {
-        /*minigame_completion[current_minigame] = true;
+        minigame_completion[current_minigame] = true;
         current_minigame = "";
         Addressables.Release(minigame_handle);
-        Resources.UnloadUnusedAssets();*/
+        Resources.UnloadUnusedAssets();
     }
 
     public void DisplayError(string error_title, string error_message) {
