@@ -8325,11 +8325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.02
+      value: -6.07
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.861
+      value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9596,7 +9596,6 @@ GameObject:
   - component: {fileID: 401221315}
   - component: {fileID: 401221317}
   - component: {fileID: 401221318}
-  - component: {fileID: 401221319}
   m_Layer: 0
   m_Name: Bag
   m_TagString: Untagged
