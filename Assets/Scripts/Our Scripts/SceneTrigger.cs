@@ -40,7 +40,7 @@ public class SceneTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.E) || noButton) && inTrigger == true)
+        if ((Input.GetKeyDown(KeyCode.E) || noButton) && inTrigger == true && !GlobalManager.Instance.in_dialogue)
         {
             if (QuestsComplete())
             {
@@ -52,7 +52,7 @@ public class SceneTrigger : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         inTrigger = true;
         doorIcon.SetBool("inTrigger", true);
