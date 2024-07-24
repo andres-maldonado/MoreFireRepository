@@ -17,6 +17,7 @@ public class TowelMinigame : MonoBehaviour
         if (wetness > 2.1f && !game_won)
         {
             game_won = true;
+            NewPlayerMovement.Instance.GetComponent<Animator>().SetInteger("spriteInQuestion", 1);
             GetComponentInParent<MinigameWin>().Win();
             Destroy(transform.Find("Towel").gameObject);
         }

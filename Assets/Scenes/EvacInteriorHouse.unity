@@ -15534,6 +15534,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1170940219}
     m_Modifications:
+    - target: {fileID: 232605555489786015, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2869930865327515428, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15593,6 +15597,10 @@ PrefabInstance:
     - target: {fileID: 5658004928863852474, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
       propertyPath: m_margin.z
       value: -344.03482
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473333988488512270, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7402124607090068483, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16817,7 +16825,6 @@ GameObject:
   m_Component:
   - component: {fileID: 932009813}
   - component: {fileID: 932009815}
-  - component: {fileID: 932009814}
   m_Layer: 0
   m_Name: FrontDoor
   m_TagString: Untagged
@@ -16840,27 +16847,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &932009814
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932009812}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8a8a6f6ce7bd37f4ba8841b2158ba8fc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &932009815
 SpriteRenderer:
   m_ObjectHideFlags: 0

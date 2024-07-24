@@ -30,7 +30,7 @@ public class MinigameWin : MonoBehaviour
         AudioManager.instance.PlayOneShot(FMODEvents.instance.minigameWinSound, this.transform.position);
         GetComponent<Animator>().SetBool("isBeaten", true);
         if (dialogue_to_queue != "") {
-            GlobalManager.Instance.StartDialogue(dialogue_to_queue, Sprite.Create(dialogue_sprite.texture, dialogue_sprite.rect, dialogue_sprite.pivot), "", quests_to_start, "");
+            GlobalManager.Instance.StartDialogue(dialogue_to_queue, dialogue_sprite, "", quests_to_start, "");
         }
         //for (int i = 0; i < itemCount; i++) { inventory.GetComponent<Inventory>().inv.Add(reward_items[i]); }
         StartCoroutine(EndGame());
