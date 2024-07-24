@@ -4055,6 +4055,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 694469586231803011, guid: 6ce8052fecc8d334087060156cb0e319, type: 3}
   m_PrefabInstance: {fileID: 1663908586}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &666941733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4148,6 +4149,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+=======
+>>>>>>> e7d0c9f9522c86f01303932afc57dd1202ace5b6
 --- !u!1 &674649379
 GameObject:
   m_ObjectHideFlags: 0
@@ -85391,6 +85394,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: give_obj
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b1e481826797a346b7c3598e817e8a5, type: 2}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
+      propertyPath: minigame_id
+      value: CheckoutMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: speaker_sprite
       value: 
       objectReference: {fileID: 21300000, guid: 737d64596540d4e0588b0718b1ab0baf, type: 3}
@@ -85404,7 +85415,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: give_objs.Array.size
+<<<<<<< HEAD
       value: 0
+=======
+      value: 3
+>>>>>>> e7d0c9f9522c86f01303932afc57dd1202ace5b6
       objectReference: {fileID: 0}
     - target: {fileID: 8824044153227559786, guid: 170d55c2080e03c4c8a2a6fe0589ef2d, type: 3}
       propertyPath: give_objs.Array.data[0]
