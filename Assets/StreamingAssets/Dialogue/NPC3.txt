@@ -1,4 +1,4 @@
-MC: Hey [NPC3], have you heard about the wildfire nearby? I wanted to make sure you’re aware and prepared!
+MC: Hey Kumi, have you heard about the wildfire nearby? I wanted to make sure you’re aware and prepared!
 NPC3: Yep, and I’ve got an essentials bag packed in case we need to evacuate too! I recommend that you put one together yourself.
 MC: Oh, that’s actually what I’m doing right now! I’m going to the store to grab what I need.
 NPC3: Good on you! I'll go ahead and leave you to it.

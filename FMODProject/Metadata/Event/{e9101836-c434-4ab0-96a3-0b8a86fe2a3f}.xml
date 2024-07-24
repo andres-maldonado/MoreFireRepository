@@ -96,7 +96,6 @@
 	</object>
 	<object class="MultiSound" id="{3a944ab7-38d2-4071-a865-c09fc55233ae}" />
 	<object class="EventSound" id="{4a66026a-b2f5-437b-b0b9-8ba604871997}">
-		<property name="name" />
 		<relationship name="parameters">
 			<destination>{c651a545-f1cb-4076-82d9-fa282f3f6451}</destination>
 			<destination>{be822dbc-ea11-4ba7-b969-b0df37c5fcd5}</destination>

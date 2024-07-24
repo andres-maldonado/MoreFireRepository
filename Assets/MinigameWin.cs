@@ -14,6 +14,7 @@ public class MinigameWin : MonoBehaviour
     [SerializeField] int itemCount;
     public List<Item> reward_items = new List<Item>();
     [SerializeField] Sprite bat;
+    [SerializeField] bool instance;
 
     private GameObject player;
 
@@ -30,6 +31,10 @@ public class MinigameWin : MonoBehaviour
         GetComponent<Animator>().SetBool("isBeaten", true);
         for (int i = 0; i < itemCount; i++) { inventory.GetComponent<Inventory>().inv.Add(reward_items[i]); }
         StartCoroutine(EndGame());
+        if(instance)
+        {
+            gameObject.GetComponent<Extinguisher>().StopSound();
+        }
     }
 
     IEnumerator EndGame()

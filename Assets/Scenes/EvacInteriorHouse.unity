@@ -8325,11 +8325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.02
+      value: -6.07
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.861
+      value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: 4256419878388457083, guid: dae9dc1b485e2ae4bbb26a1f4fb00d71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9595,7 +9595,6 @@ GameObject:
   - component: {fileID: 401221315}
   - component: {fileID: 401221317}
   - component: {fileID: 401221318}
-  - component: {fileID: 401221319}
   m_Layer: 0
   m_Name: Bag
   m_TagString: Untagged
@@ -9729,29 +9728,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 1968262346}
   in_trigger: 0
---- !u!114 &401221319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401221314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cd42827032b34151a76ae32fabcf085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_file_name: essentials_bag
-  minigame_id: 
-  quests_to_start: 
-  quests_to_complete: bag_grab
-  speaker_sprite: {fileID: 0}
-  fetch_item: 
-  interactToTrigger: 1
-  do_fetch_quest: 0
-  fetch_obj: {fileID: 0}
-  post_fetch_dialogue_file_name: 
-  give_objs: []
 --- !u!1 &430720867
 GameObject:
   m_ObjectHideFlags: 0
