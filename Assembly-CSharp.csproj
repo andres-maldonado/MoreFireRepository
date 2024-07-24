@@ -222,6 +222,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Scripts\Structural Scripts\Starter Scripts\UI\TestDialogues\TestDoc.txt" />
     <None Include="Assets\Resources\Dialogue\dialogue_test_file2.txt" />
+    <None Include="Assets\StreamingAssets\Dialogue\stayfocused.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Resources\Dialogue\bike_thought.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\old_man.txt" />
