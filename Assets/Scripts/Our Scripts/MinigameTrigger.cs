@@ -32,6 +32,7 @@ public class MinigameTrigger : MonoBehaviour
         }
         else
         {
+            GlobalManager.Instance.DisplayError("Hmmm I seem to be missing some important things...", "I should have them around here somewhere...");
             return false;
         }
     }
@@ -44,19 +45,31 @@ public class MinigameTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        has_req_items = check_item_reqs(item_reqs);
-        if (Input.GetKeyDown(KeyCode.E) && inTrigger && has_req_items)
+        if (Input.GetKeyDown(KeyCode.E) && inTrigger)
         {
+<<<<<<< HEAD
+            has_req_items = check_item_reqs(item_reqs);
+            if (has_req_items)
+=======
             foreach(Item i in item_reqs)
             {
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Remove(i);
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().clear_all_sprites();
             }
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open
+>>>>>>> 13086fa6f3f1012f4a2968fb4a996c3c1cb26554
             {
-                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory(); //closes inventory
+                foreach(Item i in item_reqs)
+                {
+                    GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Remove(i);
+                    GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().clear_all_sprites();
+                }
+                if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open
+                {
+                    GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory(); //closes inventory
+                }
+                StartGame();
             }
-            StartGame();
         }
     }
 

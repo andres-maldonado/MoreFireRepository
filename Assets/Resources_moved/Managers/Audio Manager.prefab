@@ -91,11 +91,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <song>k__BackingField:
     Guid:
-      Data1: -619435371
-      Data2: 1284614116
-      Data3: 1321210525
-      Data4: -1567665803
-    Path: event:/OverworldMusic
+      Data1: -384821194
+      Data2: 1253098548
+      Data3: -1978948714
+      Data4: 1059782278
+    Path: event:/Song
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: -710244772
@@ -103,10 +103,17 @@ MonoBehaviour:
       Data3: -624974935
       Data4: -1007023792
     Path: event:/Footsteps
+  <itemPickup>k__BackingField:
+    Guid:
+      Data1: 1244805166
+      Data2: 1228736813
+      Data3: -1684435015
+      Data4: 1283449316
+    Path: event:/ItemPickup
   <minigameWinSound>k__BackingField:
     Guid:
       Data1: -1763584013
       Data2: 1200870355
       Data3: 1162600116
       Data4: -405406696
-    Path: event:/MinigameWin
+    Path: event:/Minigames/MinigameWin

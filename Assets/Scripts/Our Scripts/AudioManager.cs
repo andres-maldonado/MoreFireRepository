@@ -6,7 +6,7 @@ using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
-    private EventInstance musicEventInstance;
+    public EventInstance musicEventInstance;
     private EventInstance dialogue;
     public static AudioManager instance { get; private set; }
     private void Start()
@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
         return eventInstance;
     }
 
-    private void InitializeMusic(EventReference musicEventReference)
+    public void InitializeMusic(EventReference musicEventReference)
     {
         PLAYBACK_STATE playbackState;
         musicEventInstance.getPlaybackState(out playbackState);

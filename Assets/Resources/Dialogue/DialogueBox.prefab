@@ -509,3 +509,10 @@ MonoBehaviour:
   sp_sprite: {fileID: 0}
   mc_sprite: {fileID: 0}
   speaker_sprite: {fileID: 0}
+  sound:
+    Guid:
+      Data1: -1593075970
+      Data2: 1240231395
+      Data3: -1347747915
+      Data4: 973656764
+    Path: event:/ProgressDialogue
