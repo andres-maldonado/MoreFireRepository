@@ -9728,6 +9728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 1968262346}
+  item: {fileID: 11400000, guid: 34d1326be2cf47c41be3bd20597cf5be, type: 2}
   in_trigger: 0
 --- !u!114 &401221319
 MonoBehaviour:
