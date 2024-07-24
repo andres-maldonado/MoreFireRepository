@@ -8,25 +8,25 @@ using System;
 public class MinigameTrigger : MonoBehaviour
 {
     [SerializeField] GameObject inventory;
-    [SerializeField] public string[] item_reqs;
+    [SerializeField] public List<Item> item_reqs = new List<Item>();
     [SerializeField] private string minigame_name;
     [SerializeField] bool oneTime;
     private bool inTrigger = false;
     private GameObject canvas;
     [SerializeField] EventReference startSound;
-    private bool has_req_items = false;
+    private bool has_req_items = true;
 
-    private bool check_item_reqs(string[] item_reqs)
+    private bool check_item_reqs(List<Item> item_reqs)
     {
         int count = 0;
-        for (int i = 0; i < item_reqs.Length; i++)
+        for (int i = 0; i < item_reqs.Count; i++)
         {
-            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().in_inventory(item_reqs[i]))
+            if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().in_inventory(item_reqs[i].name))
             {
                 count++; //is in inventory
             }
         }
-        if (count == item_reqs.Length)
+        if (count == item_reqs.Count)
         {
             return true;
         }
@@ -47,6 +47,11 @@ public class MinigameTrigger : MonoBehaviour
         has_req_items = check_item_reqs(item_reqs);
         if (Input.GetKeyDown(KeyCode.E) && inTrigger && has_req_items)
         {
+            foreach(Item i in item_reqs)
+            {
+                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().inv.Remove(i);
+                GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<Inventory>().clear_all_sprites();
+            }
             if (GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().inventory_isopen) //if the inventory is open
             {
                 GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>().close_inventory(); //closes inventory
