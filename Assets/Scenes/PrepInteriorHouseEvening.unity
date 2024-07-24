@@ -14666,7 +14666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_file_name: evening_house
   minigame_id: 
-  quests_to_start: 
+  quests_to_start: bag_packing
   quests_to_complete: 
   speaker_sprite: {fileID: 0}
   fetch_item: 
@@ -14674,7 +14674,7 @@ MonoBehaviour:
   do_fetch_quest: 0
   fetch_obj: {fileID: 0}
   post_fetch_dialogue_file_name: 
-  give_obj: {fileID: 0}
+  give_objs: []
 --- !u!61 &729784454
 BoxCollider2D:
   m_ObjectHideFlags: 0
