@@ -234,7 +234,6 @@
     <None Include="Assets\StreamingAssets\Dialogue\int_evening_stop.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Resources\Dialogue\dialogue_test_postfetch.txt" />
-    <None Include="Assets\AddressableAssetsData\link.xml" />
     <None Include="Assets\StreamingAssets\Dialogue\NPC1.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\exterior_stop.txt" />
     <None Include="Assets\StreamingAssets\Dialogue\evacstart.txt" />

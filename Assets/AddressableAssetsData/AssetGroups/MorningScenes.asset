@@ -10,30 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Default Local Group
+  m_Name: MorningScenes
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
+  m_GroupName: MorningScenes
   m_Data:
     m_SerializedData: []
-  m_GUID: 9e8321afb3de54d08941d15bad1754ac
+  m_GUID: 0d4480ec670cd4582abd8c29920a40ac
   m_SerializeEntries:
-  - m_GUID: e5b8546e535c946bc9c8a68e04a4ad7d
-    m_Address: AddressableInitiator
+  - m_GUID: 4a8781de17c101d4c94e58ce8ed43c67
+    m_Address: PrepInteriorHouse
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d0da00d2a0dfd254a9f92b446a214e27
-    m_Address: StartScreen
+  - m_GUID: 7282cbc807f6e45698746c0f0c5bb1a3
+    m_Address: PrepExterior
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 530e94ee233f86847ae3735828f70320
-    m_Address: End
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f7688fd17f250470084b6c50678c9514
-    m_Address: TutorialScreen
+  - m_GUID: 5cdd9f102ae9449e6abdd24e3370df06
+    m_Address: Konbini
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -41,5 +36,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: 8b174af6aea80457a8b0a232aa777f5e, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: de776d06df0a54f0dac63e2539853304, type: 2}
-    - {fileID: 11400000, guid: 0ef3640b819a145fa92114ec9cdaf6a7, type: 2}
+    - {fileID: 11400000, guid: 5556194183f8946369b73617dc4abaa6, type: 2}
+    - {fileID: 11400000, guid: a4209d7b51d634974ab1a3241e8f9d5e, type: 2}

@@ -27,7 +27,6 @@ public class NewGameSceneManager : MonoBehaviour
     private GameObject player;
     private bool can_transition;
     public GameObject transition;
-    private Animator transition_anim;
 
     private AsyncOperationHandle<SceneInstance> scene_handle;
 
@@ -35,7 +34,7 @@ public class NewGameSceneManager : MonoBehaviour
     public bool start_with_fade_in = true;
 
     private void Start() {
-        transition_anim = transition.GetComponent<Animator>();
+        transition = GameObject.FindWithTag("MainCanvas").transform.Find("BlackScreen").gameObject;
         if (start_with_fade_in) StartCoroutine(FadeIn());
         player = GameObject.FindWithTag("Player");
     }
@@ -47,9 +46,7 @@ public class NewGameSceneManager : MonoBehaviour
         {
             player.GetComponent<Collider2D>().enabled = false;
         }
-        if (transition == null) {
-            transition = GameObject.FindWithTag("MainCanvas").transform.GetChild(1).gameObject;
-        }
+        transition = GameObject.FindWithTag("MainCanvas").transform.Find("BlackScreen").gameObject;
         StartCoroutine(FadeOut(scene_name, entrance_name, isLong));
     }
 
@@ -68,10 +65,14 @@ public class NewGameSceneManager : MonoBehaviour
             transition = GameObject.FindWithTag("BlackScreen");
         }
         StartCoroutine(FadeIn());
-        player.GetComponent<Collider2D>().enabled = true;
-        Vector3 entranceCoord = GameObject.Find(entrance_name).transform.localPosition;
-        player.transform.localPosition = entranceCoord;
-        Camera.main.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+        if (NewPlayerMovement.Instance != null) {
+            NewPlayerMovement.Instance.GetComponent<Collider2D>().enabled = true;
+        }
+        if (GameObject.Find(entrance_name) != null) {
+            Vector3 entranceCoord = GameObject.Find(entrance_name).transform.localPosition;
+            player.transform.localPosition = entranceCoord;
+            Camera.main.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+        }
         if (scene_handle.Status == AsyncOperationStatus.Succeeded) {
             
         }
@@ -82,9 +83,9 @@ public class NewGameSceneManager : MonoBehaviour
         Debug.Log("FadeIn");
         transition.GetComponent<Animator>().SetBool("FadeOut", false);
         transition.SetActive(true);
-        transition_anim.SetBool("FadeIn", true);
+        transition.GetComponent<Animator>().SetBool("FadeIn", true);
         yield return new WaitForSeconds(1);
-        transition_anim.SetBool("FadeIn", false);
+        transition.GetComponent<Animator>().SetBool("FadeIn", false);
         transition.SetActive(false);
         //canTransition = true;
     }
