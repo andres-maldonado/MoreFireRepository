@@ -49,7 +49,7 @@ public class DialogueScript : MonoBehaviour
     public void Set(string file_name, Sprite speaker_image, string game_id = "", string quests_to_start = "", string quests_to_end = "", List<Item> objs = null, int tpl = 25) {
         dialogue_file_name = file_name;
         speaker_sprite = GameObject.Find("SpeakerPortrait").GetComponent<SpriteRenderer>();
-        speaker_sprite.sprite = sp_sprite;
+        speaker_sprite.sprite = speaker_image;
         minigame_id = game_id;
         start_quests = quests_to_start.Split(",");
         end_quests = quests_to_end.Split(",");
