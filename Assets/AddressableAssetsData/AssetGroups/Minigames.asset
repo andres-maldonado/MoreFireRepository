@@ -47,6 +47,16 @@ MonoBehaviour:
     m_SerializedLabels:
     - minigame
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 124e03747fb3cfd449185630f3d1fc3e
+    m_Address: MapMinigame
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6032f4e24e2ff804da1527712775e3d0
+    m_Address: CheckoutMinigame
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8b174af6aea80457a8b0a232aa777f5e, type: 2}
   m_SchemaSet:

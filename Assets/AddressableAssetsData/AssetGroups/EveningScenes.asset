@@ -10,30 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Default Local Group
+  m_Name: EveningScenes
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
+  m_GroupName: EveningScenes
   m_Data:
     m_SerializedData: []
-  m_GUID: 9e8321afb3de54d08941d15bad1754ac
+  m_GUID: 0ccc5ebab0fd14dafbb6bd4176c81549
   m_SerializeEntries:
-  - m_GUID: e5b8546e535c946bc9c8a68e04a4ad7d
-    m_Address: AddressableInitiator
+  - m_GUID: d4a0c7fc8ce631d4781cad0a9bff3b66
+    m_Address: PrepExteriorEvening
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d0da00d2a0dfd254a9f92b446a214e27
-    m_Address: StartScreen
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 530e94ee233f86847ae3735828f70320
-    m_Address: End
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f7688fd17f250470084b6c50678c9514
-    m_Address: TutorialScreen
+  - m_GUID: 3b8f39d2403aa9e41bebe516cc274f61
+    m_Address: PrepInteriorHouseEvening
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -41,5 +31,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: 8b174af6aea80457a8b0a232aa777f5e, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: de776d06df0a54f0dac63e2539853304, type: 2}
-    - {fileID: 11400000, guid: 0ef3640b819a145fa92114ec9cdaf6a7, type: 2}
+    - {fileID: 11400000, guid: 3990d4702511b4706b8b0365fe08dff8, type: 2}
+    - {fileID: 11400000, guid: a3bfc6c29893d4090b9be491c1e05414, type: 2}

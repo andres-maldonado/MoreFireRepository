@@ -32,10 +32,15 @@ public class PhoneMinigame : MonoBehaviour
 
     public void EnterKey(string n) {
         current_passcode += n;
+        transform.Find("Dots/Circle" + current_passcode.Length.ToString()).gameObject.SetActive(true);
         AudioManager.instance.PlayOneShot(text, this.transform.position);
         if (current_passcode.Length == 4) {
             if (current_passcode != correct_passcode) {
                 current_passcode = "";
+                transform.Find("Dots/Circle1").gameObject.SetActive(false);
+                transform.Find("Dots/Circle2").gameObject.SetActive(false);
+                transform.Find("Dots/Circle3").gameObject.SetActive(false);
+                transform.Find("Dots/Circle4").gameObject.SetActive(false);
                 AudioManager.instance.PlayOneShot(wrongPasscode, this.transform.position);
             }
             else {
