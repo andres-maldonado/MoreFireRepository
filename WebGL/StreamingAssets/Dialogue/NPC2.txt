@@ -1,0 +1,4 @@
+MC: Hey Satou-san, have you heard about the wildfire nearby? I wanted to make sure you’re aware and prepared!
+NPC2: Oh, there’s a fire? No, I didn’t know anything about that. What about it?
+MC: It’s huge! It might spread to our town soon! You have to make sure you’re ready to evacuate if we need to.
+NPC2: Oh, sure, I got you. I’ll get some things together then. Thanks for telling me.
