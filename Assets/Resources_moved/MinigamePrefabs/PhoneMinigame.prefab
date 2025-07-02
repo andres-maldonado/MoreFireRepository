@@ -1278,7 +1278,7 @@ RectTransform:
   m_GameObject: {fileID: 3554202518956206377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 800, y: 50, z: 1}
+  m_LocalScale: {x: 1044.9, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2654442079134628936}
@@ -2874,10 +2874,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u30D1\u30B9\u30EF\u30FC\u30C9\u3092\u5165\u529B\u3057\u3066\u3001\u8B66\u544A\u3092\u6709\u52B9\u306B\u3057\u307E\u3059\uFF01"
+  m_text: "\u30D1\u30B9\u30B3\u30FC\u30C9\u3092\u5165\u308C\u3066\u3001\u30A2\u30E9\u30FC\u30C8\u3092\u30AA\u30F3\u306B\u3057\u307E\u3057\u3087\u3046\uFF01"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07b152260adf204438f9c1bafe2abf25, type: 2}
-  m_sharedMaterial: {fileID: 4512710836799267083, guid: 07b152260adf204438f9c1bafe2abf25, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9531bebd95ab43b4faf5fd1ec772301b, type: 2}
+  m_sharedMaterial: {fileID: -1904201425253427260, guid: 9531bebd95ab43b4faf5fd1ec772301b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
