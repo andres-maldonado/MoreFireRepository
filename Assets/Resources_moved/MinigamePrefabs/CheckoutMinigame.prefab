@@ -486,10 +486,10 @@ MonoBehaviour:
   item_listUI: {fileID: 440934211340135345}
   checkout_screen: []
   items_checkout:
-  - Battery
-  - Energybar
-  - Medkit
-  - Bag
+  - "\u96FB\u6C60"
+  - "\u30A8\u30CD\u30EB\u30AE\u30FC\u30D0\u30FC"
+  - "\u6551\u6025\u30AD\u30C3\u30C8"
+  - "\u30D0\u30C3\u30B0"
   checkoutScan:
     Guid:
       Data1: -886396550
@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 549286039561453371}
   - component: {fileID: 6588614763432485043}
   m_Layer: 3
-  m_Name: Bag
+  m_Name: "\u30D0\u30C3\u30B0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1381,7 +1381,7 @@ GameObject:
   - component: {fileID: 3901996687290838635}
   - component: {fileID: 2201424300305896182}
   m_Layer: 3
-  m_Name: Medkit
+  m_Name: "\u6551\u6025\u30AD\u30C3\u30C8"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1857,7 +1857,7 @@ GameObject:
   - component: {fileID: 7368906127574972205}
   - component: {fileID: 2478471305938524562}
   m_Layer: 3
-  m_Name: Battery
+  m_Name: "\u96FB\u6C60"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2247,7 +2247,7 @@ GameObject:
   - component: {fileID: 6190970342106151667}
   - component: {fileID: 4649319393675794575}
   m_Layer: 3
-  m_Name: Energybar
+  m_Name: "\u30A8\u30CD\u30EB\u30AE\u30FC\u30D0\u30FC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
