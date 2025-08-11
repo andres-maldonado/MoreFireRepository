@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: bag_grab_quest
   m_EditorClassIdentifier: 
   quest_name: bag_grab
-  quest_desc: Grab your essentials bag
+  quest_desc: "\u5FC5\u9700\u54C1\u30D0\u30C3\u30B0\u3092\u6301\u3063\u3066\u884C\u3053\u3046"
   is_starter_quest: 0

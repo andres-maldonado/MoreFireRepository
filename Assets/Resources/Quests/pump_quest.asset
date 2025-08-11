@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: pump_quest
   m_EditorClassIdentifier: 
   quest_name: bike_pump
-  quest_desc: Fill your bike tires with air
+  quest_desc: "\u81EA\u8EE2\u8ECA\u306E\u30BF\u30A4\u30E4\u306B\u7A7A\u6C17\u3092\u5165\u308C\u3088\u3046"
   is_starter_quest: 0

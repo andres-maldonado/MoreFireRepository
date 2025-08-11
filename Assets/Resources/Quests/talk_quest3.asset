@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: talk_quest3
   m_EditorClassIdentifier: 
   quest_name: neighbor_talk3
-  quest_desc: Tell Satou-san about the fire
+  quest_desc: "\u3055\u3068\u3046\u3055\u3093\u306B\u706B\u4E8B\u3092\u77E5\u3089\u305B\u3088\u3046"
   is_starter_quest: 0

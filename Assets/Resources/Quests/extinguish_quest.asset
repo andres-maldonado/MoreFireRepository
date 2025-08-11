@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: extinguish_quest
   m_EditorClassIdentifier: 
   quest_name: extinguish_fire
-  quest_desc: Extinguish the fire in front of your door
+  quest_desc: "\u30C9\u30A2\u306E\u524D\u306E\u706B\u3092\u6D88\u305D\u3046"
   is_starter_quest: 0
