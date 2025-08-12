@@ -759,7 +759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: item_reqs.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8813714866464251894, guid: 3a44924fd6278e84b89edb4222f4e259, type: 3}
       propertyPath: item_reqs.Array.data[0]
@@ -113891,7 +113891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 196311453298342401, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: necessary_quests
-      value: bike_pump, batteries_fetch
+      value: batteries_fetch
       objectReference: {fileID: 0}
     - target: {fileID: 1685593635682384271, guid: b83dde05c93e7c64790059400aafee33, type: 3}
       propertyPath: m_LocalScale.x
