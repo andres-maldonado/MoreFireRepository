@@ -26,6 +26,7 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] private string[] end_quests;
     [SerializeField] EventReference sound;
     private List<Item> give_objects;
+    private InventoryUI inv_ui;
 
     public SpriteRenderer mc_sprite, speaker_sprite;
     private Image prompter_img;
@@ -66,6 +67,8 @@ public class DialogueScript : MonoBehaviour
             gameObject.GetComponent<DialogueScript>().enabled = false;
         }
 
+        inv_ui = GameObject.FindWithTag("MainCanvas").transform.GetChild(0).GetComponent<InventoryUI>();
+
         file_reader = File.OpenText(Application.streamingAssetsPath + "/Dialogue/" + dialogue_file_name + ".txt");
 
         mc_sprite = GameObject.Find("MCPortrait").GetComponent<SpriteRenderer>();
@@ -89,7 +92,9 @@ public class DialogueScript : MonoBehaviour
             }
             GlobalManager.Instance.in_dialogue = false;
             NewPlayerMovement.Instance.DisablePlayer(false);
-            foreach (string q in end_quests) {
+            inv_ui.inventory_en = true; //enable opening inventory
+            foreach (string q in end_quests)
+            {
                 if (q.Trim() != "") QuestManager.Instance.CompleteQuest(q.Trim());
             }
             foreach (string q in start_quests) {

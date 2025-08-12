@@ -30,6 +30,7 @@ public class TriggerDialogue : MonoBehaviour
         if (player_near && (Input.GetKeyDown(KeyCode.E)||!interactToTrigger) && !GlobalManager.Instance.in_dialogue && !GlobalManager.Instance.in_minigame) {
             Debug.Log("Player Triggered");
             NewPlayerMovement.Instance.DisablePlayer(true); // stop movement
+            inv_ui.inventory_en = false; //disable opening inventory 
             if (inv_ui.inventory_isopen) //if the inventory is open close inventory
             {
                 inv_ui.close_inventory();
