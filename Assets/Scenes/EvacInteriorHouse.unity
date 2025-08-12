@@ -9776,7 +9776,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401221314}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 779f36ec1a42f6f47a3c3c8f3555fd9c, type: 3}
   m_Name: 
@@ -9807,7 +9807,8 @@ MonoBehaviour:
   do_fetch_quest: 0
   fetch_obj: {fileID: 0}
   post_fetch_dialogue_file_name: 
-  give_objs: []
+  give_objs:
+  - {fileID: 11400000, guid: 34d1326be2cf47c41be3bd20597cf5be, type: 2}
 --- !u!1 &430720867
 GameObject:
   m_ObjectHideFlags: 0

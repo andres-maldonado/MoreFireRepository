@@ -8,6 +8,7 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] Animator quest;
     [SerializeField] Animator map;
     public bool inventory_isopen = false;
+    public bool inventory_en = true;
 
     public void close_inventory()
     {
@@ -34,7 +35,7 @@ public class InventoryUI : MonoBehaviour
         }
 
         //brings up the inventory if TAB is pressed and the inventory is not already open
-        if (Input.GetKeyDown(KeyCode.Tab) && inventory_isopen == false)
+        if (Input.GetKeyDown(KeyCode.Tab) && inventory_isopen == false && inventory_en)
         {
             open_inventory();
         }

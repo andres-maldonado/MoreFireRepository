@@ -12434,6 +12434,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a0307f14272f93b43a8238e1c44181e9, type: 2}
   - {fileID: 11400000, guid: 49866fb5bae50ba43af74101fc37ba08, type: 2}
   - {fileID: 11400000, guid: e801aa3d538e92940a41b04847d85466, type: 2}
+  - {fileID: 11400000, guid: 2073d4e21adb9cf40a6b034ecf31301d, type: 2}
+  - {fileID: 11400000, guid: eaa635d0871ec4d8c9844027feac4e6d, type: 2}
   minigame_name: PackingMinigame
   oneTime: 0
   startSound:
@@ -15113,6 +15115,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7667687086748458832, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3217865543360673058, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a868e334c2c58c743bb1ce3e9b4acdc9, type: 3}
